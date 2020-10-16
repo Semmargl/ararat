@@ -1,0 +1,11 @@
+@import "./reset";
+
+.container {
+  width: 1060px;
+  padding: 0 10px;
+  max-width: 100%;
+  margin: auto;
+}
+
+
+@import "../components/footer/footer";
