@@ -1,6 +1,9 @@
 @import "./constants";
 @import "./reset";
 
+// @import "~bootstrap/scss/bootstrap";
+// @import "node_modules/bootstrap/scss/bootstrap";
+
 .container {
   width: 1060px;
   padding: 0 10px;
@@ -8,5 +11,9 @@
   margin: auto;
 }
 
+body {
+  background-color: #271c3f;
+}
 
 @import "../components/footer/footer";
+@import "../components/header/header";

@@ -1,6 +1,165 @@
 @import "../../scss/constants";
 
-.footer {
-  padding: 20px;
-  background-color: $some-color;
+.section-footer {
+  color: #979797;
+
+  font-family: Roboto;
+  font-weight: 400;
+  text-align: center;
+
+  &_provider {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 25px 0;
+    text-align: center;
+    background-color: #41355c;
+
+    &__logo {
+      padding: 20px 15px;
+    }
+  }
+
+  &_menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.205);
+
+    &__link {
+      color: #979797;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding-left: 15px;
+      // padding-left: 30px;
+      // border-right: 1px solid; //border > text !!!
+
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      &:after {
+        content: "I";
+        padding-left: 15px;
+      }
+      &:last-child:after {
+        content: "";
+        padding-left: 15px;
+      }
+    }
+  }
+
+  &_payment {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.205);
+
+    &__logo {
+      padding: 30px 15px 40px 15px;
+    }
+  }
+
+  &_text {
+    padding: 20px 10px 25px 10px;
+    font-size: 11px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.205);
+
+    &-short {
+      padding: 0px 23%;
+      border-bottom: none;
+      margin: 0;
+      line-height: 24px;
+    }
+  }
+
+  &_contacts {
+    padding: 20px 0;
+    // text-align: center;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    &__number {
+      // background-image: url(../../svg/Phone1.svg);
+      background-position: left;
+      background-repeat: no-repeat;
+
+      padding: 0 30px;
+      color: #fff;
+
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 28px;
+    }
+    &__mail {
+      // background-image: url(../../svg/email_icon1.svg);
+      background-position: left;
+      background-repeat: no-repeat;
+
+      padding: 0 30px;
+
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 21px;
+      color: #fff774;
+    }
+    &__footer {
+      width: 10px;
+    }
+
+    .social-footer {
+      display: flex;
+      justify-content: space-between;
+      width: 220px;
+
+      &-icon {
+        width: 32px;
+        height: 32px;
+        background-position: center;
+        padding: 0;
+        border: none;
+        font: inherit;
+        // color: inherit;
+        color: red;
+        background-color: transparent;
+        cursor: pointer;
+      }
+      &__google {
+        background-image: url(../src/images/AplloGames.png);
+      }
+      &__vk {
+        // background-image: url(../../svg/VK.svg);
+      }
+      &__fb {
+        // background-image: url(/src/svg/FB.svg);
+      }
+      // &__twitter {
+      //   background-image: url(../../svg/Twitter.svg);
+      // }
+      // &__odnoklasniki {
+      //   background-image: url(../../svg/Odnoklasniki.svg);
+      // }
+    }
+  }
+
+  &_rights {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+
+    &__item {
+      padding: 0 10px;
+      // color: red;
+    }
+  }
 }

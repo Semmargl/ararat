@@ -1,10 +1,11 @@
 import Footer from '../components/footer';
+import Header from '../components/header';
 
 const Main = () => {
     return `
         <div class="someGlobalClass">
             <div class="container">
-                <h1>Some code for example</h1>
+                ${Header()}
             </div>
             
             <div class="container">
