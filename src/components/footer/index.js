@@ -1,3 +1,4 @@
+
 const Footer = () => {
 
     return `
@@ -5,7 +6,6 @@ const Footer = () => {
     <footer class="section-footer">
         <div class="section-footer_provider">
             <div class="inner">
-
                 <img src="/src/svg/Ezugi.svg" alt="" class="section-footer_provider__logo">
                 <img src="/src/svg/Novomatic.svg" alt="" class="section-footer_provider__logo">
                 <img src="/src/svg/egt.svg" alt="" class="section-footer_provider__logo">

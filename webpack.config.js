@@ -8,14 +8,30 @@ module.exports = {
         path: path.resolve(__dirname, 'dist')
     },
     module: {
-        rules: [{
-            test:/\.(s*)css$/,
-            use: [
-                miniCss.loader,
-                'css-loader',
-                'sass-loader',
-            ]
-        }]
+        rules: [
+            {
+                test: /\.js$/,
+                loader: 'babel-loader',
+                exclude: /(node_modules)/,
+                options: {
+                    presets: [
+                        '@babel/preset-env'
+                    ]
+                }
+            },
+            {
+                test: /\.scss$/,
+                use: [
+                    miniCss.loader,
+                    'css-loader',
+                    'sass-loader'
+                ]
+            },
+            {
+                test: /\.(svg|jpe?g|gif|png)$/,
+                loader: 'url-loader',
+
+            }]
     },
     plugins: [
         new miniCss({
