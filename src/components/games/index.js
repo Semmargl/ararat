@@ -15,6 +15,7 @@ const Games = () => {
     <div class="section-games_wrap">
         <div class="section-games_wrap__card"> 
             <img src="/src/images/GamePrevMiddle.png" alt=""> 
+            <div class="section-games_wrap__card-bg"></div>
             <div class="section-games_wrap__card_info">
                 <button class="section-games_wrap__card_info_play reset-btn">Играть</button>
                 <p class="section-games_wrap__card_info_subtitle">Демо</p>
@@ -24,6 +25,7 @@ const Games = () => {
         </div>
         <div class="section-games_wrap__card"> 
             <img src="/src/images/GamePrevMiddle.png" alt=""> 
+            <div class="section-games_wrap__card-bg"></div>
             <div class="section-games_wrap__card_info">
                 <button class="section-games_wrap__card_info_play reset-btn">Играть</button>
                 <p class="section-games_wrap__card_info_subtitle">Демо</p>
@@ -33,6 +35,7 @@ const Games = () => {
         </div>
         <div class="section-games_wrap__card"> 
             <img src="/src/images/GamePrevMiddle.png" alt=""> 
+            <div class="section-games_wrap__card-bg"></div>
             <div class="section-games_wrap__card_info">
                 <button class="section-games_wrap__card_info_play reset-btn">Играть</button>
                 <p class="section-games_wrap__card_info_subtitle">Демо</p>
@@ -42,6 +45,7 @@ const Games = () => {
         </div>
         <div class="section-games_wrap__card"> 
             <img src="/src/images/GamePrevMiddle.png" alt=""> 
+            <div class="section-games_wrap__card-bg"></div>
             <div class="section-games_wrap__card_info">
                 <button class="section-games_wrap__card_info_play reset-btn">Играть</button>
                 <p class="section-games_wrap__card_info_subtitle">Демо</p>
@@ -51,6 +55,7 @@ const Games = () => {
         </div>
         <div class="section-games_wrap__card"> 
             <img src="/src/images/GamePrevMiddle.png" alt=""> 
+            <div class="section-games_wrap__card-bg"></div>
             <div class="section-games_wrap__card_info">
                 <button class="section-games_wrap__card_info_play reset-btn">Играть</button>
                 <p class="section-games_wrap__card_info_subtitle">Демо</p>
@@ -60,6 +65,7 @@ const Games = () => {
         </div>
         <div class="section-games_wrap__card"> 
             <img src="/src/images/GamePrevMiddle.png" alt=""> 
+            <div class="section-games_wrap__card-bg"></div>
             <div class="section-games_wrap__card_info">
                 <button class="section-games_wrap__card_info_play reset-btn">Играть</button>
                 <p class="section-games_wrap__card_info_subtitle">Демо</p>
@@ -67,6 +73,7 @@ const Games = () => {
                 <div class="section-games_wrap__card_info_rating">4.5</div>
             </div>
         </div>
+       
 
 
     

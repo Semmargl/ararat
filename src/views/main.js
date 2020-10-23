@@ -6,6 +6,7 @@ import Navbar from '../components/navbar';
 import GameSlider from '../components/gameSlider';
 import Games from '../components/games';
 
+
 const Main = () => {
     return `
         <div class="someGlobalClass">

@@ -20,6 +20,13 @@
       align-items: center;
       justify-content: center;
 
+      &-bg {
+        background-color: rgba(81, 58, 123, 0.6);
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        display: none;
+      }
       img {
         display: block;
         width: 164px;
@@ -39,7 +46,6 @@
         text-align: center;
         align-items: center;
         color: #ffffff;
-        background-color: rgba(81, 58, 123, 0.6);
 
         opacity: 0;
         transition: all 0.45s;
@@ -84,19 +90,20 @@
     }
 
     &__card:hover .section-games_wrap__card_info {
-      //   display: flex;
       opacity: 1;
-      // transform: scale(0.95, 0.97);
     }
     &__card:hover img {
-      //   display: flex;
-      // opacity: 1;
       transform: scale(1.05, 1.033);
     }
     &__card:hover {
       border: 4px solid #000000;
       box-shadow: 2px 2px 0px #000000;
       border-radius: 10px;
+    }
+    &__card:hover .section-games_wrap__card-bg {
+      display: block;
+      position: absolute;
+      transform: scale(1.04, 1.023);
     }
   }
 }
