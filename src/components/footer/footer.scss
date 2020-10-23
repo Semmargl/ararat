@@ -17,6 +17,11 @@
     text-align: center;
     background-color: #41355c;
 
+    .inner {
+      width: 1040px;
+      margin: 0 auto;
+    }
+
     &__logo {
       padding: 20px 15px;
     }
@@ -89,7 +94,7 @@
     justify-content: center;
 
     &__number {
-      // background-image: url(../../svg/Phone1.svg);
+      background-image: url(../svg/Phone1.svg);
       background-position: left;
       background-repeat: no-repeat;
 
@@ -101,7 +106,7 @@
       line-height: 28px;
     }
     &__mail {
-      // background-image: url(../../svg/email_icon1.svg);
+      background-image: url(../svg/email_icon1.svg);
       background-position: left;
       background-repeat: no-repeat;
 
@@ -134,20 +139,20 @@
         cursor: pointer;
       }
       &__google {
-        background-image: url("../images/AplloGames.png");
+        background-image: url("../svg/Google.svg");
       }
       &__vk {
-         //background-image: url(../../svg/VK.svg);
+        background-image: url(../svg/VK.svg);
       }
       &__fb {
-        // background-image: url(/src/svg/FB.svg);
+        background-image: url(/src/svg/FB.svg);
       }
-      // &__twitter {
-      //   background-image: url(../../svg/Twitter.svg);
-      // }
-      // &__odnoklasniki {
-      //   background-image: url(../../svg/Odnoklasniki.svg);
-      // }
+      &__twitter {
+        background-image: url(../svg/Twitter.svg);
+      }
+      &__odnoklasniki {
+        background-image: url(../svg/Odnoklasniki.svg);
+      }
     }
   }
 

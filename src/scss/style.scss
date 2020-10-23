@@ -1,8 +1,10 @@
 @import "./constants";
 @import "./reset";
 
-// @import "~bootstrap/scss/bootstrap";
-// @import "node_modules/bootstrap/scss/bootstrap";
+@import "~bootstrap/scss/bootstrap";
+
+//импорт Шрифтов /roboto
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
 
 .container {
   width: 1060px;
@@ -13,7 +15,32 @@
 
 body {
   background-color: #271c3f;
+  font-family: "Roboto", sans-serif;
 }
 
+.grad-line-bottom {
+  position: relative;
+  // bottom: 0;
+  margin: auto;
+  height: 4px;
+  width: 100%;
+  max-width: 1440px;
+  background: linear-gradient(
+    90deg,
+    rgba(96, 51, 187, 0) 0%,
+    #58437d 50.42%,
+    rgba(96, 51, 190, 0) 100.83%
+  );
+}
+
+//reuse css
+@import "./support";
+
+//components css
 @import "../components/footer/footer";
 @import "../components/header/header";
+@import "../components/slider/slider";
+@import "../components/navbar/navbar";
+@import "../components/top/top";
+@import "../components/gameSlider/gameSlider";
+@import "../components/games/games";

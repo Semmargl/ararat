@@ -1,8 +1,110 @@
+@import "../../scss/constants";
+
 .section-header {
-  &_block {
-    width: 300px;
-    height: 200px;
-    // background-image: url(/src/svg/IGM.svg);
-    background-color: red;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  // padding: 15px;
+  padding-right: 15px;
+
+  color: #fff;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 0 1 50%;
+  height: 70px;
+
+  &_burger {
+    align-self: center;
+    .navbar {
+      // padding-top: 16px;
+      padding: 0;
+      &-toggler {
+        // padding: 0;
+        // transform: translate(-50%, -50%);
+        &-icon {
+          background-image: url(../svg/Ellipse.svg);
+        }
+      }
+      .navbar-collapse {
+        .navbar-nav {
+          display: flex;
+          // justify-content: flex-end;
+          align-items: flex-end;
+          .nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            margin-bottom: -12px;
+
+            .nav-img {
+              align-self: center;
+            }
+            .nav-link {
+              align-self: flex-end;
+              text-transform: uppercase;
+              font-weight: bold;
+              font-size: 10px;
+              line-height: 18px;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+  &_logo {
+    flex: 0 0 154px;
+    text-align: center;
+  }
+  &_right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-padding {
+      margin: 0 15px;
+    }
+    &__reg {
+      height: 40px;
+      width: 250px;
+      background: #faff01;
+      border-radius: 2px;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 18px;
+      text-transform: uppercase;
+      color: #1c1825;
+
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    &__log {
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 18px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+
+    // bootstrap
+    .dropdown {
+      // padding-top: 15px;
+      .btn-secondary {
+        background-color: #271c3f;
+        border: none;
+      }
+
+      &-menu {
+        width: 20px;
+        background-color: #271c3f;
+      }
+      &-item {
+        width: 100%;
+        color: #fff;
+      }
+    }
   }
 }

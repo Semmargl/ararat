@@ -1,34 +1,44 @@
 
+const Providers = () => {
+
+    return ` 
+    
+    <div class="section-footer_provider">
+        <div class="inner">
+            <img src="/src/svg/Ezugi.svg" alt="" class="section-footer_provider__logo">
+            <img src="/src/svg/Novomatic.svg" alt="" class="section-footer_provider__logo">
+            <img src="/src/svg/egt.svg" alt="" class="section-footer_provider__logo">
+            <img src="/src/svg/Igrosoft.svg" alt="" class="section-footer_provider__logo">
+            <img src="/src/svg/Amatic.svg" alt="" class="section-footer_provider__logo">
+            <img src="/src/svg/AristoCrat.svg" alt="" class="section-footer_provider__logo">
+            <img src="/src/svg/Netent.svg" alt="" class="section-footer_provider__logo">
+            <img src="/src/svg/Microgaing.svg" alt="" class="section-footer_provider__logo">
+            <img src="/src/svg/AplloGames.svg" alt="" class="section-footer_provider__logo">
+            <img src="/src/svg/IGT.svg" alt="" class="section-footer_provider__logo">
+            <img src="/src/svg/Merkur.svg" alt="" class="section-footer_provider__logo">
+            <img src="/src/svg/Wazdan.svg" alt="" class="section-footer_provider__logo">
+            <img src="/src/svg/endorphina.svg" alt="" class="section-footer_provider__logo">
+            <img src="/src/svg/playtech.svg" alt="" class="section-footer_provider__logo">
+            <img src="/src/svg/quickspin.svg" alt="" class="section-footer_provider__logo">
+            <img src="/src/svg/greentube.svg" alt="" class="section-footer_provider__logo">
+        
+        </div>
+    </div>
+
+
+    `
+
+}
+
+
+
 const Footer = () => {
 
     return `
     
     <footer class="section-footer">
-        <div class="section-footer_provider">
-            <div class="inner">
-                <img src="/src/svg/Ezugi.svg" alt="" class="section-footer_provider__logo">
-                <img src="/src/svg/Novomatic.svg" alt="" class="section-footer_provider__logo">
-                <img src="/src/svg/egt.svg" alt="" class="section-footer_provider__logo">
-                <img src="/src/svg/Igrosoft.svg" alt="" class="section-footer_provider__logo">
-                <img src="/src/svg/Amatic.svg" alt="" class="section-footer_provider__logo">
-                <img src="/src/svg/AristoCrat.svg" alt="" class="section-footer_provider__logo">
-                <img src="/src/svg/Netent.svg" alt="" class="section-footer_provider__logo">
-                <img src="/src/svg/Microgaing.svg" alt="" class="section-footer_provider__logo">
-                <img src="/src/svg/AplloGames.svg" alt="" class="section-footer_provider__logo">
-                <img src="/src/svg/IGT.svg" alt="" class="section-footer_provider__logo">
-                <img src="/src/svg/Merkur.svg" alt="" class="section-footer_provider__logo">
-                <img src="/src/svg/Wazdan.svg" alt="" class="section-footer_provider__logo">
-                <img src="/src/svg/endorphina.svg" alt="" class="section-footer_provider__logo">
-                <img src="/src/svg/playtech.svg" alt="" class="section-footer_provider__logo">
-                <img src="/src/svg/quickspin.svg" alt="" class="section-footer_provider__logo">
-                <img src="/src/svg/greentube.svg" alt="" class="section-footer_provider__logo">
-            
-            </div>
-        </div>
-
-    <div class="inner">
         
-        <nav class="section-footer_menu">
+       <nav class="section-footer_menu">
             <a href="#" class="section-footer_menu__link">Main</a>
             <a href="#" class="section-footer_menu__link">Blog</a>
             <a href="#" class="section-footer_menu__link">About Us</a>
@@ -60,14 +70,14 @@ Ararat Gold is a legal website in conformity with the regulations concerning Bel
         </p>
 
         <div class="section-footer_contacts">
-            <div class="section-footer_contacts__number">+7 812 200 95 12</div>
-            <div class="section-footer_contacts__mail">support@ararat.gold</div>
+            <a class="section-footer_contacts__number" href="tel:+78122009512">+7 812 200 95 12</a>
+            <a class="section-footer_contacts__mail" href="mailto:support@ararat.gold">support@ararat.gold</a>
             <div class="section-footer_contacts__footer social-footer">
-                <button class="social-footer__google social-footer-icon">1</button>
-                <button class="social-footer__vk social-footer-icon">2</button>
-                <button class="social-footer__fb social-footer-icon">3</button>
-                <button class="social-footer__twitter social-footer-icon">4</button>
-                <button class="social-footer__odnoklasniki social-footer-icon">5</button>
+                <button class="social-footer__google social-footer-icon"></button>
+                <button class="social-footer__vk social-footer-icon"></button>
+                <button class="social-footer__fb social-footer-icon"></button>
+                <button class="social-footer__twitter social-footer-icon"></button>
+                <button class="social-footer__odnoklasniki social-footer-icon"></button>
             </div>
         </div>
 
@@ -84,11 +94,8 @@ Ararat Gold is a legal website in conformity with the regulations concerning Bel
             <img src="/src/svg/begambleAwere.svg" title="beGambleAwere" class="section-footer_rights__item"></img>
         </div>
 
-    </div>
+    
 </footer> 
-    
-    
-    
     
     
     
@@ -96,4 +103,6 @@ Ararat Gold is a legal website in conformity with the regulations concerning Bel
     `
 };
 
-export default Footer;
+
+export {Providers, Footer};
+
