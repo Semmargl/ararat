@@ -46,18 +46,25 @@
     font-size: 0;
     width: 11px;
     height: 19px;
+
+    border: none;
+    outline: none;
   }
   /* Стрелка влево */
   .slick-arrow.slick-prev {
     left: 0;
     margin-left: -30px;
-    background-image: url(../svg/arrow_left.svg) no-repeat;
+    background: url(../svg/arrow_left.svg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
   }
   /* Стрелка вправо */
   .slick-arrow.slick-next {
     right: 0;
     margin-right: -30px;
-    background-image: url(../svg/arrow_right.svg) no-repeat;
+    background: url(../svg/arrow_right.svg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
   }
   /* Стрелка не активная */
   .slick-arrow.slick-disabled {
