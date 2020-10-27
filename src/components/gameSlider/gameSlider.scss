@@ -7,37 +7,25 @@
   /* Слайдер */
   .slick-slider {
   }
-  /* Слайдер запущен */
-  .slick-slider.slick-initialized {
-  }
-  /* Слайдер с точками */
-  .slick-slider.slick-dotted {
-  }
   /* Ограничивающая оболочка */
   .slick-list {
-    // width: 100%;
+    width: 100%;
     overflow: hidden;
   }
   /* Лента слайдов */
   .slick-track {
     width: 100%;
     display: flex;
+    text-align: left;
+    align-content: start;
+    // align-items: flex-start;
   }
   /* Слайд */
   .slick-slide {
+    min-width: 208px;
+    // align-self: start;
   }
-  /* Слайд активный (показывается) */
-  .slick-slide.slick-active {
-  }
-  /* Слайд основной */
-  .slick-slide.slick-current {
-  }
-  /* Слайд по центру */
-  .slick-slide.slick-center {
-  }
-  /* Клонированный слайд */
-  .slick-slide.slick-cloned {
-  }
+
   /* Стрелка */
   .slick-arrow {
     position: absolute;
@@ -49,6 +37,7 @@
 
     border: none;
     outline: none;
+    // color: #813849;
   }
   /* Стрелка влево */
   .slick-arrow.slick-prev {
@@ -57,6 +46,9 @@
     background: url(../svg/arrow_left.svg);
     background-position: 50% 50%;
     background-repeat: no-repeat;
+    fill: red;
+    color: blue;
+    z-index: 30;
   }
   /* Стрелка вправо */
   .slick-arrow.slick-next {
@@ -69,21 +61,11 @@
   /* Стрелка не активная */
   .slick-arrow.slick-disabled {
   }
-  /* Точки (булиты) */
-  .slick-dots {
-  }
-  .slick-dots li {
-  }
-  /* Активная точка */
-  .slick-dots li.slick-active {
-  }
-  /* Элемент точки */
-  .slick-dots li button {
-  }
 
   &_slider {
     min-width: 0;
     position: relative;
+    text-align: left;
     // display: flex;
     // flex-direction: row;
     // justify-content: space-between;
@@ -100,17 +82,19 @@
       align-items: center;
       justify-content: center;
 
+      img {
+        display: block;
+        width: 200px;
+        height: 300px;
+      }
       &-bg {
         background-color: rgba(81, 58, 123, 0.6);
         width: 100%;
         height: 100%;
         border-radius: 10px;
-        display: none;
-      }
-      img {
-        display: block;
-        width: 200px;
-        height: 300px;
+        position: absolute;
+        // display: none;
+        opacity: 0;
       }
 
       &_info {
@@ -122,7 +106,7 @@
         // display: none;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        // justify-content: center;
         text-align: center;
         align-items: center;
         color: #ffffff;
@@ -131,7 +115,7 @@
         transition: all 0.45s;
 
         &_play {
-          margin-top: 95px;
+          margin-top: 130px;
           width: 115px;
           height: 40px;
           box-shadow: 2px 4px 0 #28164e;
@@ -143,28 +127,67 @@
           color: #2b223a;
           font-weight: 700;
           letter-spacing: 0.02em;
+          text-transform: uppercase;
         }
         &_subtitle {
-          padding-top: 8px;
+          padding-top: 15px;
           text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
           text-transform: uppercase;
-          font-size: 14px;
+          font-size: 15px;
           font-weight: 700;
           margin-bottom: 0;
           letter-spacing: 1.8px;
           //   line-height: 18px;
         }
-        &_name {
-          padding-top: 12px;
-          font-size: 16px;
-          font-weight: 700;
-          margin-bottom: 0;
-          //   line-height: 24px;
+        &__wrap {
+          position: absolute;
+          bottom: 40px;
+
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          padding: 0 20px;
+
+          &_like {
+            display: block;
+            background-image: url("../svg/heart.svg");
+            background-repeat: no-repeat;
+            width: 15px;
+            min-width: 20px;
+            height: 13px;
+            // flex-basis: 15px;
+            margin-right: 5px;
+            // margin-right: 4px;
+            // margin-left: -20px;
+          }
+          &_nameGame {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 0;
+            // width: max-content;
+            // min-width: 170px;
+          }
         }
         &_rating {
-          //   padding-top: 5px;
+          position: absolute;
+          bottom: 16px;
           font-size: 14px;
           font-weight: 700;
+        }
+        // background-image: url(../svg/starSmall.svg);
+        // background-position-x: -19px;
+        // background-repeat: no-repeat;
+
+        &_rating:before {
+          content: url(../svg/starSmall.svg);
+          display: inline-block;
+          width: 13px;
+          height: 13px;
+          margin-right: 6px;
+          margin-left: -10px;
+          // position: absolute;
+
+          // background-image: url(../svg/starSmall.svg);
         }
       }
     }
@@ -173,17 +196,22 @@
       opacity: 1;
     }
     &__card:hover img {
-      transform: scale(1.05, 1.033);
+      transform: scale(1.02, 1.031);
     }
     &__card:hover {
+      // border: 4px solid #000000;
+      // box-shadow: 2px 2px 0px #000000;
+      // border-radius: 10px;
+    }
+    &__card:hover .section-gameSlider_slider__card-bg {
+      // display: block;
+      opacity: 1;
+      // position: absolute;
+      // transform: scale(1.02, 1.031);
+
       border: 4px solid #000000;
       box-shadow: 2px 2px 0px #000000;
       border-radius: 10px;
-    }
-    &__card:hover .section-gameSlider_slider__card-bg {
-      display: block;
-      position: absolute;
-      transform: scale(1.045, 1.023);
     }
   }
 }

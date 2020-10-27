@@ -18,25 +18,30 @@
         text-align: left;
         text-transform: uppercase;
         text-decoration: none;
+        padding: 5px;
       }
       &__link:hover {
         color: #fff774;
         text-decoration: none;
       }
       &__link + &__link {
-        padding-left: 30px;
+        margin-left: 25px;
       }
     }
     &_search {
       width: 250px;
+      height: 42px;
       border: none;
       display: flex;
       justify-content: space-between;
+      align-items: center;
+      background: #44365e;
+
       &_area {
         background: #44365e;
 
         width: 100%;
-        padding: 0 5px;
+        padding-left: 13px;
         color: #fff;
         border: none;
       }
@@ -51,7 +56,7 @@
         // background-repeat: no-repeat;
         background-color: #44365e;
         display: block;
-        padding: 0 5px;
+        padding: 0 12px 0 10px;
         :focus {
           outline: none;
         }
@@ -63,18 +68,74 @@
   &_bot {
     background-color: #382b4f;
     &_inner {
-      height: 60px;
+      /* Слайдер */
+      .slick-slider {
+      }
+      /* Ограничивающая оболочка */
+      .slick-list {
+        width: 100%;
+        overflow: hidden;
+      }
+      /* Лента слайдов */
+      .slick-track {
+        width: 100%;
+        display: flex;
+        text-align: left;
+        align-content: center;
+      }
+      /* Слайд */
+      .slick-slide {
+        align-self: center;
+        padding: 0 10px;
+        margin: 0 30px 0 0;
+        // min-width: 208px;
+        // align-self: start;
+      }
 
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-evenly;
-      overflow-y: hidden;
+      /* Стрелка */
+      .slick-arrow {
+        position: absolute;
+        top: 21px;
+        z-index: 10;
+        font-size: 0;
+        width: 11px;
+        height: 19px;
+
+        border: none;
+        outline: none;
+        // background-color: red;
+
+        // color: #813849;
+      }
+      /* Стрелка влево */
+      .slick-arrow.slick-prev {
+        left: 0;
+        margin-left: -30px;
+        background: url(../svg/arrow_left.svg);
+
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+
+        z-index: 30;
+      }
+      /* Стрелка вправо */
+      .slick-arrow.slick-next {
+        right: 0;
+        margin-right: -30px;
+        background: url(../svg/arrow_right.svg);
+        // background-color: red;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+      }
+      /* Стрелка не активная */
+      .slick-arrow.slick-disabled {
+      }
+
+      height: 60px;
+      padding: 5px 0;
+      position: relative;
 
       &__prov {
-        display: inline-block;
-        padding: 5px 15px 15px 15px;
-        // visibility: hidden;
       }
     }
   }

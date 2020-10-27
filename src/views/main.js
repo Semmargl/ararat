@@ -1,10 +1,11 @@
 import { Providers, Footer} from '../components/footer';
 import Header from '../components/header';
 import Slider from '../components/slider';
-import Navbar from '../components/navbar';
+import {NavbarTop, NavbarBot} from '../components/navbar';
 // import Top from '../components/top';
 import GameSlider from '../components/gameSlider';
-import Games from '../components/games';
+import GameList from '../components/gameList';
+import GiftSlider from '../components/giftSlider';
 
 
 const Main = () => {
@@ -14,8 +15,13 @@ const Main = () => {
             ${Header()}
              
             ${Slider()}
-                        
-            ${Navbar()}
+
+        <div class="container">
+            ${NavbarTop()}
+        </div>      
+            ${NavbarBot()}
+            
+            
 
         <div class="container">
             ${GameSlider('top')}
@@ -23,8 +29,13 @@ const Main = () => {
         <div class="container">
             ${GameSlider(`popular`)}
         </div>
+
         <div class="container">
-            ${Games()}  
+            ${GiftSlider()}
+        </div>
+
+        <div class="container">
+            ${GameList()}  
         </div>
 
              

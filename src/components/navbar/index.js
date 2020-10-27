@@ -1,4 +1,6 @@
-const Navbar = () => {
+
+
+const NavbarTop = () => {
 
     return `
     
@@ -22,45 +24,43 @@ const Navbar = () => {
   
         
       </div>
-      
-
+     
       <div class="grad-line-bottom"></div>
+    </section>
+   
+    `
+};
+const NavbarBot = () => {
+
+    return `
+    
+    <section class="section-navbar">
+      
 
       <div class="section-navbar_bot">
         <div class="section-navbar_bot_inner container">
-            <img src="/src/svg/Ezugi.svg" alt="" class="section-navbar_bot_inner__prov">
-            <img src="/src/svg/Novomatic.svg" alt="" class="section-navbar_bot_inner__prov">
-            <img src="/src/svg/egt.svg" alt="" class="section-navbar_bot_inner__prov">
-            <img src="/src/svg/Igrosoft.svg" alt="" class="section-navbar_bot_inner__prov">
-            <img src="/src/svg/Amatic.svg" alt="" class="section-navbar_bot_inner__prov">
-            <img src="/src/svg/AristoCrat.svg" alt="" class="section-navbar_bot_inner__prov">
-            <img src="/src/svg/Netent.svg" alt="" class="section-navbar_bot_inner__prov">
-            <img src="/src/svg/Microgaing.svg" alt="" class="section-navbar_bot_inner__prov">
-            <img src="/src/svg/AplloGames.svg" alt="" class="section-navbar_bot_inner__prov">
-            <img src="/src/svg/IGT.svg" alt="" class="section-navbar_bot_inner__prov">
-            <img src="/src/svg/Merkur.svg" alt="" class="section-navbar_bot_inner__prov">
-            <img src="/src/svg/Wazdan.svg" alt="" class="section-navbar_bot_inner__prov">
-            <img src="/src/svg/endorphina.svg" alt="" class="section-navbar_bot_inner__prov">
-            <img src="/src/svg/playtech.svg" alt="" class="section-navbar_bot_inner__prov">
-            <img src="/src/svg/quickspin.svg" alt="" class="section-navbar_bot_inner__prov">
-            <img src="/src/svg/greentube.svg" alt="" class="section-navbar_bot_inner__prov">
+            <a href="#"><img src="/src/svg/Ezugi.svg" alt="" class="section-navbar_bot_inner__prov"></a>
+            <a href="#"><img src="/src/svg/Novomatic.svg" alt="" class="section-navbar_bot_inner__prov"></a>
+            <a href="#"><img src="/src/svg/egt.svg" alt="" class="section-navbar_bot_inner__prov"></a>
+            <a href="#"><img src="/src/svg/Igrosoft.svg" alt="" class="section-navbar_bot_inner__prov"></a>
+            <a href="#"><img src="/src/svg/Amatic.svg" alt="" class="section-navbar_bot_inner__prov"></a>
+            <a href="#"><img src="/src/svg/AristoCrat.svg" alt="" class="section-navbar_bot_inner__prov"></a>
+            <a href="#"><img src="/src/svg/Netent.svg" alt="" class="section-navbar_bot_inner__prov"></a>
+            <a href="#"><img src="/src/svg/Microgaing.svg" alt="" class="section-navbar_bot_inner__prov"></a>
+            <a href="#"><img src="/src/svg/AplloGames.svg" alt="" class="section-navbar_bot_inner__prov"></a>
+            <a href="#"><img src="/src/svg/IGT.svg" alt="" class="section-navbar_bot_inner__prov"></a>
+            <a href="#"><img src="/src/svg/Merkur.svg" alt="" class="section-navbar_bot_inner__prov"></a>
+            <a href="#"><img src="/src/svg/Wazdan.svg" alt="" class="section-navbar_bot_inner__prov"></a>
+            <a href="#"><img src="/src/svg/endorphina.svg" alt="" class="section-navbar_bot_inner__prov"></a>
+            <a href="#"><img src="/src/svg/playtech.svg" alt="" class="section-navbar_bot_inner__prov"></a>
+            <a href="#"><img src="/src/svg/quickspin.svg" alt="" class="section-navbar_bot_inner__prov"></a>
+            <a href="#"><img src="/src/svg/greentube.svg" alt="" class="section-navbar_bot_inner__prov"></a>
         </div>
       </div>
       
     </section>
-    
-
-
-
-
-
-
-    
-    
    
-    
-    
     `
 };
 
-export default Navbar;
+export {NavbarTop, NavbarBot};

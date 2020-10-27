@@ -28,114 +28,87 @@ const GameSlider = (type) => {
 
         <div  class="section-gameSlider_slider"  >
             
+            
             <div class="section-gameSlider_slider__card "> 
-
                 <img src="/src/images/GamePrevue3.png" alt="" class=" "> 
                 <div class="section-gameSlider_slider__card-bg"></div>
                 <div class="section-gameSlider_slider__card_info">
                     <button class="section-gameSlider_slider__card_info_play reset-btn">Играть</button>
                     <p class="section-gameSlider_slider__card_info_subtitle">Демо</p>
-                    <p class="section-gameSlider_slider__card_info_name">Reel Haist</p>
+                    <div class="section-gameSlider_slider__card_info__wrap"> 
+                        <button class="section-gameSlider_slider__card_info__wrap_like reset-btn"></button>
+                        <p class="section-gameSlider_slider__card_info__wrap_nameGame">Reel Haist</p> 
+                    </div>
                     <div class="section-gameSlider_slider__card_info_rating">4.5</div>
                 </div>
-                 
-            </div>
+            </div>    
             <div class="section-gameSlider_slider__card "> 
-
                 <img src="/src/images/GamePrevue3.png" alt="" class=" "> 
                 <div class="section-gameSlider_slider__card-bg"></div>
                 <div class="section-gameSlider_slider__card_info">
                     <button class="section-gameSlider_slider__card_info_play reset-btn">Играть</button>
                     <p class="section-gameSlider_slider__card_info_subtitle">Демо</p>
-                    <p class="section-gameSlider_slider__card_info_name">Reel Haist</p>
+                    <div class="section-gameSlider_slider__card_info__wrap"> 
+                        <button class="section-gameSlider_slider__card_info__wrap_like reset-btn"></button>
+                        <p class="section-gameSlider_slider__card_info__wrap_nameGame">Reel Haist</p> 
+                    </div>
                     <div class="section-gameSlider_slider__card_info_rating">4.5</div>
                 </div>
-                 
-            </div>
+            </div>    
             <div class="section-gameSlider_slider__card "> 
-
                 <img src="/src/images/GamePrevue3.png" alt="" class=" "> 
                 <div class="section-gameSlider_slider__card-bg"></div>
                 <div class="section-gameSlider_slider__card_info">
                     <button class="section-gameSlider_slider__card_info_play reset-btn">Играть</button>
                     <p class="section-gameSlider_slider__card_info_subtitle">Демо</p>
-                    <p class="section-gameSlider_slider__card_info_name">Reel Haist</p>
+                    <div class="section-gameSlider_slider__card_info__wrap"> 
+                        <button class="section-gameSlider_slider__card_info__wrap_like reset-btn"></button>
+                        <p class="section-gameSlider_slider__card_info__wrap_nameGame">Reel Haist</p> 
+                    </div>
                     <div class="section-gameSlider_slider__card_info_rating">4.5</div>
                 </div>
-                 
-            </div>
+            </div>    
             <div class="section-gameSlider_slider__card "> 
-
                 <img src="/src/images/GamePrevue3.png" alt="" class=" "> 
                 <div class="section-gameSlider_slider__card-bg"></div>
                 <div class="section-gameSlider_slider__card_info">
                     <button class="section-gameSlider_slider__card_info_play reset-btn">Играть</button>
                     <p class="section-gameSlider_slider__card_info_subtitle">Демо</p>
-                    <p class="section-gameSlider_slider__card_info_name">Reel Haist</p>
+                    <div class="section-gameSlider_slider__card_info__wrap"> 
+                        <button class="section-gameSlider_slider__card_info__wrap_like reset-btn"></button>
+                        <p class="section-gameSlider_slider__card_info__wrap_nameGame">Reel Haist</p> 
+                    </div>
                     <div class="section-gameSlider_slider__card_info_rating">4.5</div>
                 </div>
-                 
-            </div>
+            </div>    
             <div class="section-gameSlider_slider__card "> 
-
                 <img src="/src/images/GamePrevue3.png" alt="" class=" "> 
                 <div class="section-gameSlider_slider__card-bg"></div>
                 <div class="section-gameSlider_slider__card_info">
                     <button class="section-gameSlider_slider__card_info_play reset-btn">Играть</button>
                     <p class="section-gameSlider_slider__card_info_subtitle">Демо</p>
-                    <p class="section-gameSlider_slider__card_info_name">Reel Haist</p>
+                    <div class="section-gameSlider_slider__card_info__wrap"> 
+                        <button class="section-gameSlider_slider__card_info__wrap_like reset-btn"></button>
+                        <p class="section-gameSlider_slider__card_info__wrap_nameGame">Reel Haist</p> 
+                    </div>
                     <div class="section-gameSlider_slider__card_info_rating">4.5</div>
                 </div>
-                 
-            </div>
+            </div>    
             <div class="section-gameSlider_slider__card "> 
-
                 <img src="/src/images/GamePrevue3.png" alt="" class=" "> 
                 <div class="section-gameSlider_slider__card-bg"></div>
                 <div class="section-gameSlider_slider__card_info">
                     <button class="section-gameSlider_slider__card_info_play reset-btn">Играть</button>
                     <p class="section-gameSlider_slider__card_info_subtitle">Демо</p>
-                    <p class="section-gameSlider_slider__card_info_name">Reel Haist</p>
+                    <div class="section-gameSlider_slider__card_info__wrap"> 
+                        <button class="section-gameSlider_slider__card_info__wrap_like reset-btn"></button>
+                        <p class="section-gameSlider_slider__card_info__wrap_nameGame">Reel Haist</p> 
+                    </div>
                     <div class="section-gameSlider_slider__card_info_rating">4.5</div>
                 </div>
+            </div>    
                  
-            </div>
-            <div class="section-gameSlider_slider__card "> 
-
-                <img src="/src/images/GamePrevue3.png" alt="" class=" "> 
-                <div class="section-gameSlider_slider__card-bg"></div>
-                <div class="section-gameSlider_slider__card_info">
-                    <button class="section-gameSlider_slider__card_info_play reset-btn">Играть</button>
-                    <p class="section-gameSlider_slider__card_info_subtitle">Демо</p>
-                    <p class="section-gameSlider_slider__card_info_name">Reel Haist</p>
-                    <div class="section-gameSlider_slider__card_info_rating">4.5</div>
-                </div>
-                 
-            </div>
-            <div class="section-gameSlider_slider__card "> 
-
-                <img src="/src/images/GamePrevue3.png" alt="" class=" "> 
-                <div class="section-gameSlider_slider__card-bg"></div>
-                <div class="section-gameSlider_slider__card_info">
-                    <button class="section-gameSlider_slider__card_info_play reset-btn">Играть</button>
-                    <p class="section-gameSlider_slider__card_info_subtitle">Демо</p>
-                    <p class="section-gameSlider_slider__card_info_name">Reel Haist</p>
-                    <div class="section-gameSlider_slider__card_info_rating">4.5</div>
-                </div>
-                 
-            </div>
-            <div class="section-gameSlider_slider__card "> 
-
-                <img src="/src/images/GamePrevue3.png" alt="" class=" "> 
-                <div class="section-gameSlider_slider__card-bg"></div>
-                <div class="section-gameSlider_slider__card_info">
-                    <button class="section-gameSlider_slider__card_info_play reset-btn">Играть</button>
-                    <p class="section-gameSlider_slider__card_info_subtitle">Демо</p>
-                    <p class="section-gameSlider_slider__card_info_name">Reel Haist</p>
-                    <div class="section-gameSlider_slider__card_info_rating">4.5</div>
-                </div>
-                 
-            </div>
+           
             
             
             
