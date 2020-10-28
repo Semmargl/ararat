@@ -19,7 +19,7 @@ const Slider = () => {
               </h2> 
               <button class="carousel-offer__action reset-btn">
                 <span>Регистрация</span> 
-                <img src="/src/svg/giftRegGreen.svg" alt="">
+                <img src="./src/svg/giftRegGreen.svg" alt="">
               </button>
               
             </div>
@@ -28,13 +28,13 @@ const Slider = () => {
 
 
           <div class="carousel-item active">
-            <img src="/src/images/slide1.png" class="d-block w-100" alt="...">
+            <img src="./src/images/slide1.png" class="d-block w-100" alt="..">
           </div>
           <div class="carousel-item">
-            <img src="/src/images/slide2.png" class="d-block w-100" alt="...">
+            <img src="./src/images/slide2.png" class="d-block w-100" alt="..">
           </div>
           <div class="carousel-item">
-            <img src="/src/images/slide1.png" class="d-block w-100" alt="...">
+            <img src="./src/images/slide1.png" class="d-block w-100" alt="..">
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
