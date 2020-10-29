@@ -57,6 +57,6 @@ const main = document.getElementById('Main');
 
 if (main) {
     main.innerHTML = Main();
-    Modals.init();
+
 
 }

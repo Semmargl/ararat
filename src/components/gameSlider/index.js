@@ -8,10 +8,10 @@ const GameSlider = (type) => {
     } else if (type === 'top'){
         title = 'TOP';
         icon = './src/svg/starBig.svg';
-    } 
+    }
 
 
-    
+
 
 
     return `
@@ -27,11 +27,11 @@ const GameSlider = (type) => {
         </div>
 
         <div  class="section-gameSlider_slider"  >
-            
-            
+     
             <div class="section-gameSlider_slider__card "> 
-                <img src="./src/images/GamePrevue3.png" alt="" class=" "> 
-                <div class="section-gameSlider_slider__card-bg"></div>
+                <div class="section-gameSlider_slider__card-bg">
+                    <img src="./src/images/GamePrevue3.png" alt="" class=" "> 
+                </div>
                 <div class="section-gameSlider_slider__card_info">
                     <button class="section-gameSlider_slider__card_info_play reset-btn">Играть</button>
                     <p class="section-gameSlider_slider__card_info_subtitle">Демо</p>
@@ -42,6 +42,7 @@ const GameSlider = (type) => {
                     <div class="section-gameSlider_slider__card_info_rating">4.5</div>
                 </div>
             </div>    
+            
             <div class="section-gameSlider_slider__card "> 
                 <img src="./src/images/GamePrevue3.png" alt="" class=" "> 
                 <div class="section-gameSlider_slider__card-bg"></div>
@@ -122,7 +123,7 @@ const GameSlider = (type) => {
 
     `
 
-   
+
 };
 
 export default GameSlider;
