@@ -7,6 +7,7 @@ module.exports = {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist')
     },
+    mode: "development",
     module: {
         rules: [
             {
@@ -31,7 +32,8 @@ module.exports = {
                 test: /\.(svg|jpe?g|gif|png)$/,
                 loader: 'url-loader',
 
-            }]
+            },
+            ]
     },
     plugins: [
         new miniCss({

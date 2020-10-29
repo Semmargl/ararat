@@ -6,6 +6,7 @@ import {NavbarTop, NavbarBot} from '../components/navbar';
 import GameSlider from '../components/gameSlider';
 import GameList from '../components/gameList';
 import GiftSlider from '../components/giftSlider';
+import Modals from '../components/modals';
 
 
 const Main = () => {
@@ -54,4 +55,8 @@ const Main = () => {
 
 const main = document.getElementById('Main');
 
-if (main) main.innerHTML = Main();
+if (main) {
+    main.innerHTML = Main();
+    Modals.init();
+
+}

@@ -1,8 +1,8 @@
+import Modals from '../modals';
+
 const Header = () => {
 
     return `
-    
- 
     <header class="section-header">
         <div class="section-header_burger"> 
 
@@ -41,8 +41,9 @@ const Header = () => {
         </div>
         <img class="section-header_logo" src="./src/svg/AraratLogo.svg" alt="">
         <div class="section-header_right">
-            <button class="section-header_right__reg reset-btn section-header_right-padding"><span>500 рублей за регистрацию</span>
-              <img src="./src/svg/giftRegYellow.svg" alt="">
+            <button class="section-header_right__reg reset-btn section-header_right-padding ModalsOpenSignUp"  >
+                <span>500 рублей за регистрацию</span>
+                <img src="./src/svg/giftRegYellow.svg" alt="">
             </button>
             <button class="section-header_right__log reset-btn section-header_right-padding">Вход</button>
             <div class="dropdown section-header_right-padding">
