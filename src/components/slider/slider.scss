@@ -1,63 +1,126 @@
-.carousel {
-  &-inner {
-    .carousel-offer {
-      // background-color: #fff;
-      color: #fff;
-      z-index: 10;
+.section-slider {
+  position: relative;
+  margin: auto;
+  max-width: 1440px;
+  width: 100%;
+
+  &_slider {
+    .slick-slider {
+    }
+    /* Ограничивающая оболочка */
+    .slick-list {
+      width: 100%;
+      overflow: hidden;
+    }
+    /* Лента слайдов */
+    .slick-track {
+      width: 100%;
+      display: flex;
+      // align-content: start;
+      // align-items: flex-start;
+    }
+    /* Слайд */
+    .slick-slide {
+      // min-width: 208px;
+      // align-self: start;
+    }
+
+    /* Стрелка */
+    .slick-arrow {
       position: absolute;
+      top: calc(50% - 24px);
+      z-index: 10;
+      font-size: 0;
+      width: 27px;
+      height: 48px;
 
-      padding: 40px 0 0 0;
-      &__title {
-        display: block;
-        font-weight: bold;
-        font-size: 48px;
-        line-height: 45px;
-        letter-spacing: 0.05em;
-        // padding: 0 10px;
+      border: none;
+      outline: none;
+      // color: #813849;
+      opacity: 0.6;
 
-        span {
+      cursor: pointer;
+    }
+    .slick-arrow:hover {
+      opacity: 1;
+    }
+    /* Стрелка влево */
+    .slick-arrow.slick-prev {
+      left: 0;
+      margin-left: 30px;
+      background: url(../svg/arrow_leftGrey.svg);
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+    }
+    /* Стрелка вправо */
+    .slick-arrow.slick-next {
+      right: 0;
+      margin-right: 30px;
+      background: url(../svg/arrow_rightGrey.svg);
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+    }
+    &__frame {
+      position: relative;
+      width: 100%;
+
+      &_bg {
+      }
+      &_offer {
+        color: #fff;
+        z-index: 10;
+        position: absolute;
+        top: 0;
+        padding: 40px 0 0 0;
+        margin-left: 10%;
+        &__title {
           display: block;
-          width: max-content;
-          // margin: 5px 0;
-          padding: 0px 25px 10px 5px;
-          background-color: #271c3f;
-          // line-height: 35px;
-          // height: 50px;
+          font-weight: bold;
+          font-size: 48px;
+          line-height: 45px;
+          letter-spacing: 0.05em;
+          // padding: 0 10px;
+
+          span {
+            display: block;
+            width: max-content;
+            // margin: 5px 0;
+            padding: 0px 25px 10px 5px;
+            background-color: #271c3f;
+            // line-height: 35px;
+            // height: 50px;
+          }
         }
-      }
-      &__title-small {
-        margin-top: 13px;
-        padding-top: 5px;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 24px;
-        letter-spacing: normal;
-
-        // span {
-        //   padding: 5px 0 5px 5px;
-        // }
-      }
-
-      &__action {
-        margin-top: 20px;
-        width: 350px;
-        height: 64px;
-        box-shadow: 4px 6px 0 #28164e;
-        border-radius: 5px;
-        border: 4px solid #28164e;
-        background-color: #ff0636;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        span {
-          color: #ffffff;
-          font-size: 36px;
-          font-weight: 900;
-          text-transform: uppercase;
+        &__title-small {
+          margin-top: 13px;
+          padding-top: 5px;
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 24px;
+          letter-spacing: normal;
         }
-        img {
-          padding-left: 15px;
+
+        &__action {
+          margin-top: 20px;
+          width: 350px;
+          height: 64px;
+          box-shadow: 4px 6px 0 #28164e;
+          border-radius: 5px;
+          border: 4px solid #28164e;
+          background-color: #ff0636;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          span {
+            color: #ffffff;
+            font-size: 36px;
+            font-weight: 900;
+            text-transform: uppercase;
+          }
+          img {
+            padding-left: 15px;
+          }
         }
       }
     }

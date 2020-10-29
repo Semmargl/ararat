@@ -14,23 +14,23 @@ const Header = () => {
                 <div class="collapse navbar-collapse" id="navbarNav">
                   <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <img class="nav-img" src="/src/svg/menuGift.svg" alt="">
+                        <img class="nav-img" src="./src/svg/menuGift.svg" alt="">
                         <a class="nav-link" href="#">Подарки <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <img class="nav-img" src="/src/svg/menuGame.svg" alt="">
+                        <img class="nav-img" src="./src/svg/menuGame.svg" alt="">
                         <a class="nav-link" href="#">ИГРЫ</a>
                     </li>
                     <li class="nav-item">
-                        <img class="nav-img" src="/src/svg/menuTournament.svg" alt="">
+                        <img class="nav-img" src="./src/svg/menuTournament.svg" alt="">
                         <a class="nav-link" href="#">Турниры</a>
                     </li>
                     <li class="nav-item">
-                        <img class="nav-img" src="/src/svg/menuPeyment.svg" alt="">
+                        <img class="nav-img" src="./src/svg/menuPeyment.svg" alt="">
                         <a class="nav-link" href="#">Платежи</a>
                     </li>
                     <li class="nav-item">
-                        <img class="nav-img" src="/src/svg/menuNews.svg" alt="">
+                        <img class="nav-img" src="./src/svg/menuNews.svg" alt="">
                         <a class="nav-link" href="#">Новости</a>
                     </li>
                   </ul>
@@ -39,10 +39,10 @@ const Header = () => {
         
         
         </div>
-        <img class="section-header_logo" src="/src/svg/AraratLogo.svg" alt="">
+        <img class="section-header_logo" src="./src/svg/AraratLogo.svg" alt="">
         <div class="section-header_right">
             <button class="section-header_right__reg reset-btn section-header_right-padding"><span>500 рублей за регистрацию</span>
-              <img src="/src/svg/giftRegYellow.svg" alt="">
+              <img src="./src/svg/giftRegYellow.svg" alt="">
             </button>
             <button class="section-header_right__log reset-btn section-header_right-padding">Вход</button>
             <div class="dropdown section-header_right-padding">

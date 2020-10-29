@@ -60,6 +60,7 @@
   }
   /* Стрелка не активная */
   .slick-arrow.slick-disabled {
+    opacity: 0.5;
   }
 
   &_slider {

@@ -5,22 +5,22 @@ const Providers = () => {
     
     <div class="section-footer_provider">
         <div class="inner">
-            <img src="/src/svg/Ezugi.svg" alt="" class="section-footer_provider__logo">
-            <img src="/src/svg/Novomatic.svg" alt="" class="section-footer_provider__logo">
-            <img src="/src/svg/egt.svg" alt="" class="section-footer_provider__logo">
-            <img src="/src/svg/Igrosoft.svg" alt="" class="section-footer_provider__logo">
-            <img src="/src/svg/Amatic.svg" alt="" class="section-footer_provider__logo">
-            <img src="/src/svg/AristoCrat.svg" alt="" class="section-footer_provider__logo">
-            <img src="/src/svg/Netent.svg" alt="" class="section-footer_provider__logo">
-            <img src="/src/svg/Microgaing.svg" alt="" class="section-footer_provider__logo">
-            <img src="/src/svg/AplloGames.svg" alt="" class="section-footer_provider__logo">
-            <img src="/src/svg/IGT.svg" alt="" class="section-footer_provider__logo">
-            <img src="/src/svg/Merkur.svg" alt="" class="section-footer_provider__logo">
-            <img src="/src/svg/Wazdan.svg" alt="" class="section-footer_provider__logo">
-            <img src="/src/svg/endorphina.svg" alt="" class="section-footer_provider__logo">
-            <img src="/src/svg/playtech.svg" alt="" class="section-footer_provider__logo">
-            <img src="/src/svg/quickspin.svg" alt="" class="section-footer_provider__logo">
-            <img src="/src/svg/greentube.svg" alt="" class="section-footer_provider__logo">
+            <img src="./src/svg/Ezugi.svg" alt="" class="section-footer_provider__logo">
+            <img src="./src/svg/Novomatic.svg" alt="" class="section-footer_provider__logo">
+            <img src="./src/svg/egt.svg" alt="" class="section-footer_provider__logo">
+            <img src="./src/svg/Igrosoft.svg" alt="" class="section-footer_provider__logo">
+            <img src="./src/svg/Amatic.svg" alt="" class="section-footer_provider__logo">
+            <img src="./src/svg/AristoCrat.svg" alt="" class="section-footer_provider__logo">
+            <img src="./src/svg/Netent.svg" alt="" class="section-footer_provider__logo">
+            <img src="./src/svg/Microgaing.svg" alt="" class="section-footer_provider__logo">
+            <img src="./src/svg/AplloGames.svg" alt="" class="section-footer_provider__logo">
+            <img src="./src/svg/IGT.svg" alt="" class="section-footer_provider__logo">
+            <img src="./src/svg/Merkur.svg" alt="" class="section-footer_provider__logo">
+            <img src="./src/svg/Wazdan.svg" alt="" class="section-footer_provider__logo">
+            <img src="./src/svg/endorphina.svg" alt="" class="section-footer_provider__logo">
+            <img src="./src/svg/playtech.svg" alt="" class="section-footer_provider__logo">
+            <img src="./src/svg/quickspin.svg" alt="" class="section-footer_provider__logo">
+            <img src="./src/svg/greentube.svg" alt="" class="section-footer_provider__logo">
         
         </div>
     </div>
@@ -50,17 +50,17 @@ const Footer = () => {
         </nav>
 
         <div class="section-footer_payment">
-            <img src="/src/svg/Visa.svg" alt="" class="section-footer_payment__logo">
-            <img src="/src/svg/Mastercard.svg" alt="" class="section-footer_payment__logo">
-            <img src="/src/svg/Qiwi.svg" alt="" class="section-footer_payment__logo">
-            <img src="/src/svg/YAndex_money.svg" alt="" class="section-footer_payment__logo">
-            <img src="/src/svg/Lic.svg" alt="" class="section-footer_payment__logo">
-            <img src="/src/svg/bitcoin.svg" alt="" class="section-footer_payment__logo">
-            <img src="/src/svg/Alfa_bank.svg" alt="" class="section-footer_payment__logo">
-            <img src="/src/svg/Beeline.svg" alt="" class="section-footer_payment__logo">
-            <img src="/src/svg/MTS.svg" alt="" class="section-footer_payment__logo">
-            <img src="/src/svg/Megafon.svg" alt="" class="section-footer_payment__logo">
-            <img src="/src/svg/tele2.svg" alt="" class="section-footer_payment__logo">
+            <img src="./src/svg/Visa.svg" alt="" class="section-footer_payment__logo">
+            <img src="./src/svg/Mastercard.svg" alt="" class="section-footer_payment__logo">
+            <img src="./src/svg/Qiwi.svg" alt="" class="section-footer_payment__logo">
+            <img src="./src/svg/YAndex_money.svg" alt="" class="section-footer_payment__logo">
+            <img src="./src/svg/Lic.svg" alt="" class="section-footer_payment__logo">
+            <img src="./src/svg/bitcoin.svg" alt="" class="section-footer_payment__logo">
+            <img src="./src/svg/Alfa_bank.svg" alt="" class="section-footer_payment__logo">
+            <img src="./src/svg/Beeline.svg" alt="" class="section-footer_payment__logo">
+            <img src="./src/svg/MTS.svg" alt="" class="section-footer_payment__logo">
+            <img src="./src/svg/Megafon.svg" alt="" class="section-footer_payment__logo">
+            <img src="./src/svg/tele2.svg" alt="" class="section-footer_payment__logo">
         </div>
 
         <p class="section-footer_text">
@@ -89,9 +89,9 @@ Ararat Gold is a legal website in conformity with the regulations concerning Bel
 
         <div class="section-footer_rights">
             <div class="section-footer_rights__item">All rights reserved  ARARAT GOLD ©</div>
-            <img src="/src/svg/age18.svg" title="18+" class="section-footer_rights__item"></img>
-            <img src="/src/svg/GamCare.svg" title="GamCare" class="section-footer_rights__item"></img>
-            <img src="/src/svg/begambleAwere.svg" title="beGambleAwere" class="section-footer_rights__item"></img>
+            <img src="./src/svg/age18.svg" title="18+" class="section-footer_rights__item"></img>
+            <img src="./src/svg/GamCare.svg" title="GamCare" class="section-footer_rights__item"></img>
+            <img src="./src/svg/begambleAwere.svg" title="beGambleAwere" class="section-footer_rights__item"></img>
         </div>
 
     

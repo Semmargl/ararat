@@ -1,14 +1,17 @@
 @import "./constants";
 @import "./reset";
 
-@import "~bootstrap/scss/bootstrap";
+// @import "~bootstrap/scss/bootstrap";
 
 //импорт Шрифтов /roboto
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
 
-//slick-carusel
-// @import "~slick-carousel/slick/slick";
-// @import "~slick-carousel/slick/slick-theme";
+// @font-face {
+//   font-family: "Digital Numbers";
+//   src: url("../fonts/DigitalNumbers-Regular.woff") format("woff");
+// }
+
+//root
 
 .container {
   width: 1060px;
