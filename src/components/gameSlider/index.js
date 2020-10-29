@@ -3,11 +3,11 @@ const GameSlider = (type) => {
     let icon = '';
     if (type === 'popular'){
         title = 'Популярные';
-        icon = '/src/svg/Popular.svg';
+        icon = './src/svg/Popular.svg';
 
     } else if (type === 'top'){
         title = 'TOP';
-        icon = '/src/svg/starBig.svg';
+        icon = './src/svg/starBig.svg';
     } 
 
 
@@ -30,7 +30,7 @@ const GameSlider = (type) => {
             
             
             <div class="section-gameSlider_slider__card "> 
-                <img src="/src/images/GamePrevue3.png" alt="" class=" "> 
+                <img src="./src/images/GamePrevue3.png" alt="" class=" "> 
                 <div class="section-gameSlider_slider__card-bg"></div>
                 <div class="section-gameSlider_slider__card_info">
                     <button class="section-gameSlider_slider__card_info_play reset-btn">Играть</button>
@@ -43,7 +43,7 @@ const GameSlider = (type) => {
                 </div>
             </div>    
             <div class="section-gameSlider_slider__card "> 
-                <img src="/src/images/GamePrevue3.png" alt="" class=" "> 
+                <img src="./src/images/GamePrevue3.png" alt="" class=" "> 
                 <div class="section-gameSlider_slider__card-bg"></div>
                 <div class="section-gameSlider_slider__card_info">
                     <button class="section-gameSlider_slider__card_info_play reset-btn">Играть</button>
@@ -56,7 +56,7 @@ const GameSlider = (type) => {
                 </div>
             </div>    
             <div class="section-gameSlider_slider__card "> 
-                <img src="/src/images/GamePrevue3.png" alt="" class=" "> 
+                <img src="./src/images/GamePrevue3.png" alt="" class=" "> 
                 <div class="section-gameSlider_slider__card-bg"></div>
                 <div class="section-gameSlider_slider__card_info">
                     <button class="section-gameSlider_slider__card_info_play reset-btn">Играть</button>
@@ -69,7 +69,7 @@ const GameSlider = (type) => {
                 </div>
             </div>    
             <div class="section-gameSlider_slider__card "> 
-                <img src="/src/images/GamePrevue3.png" alt="" class=" "> 
+                <img src="./src/images/GamePrevue3.png" alt="" class=" "> 
                 <div class="section-gameSlider_slider__card-bg"></div>
                 <div class="section-gameSlider_slider__card_info">
                     <button class="section-gameSlider_slider__card_info_play reset-btn">Играть</button>
@@ -82,7 +82,7 @@ const GameSlider = (type) => {
                 </div>
             </div>    
             <div class="section-gameSlider_slider__card "> 
-                <img src="/src/images/GamePrevue3.png" alt="" class=" "> 
+                <img src="./src/images/GamePrevue3.png" alt="" class=" "> 
                 <div class="section-gameSlider_slider__card-bg"></div>
                 <div class="section-gameSlider_slider__card_info">
                     <button class="section-gameSlider_slider__card_info_play reset-btn">Играть</button>
@@ -95,7 +95,7 @@ const GameSlider = (type) => {
                 </div>
             </div>    
             <div class="section-gameSlider_slider__card "> 
-                <img src="/src/images/GamePrevue3.png" alt="" class=" "> 
+                <img src="./src/images/GamePrevue3.png" alt="" class=" "> 
                 <div class="section-gameSlider_slider__card-bg"></div>
                 <div class="section-gameSlider_slider__card_info">
                     <button class="section-gameSlider_slider__card_info_play reset-btn">Играть</button>

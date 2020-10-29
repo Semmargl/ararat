@@ -12,13 +12,13 @@
 
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     padding: 25px 0;
     text-align: center;
     background-color: #41355c;
 
     .inner {
-      width: 1040px;
+      max-width: 1040px;
       margin: 0 auto;
     }
 
@@ -39,9 +39,6 @@
       text-transform: uppercase;
       text-decoration: none;
       padding-left: 15px;
-      // padding-left: 30px;
-      // border-right: 1px solid; //border > text !!!
-
       font-family: Roboto;
       font-style: normal;
       font-weight: 400;
@@ -50,11 +47,16 @@
       &:after {
         content: "I";
         padding-left: 15px;
+        pointer-events: none; //
       }
       &:last-child:after {
         content: "";
         padding-left: 15px;
       }
+    }
+    &__link:hover {
+      //:not(section-footer_menu__link:after)
+      color: #fff774;
     }
   }
 
@@ -97,26 +99,29 @@
       background-image: url(../svg/Phone1.svg);
       background-position: left;
       background-repeat: no-repeat;
-
       padding: 0 30px;
       color: #fff;
-
       font-weight: bold;
       font-size: 24px;
       line-height: 28px;
+    }
+    &__number:hover {
+      color: #fff774;
     }
     &__mail {
       background-image: url(../svg/email_icon1.svg);
       background-position: left;
       background-repeat: no-repeat;
-
       padding: 0 30px;
-
       font-weight: bold;
       font-size: 18px;
       line-height: 21px;
+      color: #fff;
+    }
+    &__mail:hover {
       color: #fff774;
     }
+
     &__footer {
       width: 10px;
     }

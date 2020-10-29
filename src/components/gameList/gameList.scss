@@ -148,4 +148,15 @@
       border-radius: 10px;
     }
   }
+
+  &__moreList {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #fff96b;
+    margin: 30px auto 40px auto;
+    padding: 5px;
+    text-transform: uppercase;
+  }
 }

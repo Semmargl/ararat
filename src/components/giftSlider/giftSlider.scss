@@ -15,14 +15,11 @@
   .slick-track {
     width: 100%;
     display: flex;
-    // align-content: start;
-    // align-items: flex-start;
+    justify-content: space-between;
   }
   /* Слайд */
   .slick-slide {
-    padding-right: 25px;
-    // min-width: 208px;
-    // align-self: start;
+    min-width: 240px;
   }
 
   /* Стрелка */
@@ -36,7 +33,7 @@
 
     border: none;
     outline: none;
-    // color: #813849;
+    cursor: pointer;
   }
   /* Стрелка влево */
   .slick-arrow.slick-prev {
@@ -54,17 +51,18 @@
     background-position: 50% 50%;
     background-repeat: no-repeat;
   }
-  /* Стрелка не активная */
   .slick-arrow.slick-disabled {
+    opacity: 0.5;
   }
 
   &_slider {
+    margin-top: 20px;
+    position: relative;
     &__item {
       width: 240px;
-      height: 470px;
-
+      height: 465px;
       text-transform: uppercase;
-      padding-top: 40px;
+      padding-top: 50px;
 
       &_card {
         position: relative;
@@ -74,49 +72,100 @@
         align-items: center;
         width: 240px;
         height: 400px;
-        background-image: url(/src/svg/bgGift2.svg);
-        background-position: top;
-        background-repeat: no-repeat;
         background-color: #fff;
         border-radius: 5px;
         border: 3px solid #8626ff;
 
-        &__hak {
-          position: absolute;
-          margin: -40px 0 0 0;
-          align-self: center;
+        box-shadow: 0 1px 1px #8351c0;
+
+        &_header {
+          position: relative;
+          width: 100%;
+          background-image: url(/src/svg/bgGift2.svg);
+          background-repeat: no-repeat;
+          background-size: contain;
+          border-radius: 0%;
+          height: 170px;
+          &_visual {
+            width: 100%;
+            display: block;
+            margin-top: -50px;
+          }
+          &__subtitle {
+            position: absolute;
+            font-weight: 900;
+            font-size: 15px;
+            line-height: 18px;
+            text-align: center;
+            top: 50px;
+            left: 0;
+            right: 0;
+
+            color: #8740ff;
+          }
         }
-        &__title {
-          position: absolute;
-          margin-top: 55px;
-          font-weight: 900;
-          font-size: 15px;
-          line-height: 18px;
-          color: #8626ff;
-          margin-bottom: 0; /// hz zvidky add 1 rem do p!!!
-        }
-        &__percent {
-          position: absolute;
-          margin: 97px 0 0 0;
-        }
-        &__subtitle {
-          //   position: absolute; /////
-          padding-top: 178px;
-          font-size: 10px;
-          line-height: 12px;
-          text-transform: uppercase;
-          color: #787878;
-        }
-        &__timer {
-        }
-        &_inform {
-          height: 95px;
-          &__name {
-            span {
+
+        &_content {
+          flex: 1 auto;
+          max-height: 170px;
+          overflow: hidden;
+          width: 100%;
+
+          &__status {
+            font-size: 10px;
+            line-height: 12px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #787878;
+          }
+          &__timer {
+            padding: 3px 0 12px 0;
+            font-family: Digital Numbers;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 26px;
+            text-align: center;
+            letter-spacing: -0.2em;
+            text-transform: uppercase;
+
+            color: #ff0637;
+          }
+          &_info {
+            // width: 100%;
+            padding: 0 20px;
+            &__string {
+              display: flex;
+              width: 200px;
+              text-transform: none;
+
+              justify-content: space-between;
+
+              &_description {
+                font-size: 12px;
+                line-height: 18px;
+                color: #787878;
+              }
+              span {
+                align-self: start;
+                text-align: left;
+                display: block;
+                font-weight: bold;
+                font-size: 12px;
+                line-height: 18px;
+                /* or 150% */
+
+                color: #171717;
+                min-width: 52px;
+              }
             }
           }
         }
+
         &__activation {
+          // align-self: end;
+          display: block;
+          margin: 10px 0px 20px 0px;
           font-weight: 900;
           font-size: 14px;
           line-height: 16px;

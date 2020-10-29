@@ -52,16 +52,12 @@
 
       &_action {
         height: 100%;
-        // background-image: url(../svg/searchglass.svg);
-        // background-repeat: no-repeat;
         background-color: #44365e;
         display: block;
         padding: 0 12px 0 10px;
         :focus {
           outline: none;
         }
-        // outline: none;
-        // height: 100%;
       }
     }
   }
@@ -88,10 +84,7 @@
         align-self: center;
         padding: 0 10px;
         margin: 0 30px 0 0;
-        // min-width: 208px;
-        // align-self: start;
       }
-
       /* Стрелка */
       .slick-arrow {
         position: absolute;
@@ -100,18 +93,22 @@
         font-size: 0;
         width: 11px;
         height: 19px;
-
         border: none;
         outline: none;
-        // background-color: red;
+        opacity: 0.6;
+        transition: all 5ms;
 
+        cursor: pointer;
         // color: #813849;
+      }
+      .slick-arrow:hover {
+        opacity: 1;
       }
       /* Стрелка влево */
       .slick-arrow.slick-prev {
         left: 0;
         margin-left: -30px;
-        background: url(../svg/arrow_left.svg);
+        background: url(../svg/arrow_leftGrey.svg);
 
         background-position: 50% 50%;
         background-repeat: no-repeat;
@@ -122,8 +119,7 @@
       .slick-arrow.slick-next {
         right: 0;
         margin-right: -30px;
-        background: url(../svg/arrow_right.svg);
-        // background-color: red;
+        background: url(../svg/arrow_rightGrey.svg);
         background-position: 50% 50%;
         background-repeat: no-repeat;
       }
@@ -136,6 +132,10 @@
       position: relative;
 
       &__prov {
+        :focus {
+          outline: none;
+          outline-offset: none;
+        }
       }
     }
   }
