@@ -6,7 +6,6 @@ import {NavbarTop, NavbarBot} from '../components/navbar';
 import GameSlider from '../components/gameSlider';
 import GameList from '../components/gameList';
 import GiftSlider from '../components/giftSlider';
-import Modals from '../components/modals';
 
 
 const Main = () => {

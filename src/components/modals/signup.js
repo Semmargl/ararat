@@ -7,9 +7,7 @@ export default () => {
     };
 
     return `
-        <div id="signInModal" class="modal">
-            <button class="modal__close" onclick="Modals.close"></button>
-           
+        <div id="signInModal">
             <div class="modal__banner">
                 <div class="modal__banner__title">Получи подарок</div>
                 <div class="modal__banner__image"><img src="./src/images/loginBanner.png" alt=""></div>
@@ -40,7 +38,7 @@ export default () => {
                 <div class="modal__form__field">
                     <label class="modal__form__field__label" for="signInModal_password">Пароль</label>
                     <div class="modal__form__field__wrap">
-                        <input class="modal__form__field__wrap__input input_validation-password" type="text" placeholder="Введите ваш пароль" id="signInModal_password">
+                        <input class="modal__form__field__wrap__input input_validation-password" type="password" placeholder="Введите ваш пароль" id="signInModal_password">
                         <div class="modal__form__field__wrap__hide-show"></div>
                         <div class="modal__form__field__tooltips">
                             <div class="modal__form__field__tooltips__item modal__form__field__tooltips__item-error">Неверный пароль</div>
@@ -50,14 +48,20 @@ export default () => {
                 </div>
                 <div class="modal__form__field">
                     <div class="modal__form__field__wrap">
-                        <input type="checkbox" class="modal__form__field__wrap__input">
+                        <span class="modal__form__field__wrap__checkbox">
+                            <input type="checkbox" class="modal__form__field__wrap__checkbox__input">
+                            <mark></mark>
+                            <label class="modal__form__field__wrap__checkbox__label">Я согласен с <a class="modal__form__field__label__link" href="#">правилами казино</a></label>
+                        </span>    
                         <div class="modal__form__field__tooltips">
                             <div class="modal__form__field__tooltips__item modal__form__field__tooltips__item-error">Нажми меня</div>
                         </div>
                     </div>
-                    <div class="modal__form__field__label">Я согласен с <a class="modal__form__field__label__link" href="#">правилами казино</a></div>
                 </div>
-                <button class="modal__form__submit">Забрать подарок</button>
+                <button class="modal__form__submit">
+                    Забрать подарок
+                    <img src="./src/images/gift.png" />
+                </button>
                 <div class="modal__form__switch_form">
                     <div class="modal__form__switch_form__text">Уже имеете акаунт?</div>
                     <div class="modal__form__switch_form__button">ВОЙТИ</div>

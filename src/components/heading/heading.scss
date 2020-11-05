@@ -1,0 +1,20 @@
+@import "../../scss/constants";
+
+.section-heading {
+  margin: 57px 0 40px;
+  font-family: var(--font-family-main);
+  font-size: 36px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #FFF774;
+  mix-blend-mode: normal;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .section-heading {
+    margin: 30px 0 30px;
+    box-sizing: border-box;
+  }
+}

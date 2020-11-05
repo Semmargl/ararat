@@ -1,3 +1,4 @@
+import Modals from '../modals';
 
 const Providers = () => {
 
@@ -33,6 +34,7 @@ const Providers = () => {
 
 
 const Footer = () => {
+    Modals();
 
     return `
     

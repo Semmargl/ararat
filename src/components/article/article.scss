@@ -1,0 +1,27 @@
+.section-article-heading {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: left;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+.section-article-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #B6B6B6;
+  text-align: left;
+  .section-article-text-row {
+    margin-bottom: 40px;
+    >b {
+      font-weight: bold !important;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .section-article-text .section-article-text-row {
+    margin-bottom: 20px;
+  }
+}
