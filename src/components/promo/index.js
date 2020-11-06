@@ -1,10 +1,10 @@
-const PromoContainer = (promos, slides = 0) => {
+export const PromoContainer = (promos, slides = 0) => {
 
   if (!Array.isArray(promos)) return '';
 
   if (slides === 0) {
     let str = '';
-    for (let p of promos) str += p;
+    for (let p of promos) str += Promo(p);
 
     return `
         <div class="promo-container">
@@ -19,7 +19,7 @@ const PromoContainer = (promos, slides = 0) => {
         str += '<div class="promo-container">';
 
         for (let j = 0; j < slides; j++) {
-          str += (promos[j + (i * slides)]);
+          str += Promo(promos[j + (i * slides)]);
         }
 
         str += '</div>';
@@ -29,7 +29,7 @@ const PromoContainer = (promos, slides = 0) => {
   }
 };
 
-const Promo = (data) => {
+export const Promo = (data) => {
 
     return `
         <div class="promo-wrapper">
@@ -51,5 +51,3 @@ const Promo = (data) => {
     `
 
 };
-
-export {PromoContainer, Promo};

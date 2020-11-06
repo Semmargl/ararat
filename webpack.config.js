@@ -30,9 +30,18 @@ module.exports = {
             {
                 test: /\.scss$/,
                 use: [
-                    miniCss.loader,
-                    'css-loader',
-                    'sass-loader'
+                  {
+                    loader: miniCss.loader,
+                    options: {
+                      publicPath: ''
+                    }
+                  },
+                  {
+                    loader: 'css-loader',
+                  },
+                  {
+                    loader: 'sass-loader',
+                  }
                 ]
             },
             {
@@ -40,6 +49,14 @@ module.exports = {
                 loader: 'url-loader',
 
             },
+            {
+                test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
+                loader: 'file-loader',
+                options: {
+                    name: '[name].[ext]',
+                    outputPath: 'fonts/'
+                }
+            }
             ]
     },
     plugins: [

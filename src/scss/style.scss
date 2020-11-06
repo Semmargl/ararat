@@ -3,13 +3,16 @@
 
 // @import "~bootstrap/scss/bootstrap";
 
-//импорт Шрифтов /roboto
+//импорт Шрифтов
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
-// @font-face {
-//   font-family: "Digital Numbers";
-//   src: url("../fonts/DigitalNumbers-Regular.woff") format("woff");
-// }
+@font-face {
+  font-family: 'Digital Numbers';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Digital Numbers'), url(../fonts/DigitalNumbers-Regular.woff) format('woff');
+}
 
 //root
 
@@ -201,4 +204,5 @@ button {
 @import "../components/article/article";
 @import "../components/table/table";
 @import "../components/promo/promo";
+@import "../components/jackpot/jackpot";
 @import "../components/modals/modals";

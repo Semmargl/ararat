@@ -1,6 +1,6 @@
 import arrowLeft from '../../svg/arrow_left.svg';
 
-const GiftSlider = () => {
+export const GiftSlider = () => {
 
     return `
         
@@ -226,5 +226,3 @@ const GiftSlider = () => {
 
     `
 };
-
-export default GiftSlider;
