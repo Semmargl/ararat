@@ -22,7 +22,15 @@ const NavbarTop = () => {
             <button class="section-navbar_top_search_action reset-btn"><img src="./src/svg/searchglass.svg" alt=""></button>
           </div>
   
-        
+          <nav class="section-navbar_top_menu_mobile">
+            <div><a href="#" class="section-navbar_top_menu__link">все игры</a></div>
+            <div><a href="#" class="section-navbar_top_menu__link">Live casino</a></div>
+            <div><a href="#" class="section-navbar_top_menu__link">ТОП</a></div>
+            <div><a href="#" class="section-navbar_top_menu__link">Классика</a></div>
+            <div><a href="#" class="section-navbar_top_menu__link">Настольные</a></div>
+            <div><a href="#" class="section-navbar_top_menu__link">ms&Виртуальные</a></div>
+            <div><a href="#" class="section-navbar_top_menu__link">Фавориты</a></div>
+          </nav>
       </div>
      
       <div class="grad-line-bottom"></div>

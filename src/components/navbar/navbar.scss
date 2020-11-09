@@ -6,6 +6,13 @@
     justify-content: space-between;
     align-items: center;
     padding: 15px 0px 10px 0px;
+    &_menu_mobile {
+      display: none;
+      width: 100%;
+      .slick-slide {
+        width: 30%;
+      }
+    }
     &_menu {
       display: flex;
       justify-content: start;
@@ -137,6 +144,24 @@
           outline-offset: none;
         }
       }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .section-navbar {
+    &_top {
+      flex-direction: column;
+      &_menu {
+        display: none;
+      }
+      &_menu_mobile {
+        display: flex;
+        align-items: center;
+      }
+    }
+    &_bot {
+      display: none;
     }
   }
 }

@@ -16,7 +16,7 @@ $('.section-gameSlider_slider').slick({
     autoplay: false,
     slidesToShow: 5,
     infinite: false,
-    // variableWidth: true
+
 });
 
 
@@ -28,12 +28,34 @@ $('.section-navbar_bot_inner').slick({
 });
 
 
+$('.section-navbar_top_menu_mobile').slick({
+  autoplay: false,
+  slidesToShow: 3,
+  infinite: false,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 3,
+        arrows: false
+      }
+    }
+  ]
+});
+
 $('.section-giftSlider_slider').slick({
     autoplay: false,
     slidesToShow: 4,
     infinite: false,
-
-    // variableWidth: true
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1.3,
+          arrows: false
+        }
+      }
+    ]
 });
 
 
