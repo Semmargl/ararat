@@ -3,6 +3,7 @@ import Header from '../components/header';
 import Heading from '../components/heading';
 import { PromoContainer } from '../components/promo';
 import { PromoList } from '../page_data';
+require('../page_data/globals');
 
 let arr = PromoList(6);
 let promos = [];

@@ -23,4 +23,4 @@ global.toggleMobileNav = (e, _this) => {
   e.preventDefault();
   _this.classList.toggle('active');
   $('.section-header-sidenav').toggleClass('active');
-}
+};

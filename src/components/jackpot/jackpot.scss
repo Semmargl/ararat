@@ -1,0 +1,290 @@
+.section-jackpot {
+  &__count {
+    display: flex;
+    align-items: center;
+    padding-top: 108px;
+    &-left {
+      position: relative;
+      width: 55%;
+      z-index: 2;
+      header {
+        position: absolute;
+        top: -72px;
+        left: 17%;
+        width: 300px;
+        background: url(../svg/jack1.svg) 0 0 no-repeat;
+        padding: 29px 50px;
+        background-size: 100% 100%;
+        text-align: center;
+        font-weight: 900;
+        font-size: 18.8556px;
+        line-height: 18px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #271C3F;
+        span, img {
+          position: relative;
+          z-index: 2;
+        }
+        img {
+          display: block;
+          margin: 10px auto 0;
+        }
+      }
+      &-main {
+        padding-top: 40px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        box-shadow: inset 0px 0px 4px 4px rgba(0, 255, 240, 1), inset 0px 2px 4px 1px rgba(255, 255, 255, 0.75);
+        box-sizing: border-box;
+        border-radius: 5px;
+        background: url(../images/jackpot_left_bg.png) 0 0 no-repeat;
+        background-size: 100% 100%;
+        overflow: hidden;
+        .jackpot-countdown {
+          font-family: "Digital Numbers";
+          font-style: normal;
+          font-weight: normal;
+          font-size: 42px;
+          line-height: 54px;
+          letter-spacing: -0.1em;
+          text-transform: uppercase;
+          color: #14FFE3;
+          text-shadow: 2px 2px 4px rgba(51, 255, 243, 0.5);
+        }
+        .jackpot-amount {
+          font-family: "Press Start 2P";
+          font-style: normal;
+          font-weight: normal;
+          font-size: 42px;
+          line-height: 70px;
+          text-align: center;
+          letter-spacing: 0.05em;
+          color: #FFFFFF;
+          text-shadow: 4px 8px 0 #000000;
+        }
+        .jackpot-more {
+          margin-top: 12px;
+          background: #FF0636;
+          border: 4px solid #28164E;
+          box-shadow: 2px 6px 0 #28164E;
+          border-radius: 5px;
+          width: 220px;
+          font-weight: 900;
+          font-size: 19.8724px;
+          line-height: 23px;
+          text-align: center;
+          text-transform: uppercase;
+          color: #FFFFFF;
+          padding: 11px 20px;
+        }
+      }
+    }
+    &-right {
+      position: relative;
+      width: 46%;
+      margin-left: -1%;
+      header {
+        position: absolute;
+        top: -76px;
+        width: 200px;
+        left: 20%;
+        background: url(../svg/jack2.svg) 0 0 no-repeat;
+        background-size: 100% 100%;
+        text-align: center;
+        font-weight: 900;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        padding: 14px 36px;
+        color: #FFFFFF;
+        img {
+          display: block;
+          margin: 10px auto 0;
+          transform: scale(0.7, 0.7) translateX(-10%);
+        }
+        span {
+          display: block;
+          margin-top: 20px;
+        }
+      }
+      &-main {
+        padding-top: 10px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        height: 260px;
+        background: url(../images/jackpot_right_bg.png) 0 0 no-repeat;
+        background-size: 100% 100%;
+        .jackpot-countdown {
+          font-family: "Digital Numbers";
+          font-style: normal;
+          font-weight: normal;
+          font-size: 24px;
+          line-height: 31px;
+          letter-spacing: -0.1em;
+          text-transform: uppercase;
+          color: #14FFE3;
+          text-shadow: 2px 2px 4px rgba(51, 255, 243, 0.5);
+        }
+        .jackpot-amount {
+          font-family: "Press Start 2P";
+          font-style: normal;
+          font-weight: normal;
+          font-size: 30px;
+          line-height: 50px;
+          text-align: center;
+          letter-spacing: 0.05em;
+          color: #FFFFFF;
+          text-shadow: 4px 8px 0 #000000;
+        }
+        .jackpot-more {
+          margin-top: 12px;
+          background: #913CFF;
+          border: 4px solid #28164E;
+          box-shadow: 2px 6px 0 #28164E;
+          padding: 11px 20px;
+          border-radius: 5px;
+          width: 220px;
+          font-weight: 900;
+          font-size: 19.8724px;
+          line-height: 23px;
+          text-align: center;
+          text-transform: uppercase;
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+  &__winning {
+    margin: 30px 0;
+    background: #674BC2;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    &-title {
+      width: 18%;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 30px;
+      text-transform: uppercase;
+      color: #FFF774;
+      mix-blend-mode: normal;
+      padding-left: 32px;
+    }
+    &-games {
+      font-size: 0;
+      width: 82%;
+      border-radius: 5px;
+      max-width: 80%;
+      background: #4D398F;
+      border: 6px solid #674BC2;
+      box-sizing: border-box;
+      box-shadow: inset 0 4px 10px 4px rgba(0, 0, 0, 0.5);
+      white-space: nowrap;
+      overflow: hidden;
+      &-item {
+        box-sizing: border-box;
+        width: 25%;
+        padding: 13px;
+        display: inline-flex;
+        white-space: normal;
+        align-items: center;
+        &__img {
+          margin-right: 20px;
+        }
+        &__text {
+          height: 100%;
+          display: flex;
+          flex-flow: column;
+          justify-content: space-between;
+          padding-top: 10px;
+          header {
+            font-size: 12px;
+            line-height: 18px;
+            color: #DBDBDB;
+          }
+          article {
+            font-size: 14px;
+            color: #FFF774;
+            margin: 8px 0;
+          }
+          footer {
+            font-size: 14px;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .section-jackpot {
+    &__count {
+      flex-flow: column;
+      &-left, &-right {
+        width: 100%
+      }
+      &-left {
+        header {
+          left: 3%;
+          padding: 29px 10px;
+          img {
+            transform: scale(0.6,0.6);
+          }
+        }
+        &-main {
+          .jackpot-countdown {
+            font-size: 26px;
+            line-height: 50px;
+          }
+          .jackpot-amount {
+            font-size: 22px;
+            line-height: 30px;
+          }
+        }
+      }
+      &-right {
+        margin-top: 90px;
+        header {
+          left: 9%;
+        }
+        &-main {
+          .jackpot-countdown {
+            font-size: 26px;
+            line-height: 50px;
+          }
+          .jackpot-amount {
+            font-size: 22px;
+            line-height: 30px;
+          }
+        }
+      }
+    }
+    &__winning {
+      flex-flow: column;
+      &-title, &-games {
+        width: 100%;
+        max-width: 100%;
+      }
+      &-title {
+        padding: 10px 10px 0;
+        text-align: center;
+        font-size: 16px;
+      }
+      &-games {
+        &-item {
+          padding: 8px;
+          width: 50%;
+        }
+      }
+    }
+  }
+}

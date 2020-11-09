@@ -5,7 +5,7 @@ import Article from '../components/article';
 import { PromoContainer } from '../components/promo';
 import { PinkButton } from '../components/buttons';
 import { PromoList } from '../page_data';
-
+require('../page_data/globals');
 
 const text = `«<b>Casino AG</b>» - сравнительно новый, но уже хорошо известный всем игрокам бренд в самых разных странах мира. В первую очередь он известен своей современной яркой атмосферой и богатым разнообразием слотов и бонусных предложений.
 

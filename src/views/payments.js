@@ -5,6 +5,7 @@ import Article from '../components/article';
 import Table from '../components/table';
 import { PromoContainer } from '../components/promo';
 import { PromoList } from '../page_data';
+require('../page_data/globals');
 
 const Main = () => {
     return `

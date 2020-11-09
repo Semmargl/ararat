@@ -5,6 +5,7 @@ import Article from '../components/article';
 import { PromoContainer } from '../components/promo';
 import { PinkButton } from '../components/buttons';
 import { PromoList } from '../page_data';
+require('../page_data/globals');
 
 
 const text = `<b>Дарим всем Новым Гостям “Обуительные Хонусы” на 1й, 2й, 3й, 5й и 7й депозиты.</b>

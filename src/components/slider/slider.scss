@@ -4,6 +4,7 @@
   width: 100%;
 
   &_slider {
+    font-size: 0;
     .slick-slider {
     }
     /* Ограничивающая оболочка */
@@ -62,7 +63,54 @@
     &__frame {
       position: relative;
       width: 100%;
-
+      &-text {
+        position: absolute;
+        top: 54px;
+        left: 100px;
+        width: 524px;
+        header {
+          span {
+            font-weight: bold;
+            color: #FFFFFF;
+            font-size: 48px;
+            line-height: 62px;
+            letter-spacing: 0.06em;
+            background-color: #2B223A;;
+            box-shadow: -10px 0 0 #2B223A, 10px 0 0 #2B223A;
+          }
+        }
+        article {
+          margin-top: 10px;
+          span {
+            color: #FFFFFF;
+            font-size: 24px;
+            line-height: 31px;
+            letter-spacing: 0.06em;
+            background-color: #2B223A;;
+            box-shadow: -10px 0 0 #2B223A, 10px 0 0 #2B223A;
+          }
+        }
+        .section-slider-button {
+          display: block;
+          position: relative;
+          text-align: center;
+          text-transform: uppercase;
+          margin: 20px 0 0 -10px;
+          background: #FF0636;
+          border: 4px solid #28164E;
+          box-shadow: 4px 6px 0 #28164E;
+          border-radius: 5px;
+          padding: 15px;
+          width: 350px;
+          font-weight: 900;
+          font-size: 36px;
+          line-height: 42px;
+          color: #fff;
+          img {
+            float: right;
+          }
+        }
+      }
       &_bg {
         width: 100%;
       }
@@ -122,6 +170,59 @@
             padding-left: 15px;
           }
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .section-slider {
+    &_slider {
+      &__frame {
+        height: 120px;
+        img {
+          height: 100%
+        }
+        &-text {
+          position: absolute;
+          top: 17px;
+          left: 18px;
+          width: 254px;
+          header {
+            span {
+              font-weight: bold;
+              color: #FFFFFF;
+              font-size: 18px;
+              line-height: 26px;
+              letter-spacing: 0.06em;
+              background-color: #2B223A;;
+              box-shadow: -10px 0 0 #2B223A, 10px 0 0 #2B223A;
+            }
+          }
+          article {
+            display: none;
+          }
+          .section-slider-button {
+            display: flex;
+            align-items: center;
+            margin: 10px 0 0 -10px;
+            padding: 5px 15px;
+            width: auto;
+            font-size: 14px;
+            line-height: 16px;
+            border: 1.77143px solid #28164E;
+            box-shadow: 1.77143px 2.65714px 0px #28164E;
+            border-radius: 2.21429px;
+            img {
+              float: none;
+              margin-left: 10px;
+              height: 19px;
+            }
+          }
+        }
+      }
+      .slick-arrow {
+        display: none !important;
       }
     }
   }

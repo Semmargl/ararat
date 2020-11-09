@@ -1,7 +1,8 @@
-import { Providers, Footer} from '../components/footer';
+import { Providers, Footer } from '../components/footer';
 import Header from '../components/header';
 import Heading from '../components/heading';
 import Article from '../components/article';
+require('../page_data/globals');
 
 const text1 = `1.1. Данные Общие Правила и Условия (далее именуемые «Правила и Условия») регулируют использование игр в онлайн-казино ARARAT GOLD (далее именуемое «Казино», «ARARAT GOLD», «Мы»), предоставленные на сайте www.ararat-gold.com (далее именуемый «Веб-сайт» или «Веб-сайт Казино»), а также по другим URL-адресам, принадлежащим компании Best Win B.V. Настоящие Правила и Условия, Политика конфиденциальности, Политика Cookies, условия рекламной кампании, правила о бонусах и специальных предложениях и любой другой документ, размещенный на Веб-сайте, составляют и регулируют договорные отношения между сторонами игрока (далее именуемые «Игрок» или «Вы») и Казино.
 

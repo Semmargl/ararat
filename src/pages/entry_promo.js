@@ -1,7 +1,6 @@
 import '../scss/style.scss'
 import '../views/promo.js'
 import $ from 'jquery';
-require('../page_data/globals');
 
 window.$ = window.jQuery = $;
 import 'slick-carousel'
