@@ -8,6 +8,7 @@ import GameList from '../components/gameList';
 import Jackpot from '../components/Jackpot';
 import { GiftSlider } from '../components/giftSlider';
 import { TopSlides, PopularSlides } from '../page_data';
+require('../page_data/globals');
 
 const Main = () => {
 

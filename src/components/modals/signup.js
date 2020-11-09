@@ -2,10 +2,6 @@ import Modals from '../modals';
 
 export default () => {
 
-    const submit = e => {
-        e.preventDefault();
-    };
-
     return `
         <div id="signInModal">
             <div class="modal__banner">
@@ -13,7 +9,7 @@ export default () => {
                 <div class="modal__banner__image"><img src="./src/images/loginBanner.png" alt=""></div>
             </div>  
             
-            <form class="modal__form" onclick="submit">
+            <form class="modal__form">
                 <div class="modal__form__title">500 рублей за регистрацию</div>
                 <div class="modal__form__soc">
                     <div class="modal__form__soc__title">Или войти через соц. сети</div>
@@ -64,7 +60,7 @@ export default () => {
                 </button>
                 <div class="modal__form__switch_form">
                     <div class="modal__form__switch_form__text">Уже имеете акаунт?</div>
-                    <div class="modal__form__switch_form__button">ВОЙТИ</div>
+                    <div class="modal__form__switch_form__button" onclick="signIn(event,this)">ВОЙТИ</div>
                 </div>
             </form>
         </div>

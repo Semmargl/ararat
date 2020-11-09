@@ -34,6 +34,10 @@ const Modals = () => {
                 this.active = !this.active;
             }
         }))
+
+        Array.from(document.querySelectorAll('.ModalsOpenSignOut')).map(node => node.addEventListener('click', (ev) => {
+            signOut(ev);
+        }))
     })
 };
 

@@ -127,7 +127,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
+button, input {
+  border: none;
+  outline: none
+}
 .reset-btn {
   padding: 0;
   border: none;
