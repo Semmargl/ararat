@@ -18,3 +18,9 @@ global.signOut = (e) => {
   localStorage.removeItem('loggedIn');
   window.location.reload();
 };
+
+global.toggleMobileNav = (e, _this) => {
+  e.preventDefault();
+  _this.classList.toggle('active');
+  $('.section-header-sidenav').toggleClass('active');
+}

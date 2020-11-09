@@ -1,15 +1,21 @@
+import { MobileNav } from './mobile_nav';
+
 const Header = () => {
     if (state.loggedIn) {
       return `
     
-        <header class="section-header">
+        <header class="section-header section-header-auth">
+        
+            ${MobileNav()}
+            
             <div class="section-header_inner">
                 <div class="section-header_burger"> 
         
                       <nav class="navbar navbar-expand-lg ">
                         <a class="navbar-brand" href="#"></a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler" type="button" onclick="toggleMobileNav(event,this)">
                           <span class="navbar-toggler-icon"></span>
+                          <span class="navbar-toggler-icon-active"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNav">
                           <ul class="navbar-nav">
@@ -55,19 +61,24 @@ const Header = () => {
                       <img src="./src/svg/profile.svg"/>
                     </div>
                     <div class="section-header_right__balance">
-                      <div class="section-header_right__balance__bal">
-                        <header>баланс</header>
-                        <section>
-                          <img src="./src/svg/balance.svg"/>
-                          13 000 ₽
-                        </section>
+                      <div class="section-header_right__balance__acc">
+                        <img src="./src/svg/profile.svg"/>
                       </div>
-                      <div class="section-header_right__balance__bonus">
-                        <header>бонус</header>
-                        <section>
-                          <img src="./src/svg/bonus.svg"/>
-                          33 000 ₽
-                        </section>
+                      <div class="section-header_right__balance__text">
+                        <div class="section-header_right__balance__text__bal">
+                          <header>баланс</header>
+                          <section>
+                            <img src="./src/svg/balance.svg"/>
+                            13 000 ₽
+                          </section>
+                        </div>
+                        <div class="section-header_right__balance__text__bonus">
+                          <header>бонус</header>
+                          <section>
+                            <img src="./src/svg/bonus.svg"/>
+                            33 000 ₽
+                          </section>
+                        </div>
                       </div>
                     </div>
                     <button class="section-header_right__deposit">депозит</button>
@@ -95,13 +106,16 @@ const Header = () => {
       return `
     
         <header class="section-header">
+            
+            ${MobileNav()}
+            
             <div class="section-header_inner">
                 <div class="section-header_burger"> 
-        
                       <nav class="navbar navbar-expand-lg ">
                         <a class="navbar-brand" href="#"></a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler" type="button"  onclick="toggleMobileNav(event,this)">
                           <span class="navbar-toggler-icon"></span>
+                          <span class="navbar-toggler-icon-active"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNav">
                           <ul class="navbar-nav">
@@ -136,7 +150,10 @@ const Header = () => {
                     <button class="section-header_right__reg reset-btn section-header_right-padding"><span>500 рублей за регистрацию</span>
                       <img src="./src/svg/giftRegYellow.svg" alt="">
                     </button>
-                    <button class="section-header_right__log reset-btn section-header_right-padding ModalsOpenSignUp">Вход</button>
+                    <button class="section-header_right__log reset-btn section-header_right-padding ModalsOpenSignUp">
+                      <span class="section-header_right__log-desk">Вход</span>
+                      <span class="section-header_right__log-mob">Войти</span>
+                    </button>
                     <div class="dropdown section-header_right-padding">
                         <button class="btn btn-secondary dropdown-toggle reset-btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Ру
