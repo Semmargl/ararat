@@ -54,7 +54,8 @@
 .content__table__mobile_column {
   display: none;
 }
-@media (max-width: 768px) {
+
+@media (max-width: 1024px) {
   .payments-container-inner {
     background: none;
     padding: 25px 12px 25px;

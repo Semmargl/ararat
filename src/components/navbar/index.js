@@ -18,18 +18,51 @@ const NavbarTop = () => {
           </nav>
           
           <div class="section-navbar_top_search">
-            <input class="section-navbar_top_search_area" type="text" placeholder="Поиск..." aria-label="Search">
-            <button class="section-navbar_top_search_action reset-btn"><img src="./src/svg/searchglass.svg" alt=""></button>
+            <div class="section-navbar_top_search-select custom-select">
+              <select>
+                <option>Провайдеры</option>
+                <option>NETENT</option>
+                <option>WAZDAN</option>
+                <option>Amatic</option>
+                <option>Apollo</option>
+                <option>Evoplay</option>
+                <option>Microgaming</option>
+                <option>Microgaming</option>
+                <option>Microgaming</option>
+                <option>Microgaming</option>
+              </select>
+            </div>
+            <div class="section-navbar_top_search_wrap">
+              <input class="section-navbar_top_search_area" type="text" placeholder="Поиск...">
+              <button class="section-navbar_top_search_action reset-btn" onclick="toggleSearch(event,this)">
+                <img src="./src/svg/searchglass.svg" alt=""/>
+              </button>
+            </div>
+           
           </div>
   
           <nav class="section-navbar_top_menu_mobile">
-            <div><a href="#" class="section-navbar_top_menu__link">все игры</a></div>
-            <div><a href="#" class="section-navbar_top_menu__link">Live casino</a></div>
-            <div><a href="#" class="section-navbar_top_menu__link">ТОП</a></div>
-            <div><a href="#" class="section-navbar_top_menu__link">Классика</a></div>
-            <div><a href="#" class="section-navbar_top_menu__link">Настольные</a></div>
-            <div><a href="#" class="section-navbar_top_menu__link">ms&Виртуальные</a></div>
-            <div><a href="#" class="section-navbar_top_menu__link">Фавориты</a></div>
+            <div class="section-navbar_top_menu_mobile-item">
+              <a href="#" class="section-navbar_top_menu__link active">все игры</a>
+            </div>
+            <div class="section-navbar_top_menu_mobile-item">
+              <a href="#" class="section-navbar_top_menu__link">Live casino</a>
+             </div>
+            <div class="section-navbar_top_menu_mobile-item">
+              <a href="#" class="section-navbar_top_menu__link">ТОП</a>
+            </div>
+            <div class="section-navbar_top_menu_mobile-item">
+              <a href="#" class="section-navbar_top_menu__link">Классика</a>
+            </div>
+            <div class="section-navbar_top_menu_mobile-item">
+              <a href="#" class="section-navbar_top_menu__link">Настольные</a>
+            </div>
+            <div class="section-navbar_top_menu_mobile-item">
+              <a href="#" class="section-navbar_top_menu__link">ms&Виртуальные</a>
+            </div>
+            <div class="section-navbar_top_menu_mobile-item">
+              <a href="#" class="section-navbar_top_menu__link">Фавориты</a>
+            </div>
           </nav>
       </div>
      

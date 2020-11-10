@@ -161,12 +161,12 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .section-gameList {
     &_wrap {
       justify-content: space-between;
       &__card {
-        width: 48%;
+        max-width: 48%;
         img {
           width: 100%;
         }

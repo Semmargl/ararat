@@ -32,12 +32,21 @@ $('.section-navbar_top_menu_mobile').slick({
   autoplay: false,
   slidesToShow: 3,
   infinite: false,
+  variableWidth: true,
+  arrows: true,
   responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        arrows: true
+      }
+    },
     {
       breakpoint: 768,
       settings: {
-        slidesToShow: 3,
-        arrows: false
+        slidesToShow: 1,
+        arrows: true
       }
     }
   ]
@@ -48,6 +57,13 @@ $('.section-giftSlider_slider').slick({
     slidesToShow: 4,
     infinite: false,
     responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          arrows: false
+        }
+      },
       {
         breakpoint: 768,
         settings: {

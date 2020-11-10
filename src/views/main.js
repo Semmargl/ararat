@@ -9,6 +9,7 @@ import Jackpot from '../components/Jackpot';
 import { GiftSlider } from '../components/giftSlider';
 import { TopSlides, PopularSlides } from '../page_data';
 require('../page_data/globals');
+require('../page_scripts');
 
 const Main = () => {
 

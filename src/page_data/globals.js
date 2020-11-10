@@ -24,3 +24,9 @@ global.toggleMobileNav = (e, _this) => {
   _this.classList.toggle('active');
   $('.section-header-sidenav').toggleClass('active');
 };
+
+global.toggleSearch = (e, _this) => {
+  if (window.innerWidth <= 768) {
+    _this.closest('.section-navbar_top_search').classList.toggle('active')
+  }
+}
