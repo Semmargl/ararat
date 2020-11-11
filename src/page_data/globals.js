@@ -5,17 +5,13 @@ global.state = {
 };
 
 global.signIn = (e, el) => {
-  console.log(e);
   e.preventDefault();
-
   const form = el.closest('form');
-  console.log(form);
   const errors = form.querySelectorAll(':invalid');
-  console.log(errors);
 
   if (errors.length) {
     Array.from(errors).map(inp => {
-      console.log(inp)
+      if (inp.getAttribute('type') === 'checkbox') inp = inp.parentNode;
       inp.classList.add('error');
       inp.onfocus = function () { this.classList.remove('error') }
     });

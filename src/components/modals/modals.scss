@@ -189,7 +189,8 @@
     &__input:focus:not(.error) ~ &__tooltips &__tooltips__item-notice {
       display: block
     }
-    &__input.error ~ &__tooltips &__tooltips__item-error {
+    &__input.error ~ &__tooltips &__tooltips__item-error,
+    &__checkbox.error ~ &__tooltips &__tooltips__item-error {
       display: block
     }
     &__hide-show {
