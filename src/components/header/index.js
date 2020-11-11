@@ -21,31 +21,31 @@ const Header = () => {
                           <ul class="navbar-nav">
                             <li class="nav-item active">
                                 <a class="nav-link" href="#">
-                                  <img class="nav-img" src="./src/svg/menuGift.svg" alt="">
+                                  <img class="nav-img" src="./src/svg/menuGift.svg" alt=""/>
                                   Подарки
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">
-                                  <img class="nav-img" src="./src/svg/menuGame.svg" alt="">
+                                  <img class="nav-img" src="./src/svg/menuGame.svg" alt=""/>
                                   ИГРЫ
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">
-                                  <img class="nav-img" src="./src/svg/menuTournament.svg" alt="">
+                                  <img class="nav-img" src="./src/svg/menuTournament.svg" alt=""/>
                                   Турниры
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">
-                                  <img class="nav-img" src="./src/svg/menuPeyment.svg" alt="">
+                                  <img class="nav-img" src="./src/svg/menuPeyment.svg" alt=""/>
                                   Платежи
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">
-                                  <img class="nav-img" src="./src/svg/menuNews.svg" alt="">
+                                  <img class="nav-img" src="./src/svg/menuNews.svg" alt=""/>
                                   Новости
                                 </a>
                             </li>
@@ -120,24 +120,34 @@ const Header = () => {
                         <div class="collapse navbar-collapse" id="navbarNav">
                           <ul class="navbar-nav">
                             <li class="nav-item active">
-                                <img class="nav-img" src="./src/svg/menuGift.svg" alt="">
-                                <a class="nav-link" href="#">Подарки</a>
+                                <a class="nav-link" href="#">
+                                  <img class="nav-img" src="./src/svg/menuGift.svg" alt="">
+                                  Подарки
+                                </a>
                             </li>
                             <li class="nav-item">
-                                <img class="nav-img" src="./src/svg/menuGame.svg" alt="">
-                                <a class="nav-link" href="#">ИГРЫ</a>
+                                <a class="nav-link" href="#">
+                                  <img class="nav-img" src="./src/svg/menuGame.svg" alt="">
+                                  ИГРЫ
+                                </a>
                             </li>
                             <li class="nav-item">
-                                <img class="nav-img" src="./src/svg/menuTournament.svg" alt="">
-                                <a class="nav-link" href="#">Турниры</a>
+                                <a class="nav-link" href="#">
+                                  <img class="nav-img" src="./src/svg/menuTournament.svg" alt="">
+                                  Турниры
+                                </a>
                             </li>
                             <li class="nav-item">
-                                <img class="nav-img" src="./src/svg/menuPeyment.svg" alt="">
-                                <a class="nav-link" href="#">Платежи</a>
+                                <a class="nav-link" href="#">
+                                  <img class="nav-img" src="./src/svg/menuPeyment.svg" alt="">
+                                  Платежи
+                                </a>
                             </li>
                             <li class="nav-item">
-                                <img class="nav-img" src="./src/svg/menuNews.svg" alt="">
-                                <a class="nav-link" href="#">Новости</a>
+                                <a class="nav-link" href="#">
+                                  <img class="nav-img" src="./src/svg/menuNews.svg" alt="">
+                                  Новости
+                                </a>
                             </li>
                           </ul>
                         </div>

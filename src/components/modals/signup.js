@@ -24,43 +24,43 @@ export default () => {
                 <div class="modal__form__field">
                     <label class="modal__form__field__label" for="signInModal_login">Email или номер телефона </label>
                     <div class="modal__form__field__wrap">
-                        <input class="modal__form__field__wrap__input input_validation-text" type="text" id="signInModal_login" placeholder="Введите вашу почту или телефон">
-                        <div class="modal__form__field__tooltips">
-                            <div class="modal__form__field__tooltips__item modal__form__field__tooltips__item-error">Неверный телефон или почта</div>
-                            <div class="modal__form__field__tooltips__item modal__form__field__tooltips__item-notice">Я подсказка</div>
+                        <input class="modal__form__field__wrap__input input_validation-text" required type="text" id="signInModal_login" placeholder="Введите вашу почту или телефон">
+                        <div class="modal__form__field__wrap__tooltips">
+                            <div class="modal__form__field__wrap__tooltips__item modal__form__field__wrap__tooltips__item-error">Неверный телефон или почта</div>
+                            <div class="modal__form__field__wrap__tooltips__item modal__form__field__wrap__tooltips__item-notice">Я подсказка</div>
                         </div>
                     </div>
                 </div>
                 <div class="modal__form__field">
                     <label class="modal__form__field__label" for="signInModal_password">Пароль</label>
                     <div class="modal__form__field__wrap">
-                        <input class="modal__form__field__wrap__input input_validation-password" type="password" placeholder="Введите ваш пароль" id="signInModal_password">
+                        <input class="modal__form__field__wrap__input input_validation-password" required type="password" placeholder="Введите ваш пароль" id="signInModal_password">
                         <div class="modal__form__field__wrap__hide-show"></div>
-                        <div class="modal__form__field__tooltips">
-                            <div class="modal__form__field__tooltips__item modal__form__field__tooltips__item-error">Неверный пароль</div>
-                            <div class="modal__form__field__tooltips__item modal__form__field__tooltips__item-notice">Я подсказка</div>
+                        <div class="modal__form__field__wrap__tooltips">
+                            <div class="modal__form__field__wrap__tooltips__item modal__form__field__wrap__tooltips__item-error">Неверный пароль</div>
+                            <div class="modal__form__field__wrap__tooltips__item modal__form__field__wrap__tooltips__item-notice">Я подсказка</div>
                         </div>
                     </div>
                 </div>
                 <div class="modal__form__field">
                     <div class="modal__form__field__wrap">
                         <span class="modal__form__field__wrap__checkbox">
-                            <input type="checkbox" class="modal__form__field__wrap__checkbox__input">
+                            <input type="checkbox" required class="modal__form__field__wrap__checkbox__input">
                             <mark></mark>
                             <label class="modal__form__field__wrap__checkbox__label">Я согласен с <a class="modal__form__field__label__link" href="#">правилами казино</a></label>
                         </span>    
-                        <div class="modal__form__field__tooltips">
-                            <div class="modal__form__field__tooltips__item modal__form__field__tooltips__item-error">Нажми меня</div>
+                        <div class="modal__form__field__wrap__tooltips">
+                            <div class="modal__form__field__wrap__tooltips__item modal__form__field__wrap__tooltips__item-error">Нажми меня</div>
                         </div>
                     </div>
                 </div>
-                <button class="modal__form__submit">
+                <button class="modal__form__submit" onclick="signIn(event,this)">
                     Забрать подарок
                     <img src="./src/images/gift.png" />
                 </button>
                 <div class="modal__form__switch_form">
                     <div class="modal__form__switch_form__text">Уже имеете акаунт?</div>
-                    <div class="modal__form__switch_form__button" onclick="signIn(event,this)">ВОЙТИ</div>
+                    <div class="modal__form__switch_form__button">ВОЙТИ</div>
                 </div>
             </form>
         </div>

@@ -4,9 +4,24 @@ global.state = {
   loggedIn: loggedIn !== null && loggedIn
 };
 
-global.signIn = (e) => {
+global.signIn = (e, el) => {
   console.log(e);
   e.preventDefault();
+
+  const form = el.closest('form');
+  console.log(form);
+  const errors = form.querySelectorAll(':invalid');
+  console.log(errors);
+
+  if (errors.length) {
+    Array.from(errors).map(inp => {
+      console.log(inp)
+      inp.classList.add('error');
+      inp.onfocus = function () { this.classList.remove('error') }
+    });
+    return false;
+  }
+
   state.loggedIn = true;
   localStorage.setItem('loggedIn', 1);
   window.location.reload();

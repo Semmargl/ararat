@@ -19,6 +19,12 @@ const Modals = () => {
         const sh = document.querySelector('.section-header');
         modal.style.top = `${sh.clientHeight}px`;
         Array.from(document.querySelectorAll('.modal__close')).map(node => node.addEventListener('click', close));
+
+        window.addEventListener('resize', () => {
+          const modal = document.querySelector('.modal');
+          const sh = document.querySelector('.section-header');
+          modal.style.top = `${sh.clientHeight}px`;
+        })
     };
 
     document.addEventListener('DOMContentLoaded', () => {
