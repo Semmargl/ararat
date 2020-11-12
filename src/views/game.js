@@ -1,10 +1,21 @@
-import { SideModal } from '../components/modals/game_stat';
+import { SideModal } from '../components/modals/side_modal';
+import { GameAuth } from '../components/modals/inner/game_auth';
+import { GameNonAuth } from '../components/modals/inner/game_nonauth';
 require('../page_data/globals');
+require('../page_scripts');
+
+let modalInner;
+console.log(isLoggedIn());
+if (isLoggedIn()) {
+  modalInner = GameAuth();
+} else {
+  modalInner = GameNonAuth();
+}
 
 const Main = () => {
     return `
         
-        ${SideModal()}
+        ${SideModal(modalInner)}
         
     `
 };

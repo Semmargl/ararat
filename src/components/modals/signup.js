@@ -1,5 +1,3 @@
-import Modals from '../modals';
-
 export default () => {
 
     return `

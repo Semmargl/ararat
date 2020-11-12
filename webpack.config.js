@@ -8,7 +8,8 @@ module.exports = {
       about: '/src/pages/entry_about.js',
       rules: '/src/pages/entry_rules.js',
       promo: '/src/pages/entry_promo.js',
-      bonus: '/src/pages/entry_bonus.js'
+      bonus: '/src/pages/entry_bonus.js',
+      game: '/src/pages/entry_game.js'
     },
     output: {
         filename: '[name].bundle.js',

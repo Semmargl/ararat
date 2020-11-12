@@ -1,7 +1,7 @@
 import { MobileNav } from './mobile_nav';
 
 const Header = () => {
-    if (state.loggedIn) {
+    if (isLoggedIn()) {
       return `
     
         <header class="section-header section-header-auth">

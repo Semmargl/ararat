@@ -1,7 +1,7 @@
 const loggedIn = localStorage.getItem('loggedIn');
 
 global.state = {
-  loggedIn: loggedIn !== null && loggedIn
+  loggedIn: loggedIn !== null && loggedIn === '1'
 };
 
 global.signIn = (e, el) => {
@@ -28,6 +28,10 @@ global.signOut = (e) => {
   state.loggedIn = false;
   localStorage.removeItem('loggedIn');
   window.location.reload();
+};
+
+global.isLoggedIn = () => {
+  return state.loggedIn;
 };
 
 global.toggleMobileNav = (e, _this) => {

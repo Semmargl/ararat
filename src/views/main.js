@@ -69,7 +69,6 @@ function initTimer(e) {
     e.dataset.end = new Date().getTime() + 1000 * 60 * 60 * offset;
   }
 
-
   e.interval = setInterval(function() {
     const now = new Date().getTime();
     const distance = parseInt(e.dataset.end) - now;
