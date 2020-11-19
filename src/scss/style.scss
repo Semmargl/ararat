@@ -31,7 +31,6 @@
 body {
   background-color: #271c3f;
   font-family: "Roboto", sans-serif;
-  padding-top: 65px;
 }
 
 button {
@@ -182,7 +181,6 @@ button {
   line-height: 16px;
   color: #FFFFFF;
   text-align: left;
-  color: #ffffff;
   padding: 13px 16px;
   cursor: pointer;
   &:after {
@@ -192,7 +190,7 @@ button {
     right: 10px;
     width: 0;
     height: 0;
-    border: 6px solid transparent;
+    border: 6px solid;
     border-color: #fff transparent transparent transparent;
     transition: .3s;
   }
@@ -221,7 +219,7 @@ button {
     line-height: 16px;
     color: #FFFFFF;
     padding: 13px 16px;
-    border: 1px solid transparent;
+    border: 1px solid;
     border-color: transparent transparent rgba(0, 0, 0, 0.05) transparent;
     cursor: pointer;
     &:hover {
@@ -246,10 +244,6 @@ button {
 
 
 @media (max-width: 1024px) {
-  body {
-    padding-top: 48px;
-  }
-
   .grad-line-bottom {
     display: none
   }

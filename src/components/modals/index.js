@@ -24,10 +24,13 @@ const Modals = () => {
           const modal = document.querySelector('.modal');
           const sh = document.querySelector('.section-header');
           modal.style.top = `${sh.clientHeight}px`;
+          document.body.style['padding-top'] = `${sh.clientHeight}px`;
         })
     };
 
     document.addEventListener('DOMContentLoaded', () => {
+        const sh = document.querySelector('.section-header');
+        document.body.style['padding-top'] = `${sh.clientHeight}px`;
         const modal = document.createElement('div');
         modal.className = 'modal';
         document.querySelector('.someGlobalClass').append(modal);

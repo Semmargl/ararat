@@ -178,7 +178,8 @@
   .section-slider {
     &_slider {
       &__frame {
-        height: 120px;
+        height: 22vw;
+        min-height: 120px;
         img {
           height: 100%
         }

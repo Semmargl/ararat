@@ -16,7 +16,30 @@ $('.section-gameSlider_slider').slick({
     autoplay: false,
     slidesToShow: 5,
     infinite: false,
-
+    arrows: true,
+    responsive: [
+      {
+        breakpoint: 1160,
+        settings: {
+          slidesToShow: 4.5,
+          arrows: false
+        }
+      },
+      {
+        breakpoint: 960,
+        settings: {
+          slidesToShow: 4,
+          arrows: true
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3.3,
+          arrows: true
+        }
+      }
+    ]
 });
 
 
@@ -54,20 +77,62 @@ $('.section-navbar_top_menu_mobile').slick({
 
 $('.section-giftSlider_slider').slick({
     autoplay: false,
-    slidesToShow: 4,
+    slidesToShow: 5,
     infinite: false,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1160,
+        settings: {
+          slidesToShow: 4,
+          arrows: false
+        }
+      },
+      {
+        breakpoint: 980,
+        settings: {
+          slidesToShow: 3.5,
+          arrows: false
+        }
+      },
+      {
+        breakpoint: 870,
         settings: {
           slidesToShow: 3,
           arrows: false
         }
       },
       {
-        breakpoint: 768,
+        breakpoint: 800,
         settings: {
-          slidesToShow: 1.3,
+          slidesToShow: 2.7,
+          arrows: false
+        }
+      },
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 2.5,
+          arrows: false
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2.2,
+          arrows: false
+        }
+      },
+      {
+        breakpoint: 520,
+        settings: {
+          slidesToShow: 1.8,
+          arrows: false
+        }
+      },
+      {
+        breakpoint: 400,
+        settings: {
+          slidesToShow: 1.8,
           arrows: false
         }
       }

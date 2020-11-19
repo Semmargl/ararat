@@ -13,7 +13,6 @@ const GameList = () => {
     </div>
 
     <div class="section-gameList_wrap">
-
         <div class="section-gameList_wrap__card"> 
             <img src="./src/images/GamePrevMiddle.png" alt=""> 
             <div class="section-gameList_wrap__card-bg"></div>

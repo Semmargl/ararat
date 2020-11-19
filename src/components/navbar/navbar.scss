@@ -42,9 +42,7 @@
         &:after {
           content: '';
           display: block;
-          background: url(../svg/chevron_left.svg);
-          background-position: 50% 50%;
-          background-repeat: no-repeat;
+          background: url(../svg/chevron_left.svg) 50% 50% no-repeat;
           height: 12px;
           width: 8px;
         }
@@ -55,9 +53,7 @@
         &:after {
           content: '';
           display: block;
-          background: url(../svg/chevron_right.svg);
-          background-position: 50% 50%;
-          background-repeat: no-repeat;
+          background: url(../svg/chevron_right.svg) 50% 50% no-repeat;
           height: 12px;
           width: 8px;
           margin-left: auto;
@@ -67,7 +63,6 @@
     &_menu {
       display: flex;
       justify-content: start;
-
       &__link {
         color: #ffffff;
         font-size: 12px;
@@ -135,28 +130,24 @@
   &_bot {
     background-color: #382b4f;
     &_inner {
-      /* Слайдер */
-      .slick-slider {
-      }
-      /* Ограничивающая оболочка */
+      height: 60px;
+      padding: 5px 0;
+      position: relative;
       .slick-list {
         width: 100%;
         overflow: hidden;
       }
-      /* Лента слайдов */
       .slick-track {
         width: 100%;
         display: flex;
         text-align: left;
         align-content: center;
       }
-      /* Слайд */
       .slick-slide {
         align-self: center;
         padding: 0 10px;
         margin: 0 30px 0 0;
       }
-      /* Стрелка */
       .slick-arrow {
         position: absolute;
         top: 20px;
@@ -168,43 +159,45 @@
         outline: none;
         opacity: 0.6;
         transition: all 5ms;
-
         cursor: pointer;
-        // color: #813849;
       }
       .slick-arrow:hover {
         opacity: 1;
       }
-      /* Стрелка влево */
       .slick-arrow.slick-prev {
         left: 0;
-        margin-left: -30px;
-        background: url(../svg/bot_left.svg);
-
-        background-position: 50% 50%;
-        background-repeat: no-repeat;
+        margin-left: -1.2vw;
+        background: url(../svg/bot_left.svg) 50% 50% no-repeat;
         z-index: 30;
       }
-      /* Стрелка вправо */
       .slick-arrow.slick-next {
         right: 0;
-        margin-right: -30px;
-        background: url(../svg/bot_right.svg);
-        background-position: 50% 50%;
-        background-repeat: no-repeat;
+        margin-right: -1.2vw;
+        background: url(../svg/bot_right.svg) 50% 50% no-repeat;
       }
-      /* Стрелка не активная */
-      .slick-arrow.slick-disabled {
-      }
-
-      height: 60px;
-      padding: 5px 0;
-      position: relative;
-
       &__prov {
         :focus {
           outline: none;
-          outline-offset: none;
+          outline-offset: unset;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1160px) {
+  .section-navbar {
+    &_bot {
+      &_inner {
+        overflow: hidden;
+        .slick-list {
+          padding: 0 20px;
+        }
+        .slick-arrow.slick-prev {
+          margin-left: 0.2vw;
+        }
+        .slick-arrow.slick-next {
+          margin-right: 0.2vw;
         }
       }
     }
@@ -229,8 +222,12 @@
         &-select {
           display: block;
           flex-grow: 1;
+          .select-selected {
+            padding-right: 30px;
+          }
         }
         &_wrap {
+          padding-left: 10px;
           margin-left: 9px;
           background: #44365e;
           border-radius: 3px;

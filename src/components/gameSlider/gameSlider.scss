@@ -1,34 +1,20 @@
 @import "../../scss/constants";
-
-//title-category css
 @import "../../scss/support";
 
 .section-gameSlider {
-  /* Слайдер */
-  .slick-slider {
-  }
-  /* Ограничивающая оболочка */
   .slick-list {
     width: 100%;
     overflow: hidden;
-    padding: 5px;
-    margin: 0 -5px;
   }
-  /* Лента слайдов */
   .slick-track {
     width: 100%;
     display: flex;
     text-align: left;
     align-content: start;
-    // align-items: flex-start;
   }
-  /* Слайд */
   .slick-slide {
     min-width: 208px;
-    // align-self: start;
   }
-
-  /* Стрелка */
   .slick-arrow {
     position: absolute;
     top: 50%;
@@ -36,59 +22,41 @@
     font-size: 0;
     width: 11px;
     height: 19px;
-
     border: none;
     outline: none;
-    // color: #813849;
   }
-  /* Стрелка влево */
   .slick-arrow.slick-prev {
     left: 0;
-    margin-left: -30px;
-    background: url(../svg/arrow_left.svg);
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
+    margin-left: -2vw;
+    background: url(../svg/arrow_left.svg) 50% 50% no-repeat;
     fill: red;
     color: blue;
     z-index: 30;
   }
-  /* Стрелка вправо */
   .slick-arrow.slick-next {
     right: 0;
-    margin-right: -30px;
-    background: url(../svg/arrow_right.svg);
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
+    margin-right: -2vw;
+    background: url(../svg/arrow_right.svg) 50% 50% no-repeat;
   }
-  /* Стрелка не активная */
   .slick-arrow.slick-disabled {
     opacity: 0.5;
   }
-
   &_slider {
     min-width: 0;
     position: relative;
     text-align: left;
-    // display: flex;
-    // flex-direction: row;
-    // justify-content: space-between;
-    // flex-wrap: wrap;
-    // overflow: hidden;
-    // padding-bottom: 10px;
+    .slick-slide {
+      margin-right: 11px;
+    }
     &__card {
-
-      // display: inline-block;
-      width: 200px !important;
       height: 300px;
       position: relative;
-      // background-color: red;
-      display: flex !important; // slick перебивав на inline-block
+      display: flex !important;
       align-items: center;
       justify-content: center;
-
-
       &-bg {
-        width: 200px;
+        min-width: 200px;
+        width: 100%;
         height: 300px;
         position: absolute;
         display: flex;
@@ -98,14 +66,13 @@
         border-radius: 10px;
         transition: all 0.45s;
         z-index: 1;
-
         img {
           display: block;
           width: 210px;
+          max-width: 100%;
           height: 310px;
           position: absolute;
         }
-
         &:after {
           content: '';
           position: absolute;
@@ -115,27 +82,21 @@
           height: 100%;
           background-color: rgba(81, 58, 123, 0.6);
           opacity: 0;
-
         }
       }
-
       &_info {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        // display: none;
         display: flex;
         flex-direction: column;
-        // justify-content: center;
         text-align: center;
         align-items: center;
         color: #ffffff;
-
         opacity: 0;
         transition: all 0.45s;
-
         &_play {
           margin-top: 130px;
           width: 115px;
@@ -159,35 +120,27 @@
           font-weight: 700;
           margin-bottom: 0;
           letter-spacing: 1.8px;
-          //   line-height: 18px;
         }
         &__wrap {
           position: absolute;
           bottom: 40px;
-
           display: flex;
           flex-direction: row;
           align-items: center;
           padding: 0 20px;
-
           &_like {
             display: block;
-            background-image: url("../svg/heart.svg");
+            background-image: url(../svg/heart.svg);
             background-repeat: no-repeat;
             width: 15px;
             min-width: 20px;
             height: 13px;
-            // flex-basis: 15px;
             margin-right: 5px;
-            // margin-right: 4px;
-            // margin-left: -20px;
           }
           &_nameGame {
             font-size: 16px;
             font-weight: 700;
             margin-bottom: 0;
-            // width: max-content;
-            // min-width: 170px;
           }
         }
         &_rating {
@@ -196,10 +149,6 @@
           font-size: 14px;
           font-weight: 700;
         }
-        // background-image: url(../svg/starSmall.svg);
-        // background-position-x: -19px;
-        // background-repeat: no-repeat;
-
         &_rating:before {
           content: url(../svg/starSmall.svg);
           display: inline-block;
@@ -207,32 +156,20 @@
           height: 13px;
           margin-right: 6px;
           margin-left: -10px;
-          // position: absolute;
-
-          // background-image: url(../svg/starSmall.svg);
         }
       }
-
       &:hover  {
-
         & .section-gameSlider_slider__card-bg {
-
           border: 4px solid #000000;
           box-shadow: 2px 2px 0 #000000;
           border-radius: 10px;
           width: 210px;
           height: 310px;
           box-sizing: border-box;
-
-          & img {
-
-          }
-
           &:after {
             opacity: 1;
           }
         }
-
         & .section-gameSlider_slider__card_info {
           opacity: 1;
           z-index: 1;
@@ -242,4 +179,34 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .section-gameSlider {
+    .slick-arrow.slick-prev, .slick-arrow.slick-next {
+      display: none !important
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .section-gameSlider {
+    &_slider {
+      .slick-slide {
+        min-width: 37.5vw;
+      }
+      &__card {
+        max-width: 100%;
+        max-height: 56.25vw;
+        &-bg {
+          min-width: 120px;
+          max-width: 100%;
+          max-height: 100%;
+          img {
+            max-width: 100%;
+            max-height: 100%;
+          }
+        }
+      }
+    }
+  }
+}
 

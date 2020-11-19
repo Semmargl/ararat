@@ -6,7 +6,6 @@
   top: 0;
   left: 0;
   background-color: #271c3f;
-  max-width: 1640px;
   margin: 0 auto;
   z-index: 8888;
   &-sidenav {
@@ -115,18 +114,15 @@
   }
   &_inner {
     box-sizing: border-box;
-
     color: #fff;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex: 0 1 50%;
-    padding: 10px 15px 15px 0;
+    padding: 10px 0.5vw 15px 0;
   }
   &_burger {
     align-self: center;
-    width: 40%;
     .navbar {
       // padding-top: 16px;
       padding: 0;
@@ -173,10 +169,10 @@
           display: flex;
           // justify-content: flex-end;
           align-items: flex-end;
-          padding-left: 25px;
+          padding-left: 1.2vw;
           .nav-item {
             margin-bottom: -12px;
-            padding: 0 15px;
+            padding: 0 1vw;
             .nav-link {
               align-self: flex-end;
               font-weight: bold;
@@ -203,14 +199,16 @@
   &_logo {
     flex: 0 0 154px;
     text-align: center;
+    margin-left: auto;
   }
   &_right {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 40%;
+    width: 45%;
+    padding-left: 10px;
     &-padding {
-      margin: 0 15px;
+      margin: 0 1vw;
     }
     &__reg {
       height: 40px;
@@ -247,6 +245,8 @@
       border-radius: 48px;
       width: 40px;
       height: 40px;
+      min-width: 40px;
+      min-height: 40px;
       display: inline-flex;
       align-items: center;
       justify-content: center;
@@ -256,7 +256,7 @@
       background: #413752;
       border-radius: 3px;
       height: 40px;
-      margin-left: 20px;
+      margin-left: 1.4vw;
       &__acc {
         display: none
       }
@@ -282,11 +282,16 @@
           color: #FFF96B;
         }
         &__bal section img, &__bonus section img {
-          margin-right: 7px;
+          margin-right: 0.5vw;
         }
       }
-      &__text  > * {
-        margin: 0 15px;
+      &__text {
+        &__bal {
+          margin: 0 0.5vw 0 1vw;
+        }
+        &__bonus {
+          margin: 0 1vw 0 0.5vw;
+        }
       }
     }
     &__deposit {
@@ -295,7 +300,7 @@
       justify-content: center;
       align-items: center;
       height: 40px;
-      margin-left: 15px;
+      margin-left: 1vw;
       background: #FF0636;
       border-radius: 2px;
       color: #fff;
@@ -305,7 +310,7 @@
       line-height: 18px;
       text-align: center;
       letter-spacing: 0.02em;
-      width: 150px;
+      width: 10vw;
       transition: .3s;
     }
     &__deposit:after {
@@ -342,7 +347,7 @@
         border-style: solid;
         border-width: 5px 7px 0 7px;
         border-color: #fff transparent transparent transparent;
-        margin-left: 15px;
+        margin-left: 1vw;
         vertical-align: middle;
         display: inline-block;
         transition: .3s;
@@ -373,6 +378,17 @@
   }
 }
 
+@media (max-width: 1160px) {
+  .section-header_right__balance__text {
+    &__bal section, &__bonus section {
+      margin-top: 7px;
+      img {
+        display: none;
+      }
+    }
+  }
+}
+
 @media (max-width: 1024px) {
   #navbarNav, .section-header_right__reg, .section-header_right .dropdown {
     display: none;
@@ -380,7 +396,7 @@
 
   .section-header {
     &_inner {
-      padding: 4px 15px 4px 0;
+      padding: 7px 15px 7px 0;
     }
     &-sidenav {
       display: block;
@@ -393,7 +409,9 @@
     }
     &_logo {
       margin-right: auto;
-      margin-left: 15px;
+      margin-left: 10px;
+      height: 16px;
+      flex: 0 0 auto;
     }
     &_right {
       width: auto;
@@ -404,11 +422,12 @@
         background: #FAFF01;
         box-shadow: 0 2px 0 #4F3E1D;
         border-radius: 3px;
-        padding: 10px 20px;
+        padding: 7px 21px;
         color: #000;
         margin-right: 0;
         font-size: 13px;
-        text-decoration: uppercase;
+        line-height: 15px;
+        text-transform: uppercase;
         &-desk {
           display: none;
         }
@@ -427,10 +446,14 @@
         }
         &__text {
           flex-flow: column;
+          &__bal, &__bonus {
+            margin: 0 1vw
+          }
           &__bal header, &__bonus header {
             font-size: 10px;
           }
           &__bal section, &__bonus section {
+            margin-top: 0;
             white-space: nowrap;
           }
           &__bal header, &__bonus header, &__bal section img, &__bonus section img {

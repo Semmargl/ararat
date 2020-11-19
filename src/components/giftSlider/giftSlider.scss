@@ -1,28 +1,20 @@
 @import "../../scss/constants";
-//title-category css
 @import "../../scss/support";
 
 .section-giftSlider {
   padding-top: 30px;
-  .slick-slider {
-  }
-  /* Ограничивающая оболочка */
   .slick-list {
     width: 100%;
     overflow: hidden;
   }
-  /* Лента слайдов */
   .slick-track {
     width: 100%;
     display: flex;
     justify-content: space-between;
   }
-  /* Слайд */
   .slick-slide {
     min-width: 240px;
   }
-
-  /* Стрелка */
   .slick-arrow {
     position: absolute;
     top: 50%;
@@ -35,26 +27,19 @@
     outline: none;
     cursor: pointer;
   }
-  /* Стрелка влево */
   .slick-arrow.slick-prev {
     left: 0;
-    margin-left: -30px;
-    background: url(../svg/arrow_left.svg);
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
+    margin-left: -2vw;
+    background: url(../svg/arrow_left.svg) 50% 50% no-repeat;
   }
-  /* Стрелка вправо */
   .slick-arrow.slick-next {
     right: 0;
-    margin-right: -30px;
-    background: url(../svg/arrow_right.svg);
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
+    margin-right: -2vw;
+    background: url(../svg/arrow_right.svg) 50% 50% no-repeat;
   }
   .slick-arrow.slick-disabled {
     opacity: 0.5;
   }
-
   &_slider {
     margin-top: 20px;
     position: relative;
@@ -63,7 +48,6 @@
       height: 465px;
       text-transform: uppercase;
       padding-top: 50px;
-
       &_card {
         position: relative;
         display: flex;
@@ -71,13 +55,13 @@
         text-align: center;
         align-items: center;
         width: 240px;
+        max-width: 100%;
+        box-sizing: border-box;
         height: 400px;
         background-color: #fff;
         border-radius: 5px;
         border: 3px solid #8626ff;
-
         box-shadow: 0 1px 1px #8351c0;
-
         &_header {
           position: relative;
           width: 100%;
@@ -100,17 +84,14 @@
             top: 50px;
             left: 0;
             right: 0;
-
             color: #8740ff;
           }
         }
-
         &_content {
           flex: 1 auto;
           max-height: 170px;
           overflow: hidden;
           width: 100%;
-
           &__status {
             font-size: 10px;
             line-height: 12px;
@@ -128,19 +109,15 @@
             text-align: center;
             letter-spacing: -0.2em;
             text-transform: uppercase;
-
             color: #ff0637;
           }
           &_info {
-            // width: 100%;
             padding: 0 20px;
             &__string {
               display: flex;
               width: 200px;
               text-transform: none;
-
               justify-content: space-between;
-
               &_description {
                 font-size: 12px;
                 line-height: 18px;
@@ -153,19 +130,15 @@
                 font-weight: bold;
                 font-size: 12px;
                 line-height: 18px;
-                /* or 150% */
-
                 color: #171717;
                 min-width: 52px;
               }
             }
           }
         }
-
         &__activation {
-          // align-self: end;
           display: block;
-          margin: 10px 0px 20px 0px;
+          margin: 10px 0 20px 0;
           font-weight: 900;
           font-size: 14px;
           line-height: 16px;
@@ -175,6 +148,54 @@
           border-radius: 5px;
           width: 186px;
           height: 40px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .section-giftSlider {
+    .slick-slide {
+      min-width: 50vw;
+      max-width: 50vw;
+    }
+    &_slider {
+      &__item {
+        max-width: 100%;
+        max-height: 83.375vw;
+        &_card {
+          max-width: 100%;
+          max-height: 100%;
+          &_header {
+            max-height: 33vw;
+            &_visual {
+              margin-top: -10vw;
+            }
+            &__subtitle {
+              top: 28%;
+              font-size: 10px;
+            }
+          }
+          &_content_info {
+            padding: 0 4vw;
+            &__string {
+              max-width: 100%;
+              &_description, span {
+                font-size: 9px;
+                line-height: 12px;
+              }
+            }
+          }
+          &_headerontent_info__string {
+            max-width: 100%;
+          }
+          &__activation {
+            font-size: 10px;
+            margin: 10px auto 10px;
+            max-width: 90%;
+          }
         }
       }
     }
