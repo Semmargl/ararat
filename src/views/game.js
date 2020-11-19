@@ -25,3 +25,5 @@ const main = document.getElementById('Main');
 if (main) {
     main.innerHTML = Main();
 }
+
+export const Game = Main;

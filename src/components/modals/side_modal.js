@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 export const SideModal = (inner) => {
-    console.log(inner);
+
     return `
 
         <div class="side__modal">

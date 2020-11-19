@@ -7,7 +7,7 @@ const Modals = () => {
         modal.innerHTML = '';
     };
 
-    const openSignUp = (modal) =>{
+    const openSignUp = () =>{
         return SignUp();
     };
 

@@ -8,6 +8,9 @@ import GameList from '../components/gameList';
 import Jackpot from '../components/Jackpot';
 import { GiftSlider } from '../components/giftSlider';
 import { TopSlides, PopularSlides } from '../page_data';
+import { GameModal } from "../components/modals/game_modal";
+import { Game } from "./game";
+
 require('../page_data/globals');
 require('../page_scripts');
 
@@ -50,6 +53,7 @@ const Main = () => {
             
             <div class="container">
                 ${Footer()}
+                ${GameModal(Game())}
             </div>
         </div>    
     `
@@ -87,3 +91,12 @@ function initTimer(e) {
 }
 
 Array.from(document.querySelectorAll('.jackpot-countdown')).map(node => initTimer(node))
+
+document.addEventListener('DOMContentLoaded', () => {
+  Array.from(document.querySelectorAll('.section-gameSlider_slider__card_info_subtitle')).map(e => {
+    console.log(e);
+    e.onclick = function () {
+      document.querySelector('.game__modal').classList.add('modal-active')
+    }
+  })
+});
