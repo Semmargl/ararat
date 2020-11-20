@@ -7,7 +7,7 @@
     margin: 0 -3.5px;
     font-size: 0;
     &__card {
-      width: calc(16.66666666666667% - 7px);
+      width: calc(11.11111111111111% - 7px);
       margin: 0 3.5px;
       height: 250px;
       position: relative;
@@ -133,6 +133,45 @@
     margin: 30px auto 40px auto;
     padding: 5px;
     text-transform: uppercase;
+  }
+}
+
+@media (max-width: 1640px) {
+  .section-gameList {
+    &_wrap {
+      &__card {
+        width: calc(12.5% - 7px);
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .section-gameList {
+    &_wrap {
+      &__card {
+        width: calc(14.28571428571429% - 7px);
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .section-gameList {
+    &_wrap {
+      &__card {
+        width: calc(16.66666667% - 7px);
+        img {
+          width: 100%;
+        }
+      }
+    }
   }
 }
 

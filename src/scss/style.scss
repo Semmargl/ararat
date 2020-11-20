@@ -21,19 +21,20 @@
 }
 
 .container {
-  width: 1060px;
+  width: 91%;
   padding: 0 10px;
   max-width: 100%;
   margin: auto;
   box-sizing: border-box;
   &.opened {
-    height: 100vh;
+    min-height: 100vh;
   }
 }
 
 body {
   background-color: #271c3f;
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
 
 button {
@@ -246,11 +247,14 @@ button {
 }
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1160px) {
+  .container {
+    width: 100%;
+    margin: 0;
+  }
   .grad-line-bottom {
     display: none
   }
-
   .payments-container-inner {
     margin-bottom: 20px;
   }

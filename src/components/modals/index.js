@@ -19,14 +19,14 @@ const Modals = () => {
         const sh = document.querySelector('.section-header');
         modal.style.top = `${sh.clientHeight}px`;
         Array.from(document.querySelectorAll('.modal__close')).map(node => node.addEventListener('click', close));
-
-        window.addEventListener('resize', () => {
-          const modal = document.querySelector('.modal');
-          const sh = document.querySelector('.section-header');
-          modal.style.top = `${sh.clientHeight}px`;
-          document.body.style['padding-top'] = `${sh.clientHeight}px`;
-        })
     };
+
+    window.addEventListener('resize', () => {
+        const sh = document.querySelector('.section-header');
+        document.body.style['padding-top'] = `${sh.clientHeight}px`;
+        const modal = document.querySelector('.modal');
+        modal.style.top = `${sh.clientHeight}px`;
+    });
 
     document.addEventListener('DOMContentLoaded', () => {
         const sh = document.querySelector('.section-header');

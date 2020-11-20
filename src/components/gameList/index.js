@@ -23,7 +23,7 @@ const GameList = () => {
                 </div>
                 <div class="section-gameList_wrap__card__wrap"> 
                     <button class="section-gameList_wrap__card__wrap_like reset-btn"></button>
-                    <p class="section-gameList_wrap__card__wrap_nameGame">LuLucky Eas ter Lucky Easter</p> 
+                    <p class="section-gameList_wrap__card__wrap_nameGame">Lucky Easter</p> 
                 </div>
                 <div class="section-gameList_wrap__card_rating">4.5</div>
             </div>
@@ -36,7 +36,7 @@ const GameList = () => {
                 </div>
                 <div class="section-gameList_wrap__card__wrap"> 
                     <button class="section-gameList_wrap__card__wrap_like reset-btn"></button>
-                    <p class="section-gameList_wrap__card__wrap_nameGame">Lucky Lucky Easter Easter</p> 
+                    <p class="section-gameList_wrap__card__wrap_nameGame">Lucky Easter</p> 
                 </div>
                 <div class="section-gameList_wrap__card_rating">4.5</div>
             </div>

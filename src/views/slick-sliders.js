@@ -14,10 +14,17 @@ $('.section-slider_slider').slick({
 
 $('.section-gameSlider_slider').slick({
     autoplay: false,
-    slidesToShow: 5,
+    slidesToShow: 6.5,
     infinite: false,
     arrows: true,
     responsive: [
+      {
+        breakpoint: 1160,
+        settings: {
+          slidesToShow: 4.5,
+          arrows: false
+        }
+      },
       {
         breakpoint: 1160,
         settings: {
@@ -77,20 +84,41 @@ $('.section-navbar_top_menu_mobile').slick({
 
 $('.section-giftSlider_slider').slick({
     autoplay: false,
-    slidesToShow: 5,
+    slidesToShow: 5.2,
     infinite: false,
     responsive: [
       {
-        breakpoint: 1160,
+        breakpoint: 1440,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 5,
+          arrows: false
+        }
+      },
+      {
+        breakpoint: 1350,
+        settings: {
+          slidesToShow: 4.2,
+          arrows: false
+        }
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3.9,
+          arrows: false
+        }
+      },
+      {
+        breakpoint: 1080,
+        settings: {
+          slidesToShow: 3.7,
           arrows: false
         }
       },
       {
         breakpoint: 980,
         settings: {
-          slidesToShow: 3.5,
+          slidesToShow: 3.3,
           arrows: false
         }
       },
@@ -104,26 +132,26 @@ $('.section-giftSlider_slider').slick({
       {
         breakpoint: 800,
         settings: {
-          slidesToShow: 2.7,
+          slidesToShow: 2.8,
           arrows: false
         }
       },
       {
         breakpoint: 700,
         settings: {
-          slidesToShow: 2.5,
+          slidesToShow: 2.4,
           arrows: false
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 620,
         settings: {
-          slidesToShow: 2.2,
+          slidesToShow: 2.1,
           arrows: false
         }
       },
       {
-        breakpoint: 520,
+        breakpoint: 540,
         settings: {
           slidesToShow: 1.8,
           arrows: false
@@ -132,7 +160,7 @@ $('.section-giftSlider_slider').slick({
       {
         breakpoint: 400,
         settings: {
-          slidesToShow: 1.8,
+          slidesToShow: 1.6,
           arrows: false
         }
       }
