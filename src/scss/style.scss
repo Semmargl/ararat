@@ -26,6 +26,9 @@
   max-width: 100%;
   margin: auto;
   box-sizing: border-box;
+  &.opened {
+    height: 100vh;
+  }
 }
 
 body {

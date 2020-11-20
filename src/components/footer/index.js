@@ -22,10 +22,8 @@ const Providers = () => {
             <img src="./src/svg/playtech.svg" alt="" class="section-footer_provider__logo">
             <img src="./src/svg/quickspin.svg" alt="" class="section-footer_provider__logo">
             <img src="./src/svg/greentube.svg" alt="" class="section-footer_provider__logo">
-        
         </div>
     </div>
-
 
     `
 

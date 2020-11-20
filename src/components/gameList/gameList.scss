@@ -3,20 +3,21 @@
 
 .section-gameList {
   &_wrap {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
+    width: calc(100% + 7px);
+    margin: 0 -3.5px;
+    font-size: 0;
     &__card {
-      width: 173px;
+      width: calc(16.66666666666667% - 7px);
+      margin: 0 3.5px;
       height: 250px;
       position: relative;
-      display: flex;
+      display: inline-flex;
       align-items: center;
       justify-content: center;
       color: #ffffff;
       img {
         display: block;
-        width: 164px;
+        width: 100%;
         height: 239px;
         border-radius: 10px;
       }
@@ -63,6 +64,7 @@
           font-weight: 700;
           margin-bottom: 0;
           letter-spacing: 1.8px;
+          cursor: pointer;
         }
       }
       &__wrap {
@@ -134,15 +136,50 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 960px) {
   .section-gameList {
     &_wrap {
-      justify-content: center;
       &__card {
-        width: 16vw;
-        min-width: 155px;
-        max-width: 48%;
-        margin: 0 10px;
+        width: calc(20% - 7px);
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .section-gameList {
+    &_wrap {
+      &__card {
+        width: calc(25% - 7px);
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .section-gameList {
+    &_wrap {
+      &__card {
+        width: calc(33.33333333333% - 7px);
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  .section-gameList {
+    &_wrap {
+      &__card {
+        width: calc(50% - 7px);
         img {
           width: 100%;
         }

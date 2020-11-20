@@ -93,10 +93,15 @@ function initTimer(e) {
 Array.from(document.querySelectorAll('.jackpot-countdown')).map(node => initTimer(node))
 
 document.addEventListener('DOMContentLoaded', () => {
-  Array.from(document.querySelectorAll('.section-gameSlider_slider__card_info_subtitle')).map(e => {
-    console.log(e);
+  Array.from(document.querySelectorAll('.section-gameSlider_slider__card_info_subtitle,.section-gameList_wrap__card_info_subtitle')).map(e => {
     e.onclick = function () {
       document.querySelector('.game__modal').classList.add('modal-active')
     }
-  })
+  });
+  document.querySelector('.section-gameList__moreList').onclick = function () {
+    this.closest('.container').classList.add('opened')
+  };
+  document.querySelector('.section-gameList .title-category_more').onclick = function () {
+    this.closest('.container').classList.add('opened')
+  }
 });
