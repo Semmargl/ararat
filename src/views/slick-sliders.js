@@ -14,7 +14,7 @@ $('.section-slider_slider').slick({
 
 $('.section-gameSlider_slider').slick({
     autoplay: false,
-    slidesToShow: 6.5,
+    slidesToShow: 4.96,
     infinite: false,
     arrows: true,
     responsive: [
@@ -26,24 +26,59 @@ $('.section-gameSlider_slider').slick({
         }
       },
       {
-        breakpoint: 1160,
+        breakpoint: 960,
         settings: {
-          slidesToShow: 4.5,
+          slidesToShow: 4,
           arrows: false
         }
       },
       {
-        breakpoint: 960,
+        breakpoint: 820,
         settings: {
-          slidesToShow: 4,
-          arrows: true
+          slidesToShow: 3.3,
+          arrows: false
         }
       },
       {
-        breakpoint: 768,
+        breakpoint: 700,
         settings: {
-          slidesToShow: 3.3,
-          arrows: true
+          slidesToShow: 3,
+          arrows: false
+        }
+      },
+      {
+        breakpoint: 620,
+        settings: {
+          slidesToShow: 2.8,
+          arrows: false
+        }
+      },
+      {
+        breakpoint: 580,
+        settings: {
+          slidesToShow: 2.2,
+          arrows: false
+        }
+      },
+      {
+        breakpoint: 520,
+        settings: {
+          slidesToShow: 3.4,
+          arrows: false
+        }
+      },
+      {
+        breakpoint: 440,
+        settings: {
+          slidesToShow: 2.8,
+          arrows: false
+        }
+      },
+      {
+        breakpoint: 360,
+        settings: {
+          slidesToShow: 2.2,
+          arrows: false
         }
       }
     ]
@@ -84,23 +119,9 @@ $('.section-navbar_top_menu_mobile').slick({
 
 $('.section-giftSlider_slider').slick({
     autoplay: false,
-    slidesToShow: 5.2,
+    slidesToShow: 4,
     infinite: false,
     responsive: [
-      {
-        breakpoint: 1440,
-        settings: {
-          slidesToShow: 5,
-          arrows: false
-        }
-      },
-      {
-        breakpoint: 1350,
-        settings: {
-          slidesToShow: 4.2,
-          arrows: false
-        }
-      },
       {
         breakpoint: 1200,
         settings: {

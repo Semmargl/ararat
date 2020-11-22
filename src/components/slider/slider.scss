@@ -62,10 +62,19 @@
     }
     &__frame {
       position: relative;
+      &-text-wrap {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 1040px;
+        height: 100%;
+        margin: 0 auto;
+      }
       &-text {
         position: absolute;
         top: 6vw;
-        left: 100px;
+        left: 0;
         width: 524px;
         header {
           span {
@@ -174,6 +183,17 @@
   }
 }
 
+@media (max-width: 1280px) {
+  .section-slider {
+    &_slider {
+      &__frame-text-wrap {
+        width: 90%;
+        left: 10%;
+      }
+    }
+  }
+}
+
 @media (max-width: 1024px) {
   .section-slider {
     &_slider {
@@ -182,6 +202,10 @@
         min-height: 120px;
         img {
           height: 100%
+        }
+        &-text-wrap {
+          width: 98%;
+          left: 1%;
         }
         &-text {
           position: absolute;
