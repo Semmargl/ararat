@@ -19,16 +19,28 @@ const GameSlide = (data) => {
     `
 }
 
-const GameSlider = (type, slides) => {
+const GameSlider = (type, slides, search = '') => {
     let title = '';
     let icon = '';
+    let top = '';
     if (type === 'popular'){
         title = 'Популярные';
         icon = './src/svg/Popular.svg';
-
+        top = `<div class="title-category_name">
+                    <img src="${icon}" alt="">
+                    <span>${title}</span>
+                </div>
+                <button class="title-category_more reset-btn">БОЛЬШЕ ИГР >></button>`;
     } else if (type === 'top'){
         title = 'TOP';
         icon = './src/svg/starBig.svg';
+        top = `<div class="title-category_name">
+                   <img src="${icon}" alt="">
+                   <span>${title}</span>
+               </div>
+                <button class="title-category_more reset-btn">БОЛЬШЕ ИГР >></button>`;
+    } else if (type === 'search'){
+        top = `<div class="title-search_name">По запросу <b>${search}</b> найдено ${slides.length} игры</div>`
     }
 
 
@@ -37,22 +49,18 @@ const GameSlider = (type, slides) => {
         str += GameSlide(s)
     }
 
-
     return `
         
-    <section class="section-gameSlider">
-        <div class="title-category">
-            <div class="title-category_name">
-                <img src="${icon}" alt="">
-                <span>${title}</span>
+        <section class="section-gameSlider">
+            <div class="title-category">
+                ${top}
             </div>
-            <button class="title-category_more reset-btn">БОЛЬШЕ ИГР >></button>
-        </div>
-
-        <div  class="section-gameSlider_slider">
-            ${str}
-        </div>
-    </section>
+    
+            <div  class="section-gameSlider_slider">
+                ${str}
+            </div>
+            ${type === 'search' ? '<div class="title-divider"></div>' : ''}
+        </section>
 
     `
 };

@@ -1,6 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.side__modal__toggle').onclick = function () {
         this.parentNode.classList.toggle('active');
+        Array.from(this.closest('.modal').querySelectorAll('.shift-left')).map(e => {
+            e.classList.toggle('shifted');
+        });
     }
 })
 

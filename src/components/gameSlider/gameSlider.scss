@@ -189,6 +189,17 @@
       &__card {
         max-width: 120px;
         max-height: 180px;
+        &_info {
+          &_play {
+            margin-top: 25%;
+          }
+          &__wrap {
+            padding: 0 13px;
+            &_nameGame {
+              font-size: 14px;
+            }
+          }
+        }
       }
     }
   }

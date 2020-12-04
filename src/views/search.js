@@ -1,7 +1,7 @@
 import { Providers, Footer} from '../components/footer';
 import Header from '../components/header';
 import Slider from '../components/slider';
-import {NavbarTop, NavbarBot} from '../components/navbar';
+import { NavbarTop, NavbarBot } from '../components/navbar';
 // import Top from '../components/top';
 import GameSlider from '../components/gameSlider';
 import GameList from '../components/gameList';
@@ -28,6 +28,10 @@ const Main = () => {
             </div>      
             
             ${NavbarBot()}
+            
+            <div class="container">
+                ${GameSlider('search', TopSlides, 'Book of')}
+            </div>
             
             <div class="container">
                 ${GameSlider('top', TopSlides)}

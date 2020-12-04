@@ -440,9 +440,10 @@
         align-content: center;
         align-items: center;
         height: 33px;
+        padding-right: 5px;
         &__acc {
           display: block;
-          margin-left: 15px;
+          margin: 0 10px;
         }
         &__text {
           flex-flow: column;
@@ -453,6 +454,7 @@
             font-size: 10px;
           }
           &__bal section, &__bonus section {
+            font-size: 10px;
             margin-top: 0;
             white-space: nowrap;
           }
