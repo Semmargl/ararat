@@ -202,7 +202,6 @@
         min-height: 120px;
         img {
           height: 100%;
-          width: unset;
         }
         &-text-wrap {
           width: 98%;
@@ -248,6 +247,18 @@
       }
       .slick-arrow {
         display: none !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .section-slider {
+    &_slider {
+      &__frame {
+        img {
+          width: unset;
+        }
       }
     }
   }
