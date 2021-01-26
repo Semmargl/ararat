@@ -181,6 +181,14 @@
   }
 }
 
+@media (min-width: 1040px) {
+  .section-giftSlider {
+    .slick-list {
+      overflow: hidden;
+    }
+  }
+}
+
 @media (max-width: 480px) {
   .section-giftSlider {
     .slick-slide {
