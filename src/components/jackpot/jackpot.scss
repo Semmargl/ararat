@@ -344,6 +344,44 @@
   }
 }
 
+@media (min-width: 1300px) {
+  .section-jackpot {
+    &__count-left {
+      header {
+        span {
+          padding-top: 3.5%;
+        }
+      }
+    }
+    &__count-right {
+      header {
+        span {
+          padding-top: 5%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .section-jackpot {
+    &__count-left {
+      header {
+        span {
+          padding-top: 4%;
+        }
+      }
+    }
+    &__count-right {
+      header {
+        span {
+          padding-top: 5.5%;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 1024px) {
   .section-jackpot {
     &__count {
