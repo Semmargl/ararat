@@ -131,7 +131,7 @@
             width: 15px;
             min-width: 20px;
             height: 13px;
-            margin-right: 5px;
+            margin-right: 3px;
           }
           &_nameGame {
             font-size: 16px;
@@ -146,12 +146,13 @@
           font-weight: 700;
         }
         &_rating:before {
-          content: url(../svg/starSmall.svg);
+          content: '';
+          background: url(../svg/starSmall.svg) 0 0 no-repeat;
+          background-size: 100% 100%;
           display: inline-block;
-          width: 13px;
+          width: 13.5px;
           height: 13px;
-          margin-right: 6px;
-          margin-left: -10px;
+          margin-right: 3px;
         }
       }
       &:hover  {
