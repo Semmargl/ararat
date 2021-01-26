@@ -71,8 +71,10 @@ Ararat Gold is a legal website in conformity with the regulations concerning Bel
         </p>
 
         <div class="section-footer_contacts">
-            <a class="section-footer_contacts__number" href="tel:+78122009512">+7 812 200 95 12</a>
-            <a class="section-footer_contacts__mail" href="mailto:support@ararat.gold">support@ararat.gold</a>
+            <div class="section-footer_contacts__data">
+              <a class="section-footer_contacts__number" href="tel:+78122009512">+7 812 200 95 12</a>
+              <a class="section-footer_contacts__mail" href="mailto:support@ararat.gold">support@ararat.gold</a>
+            </div>
             <div class="dropdown section-footer_contacts__lang">
               <div class="dropdown">
                 <div class="dropdown-toggle" type="button" onclick="this.classList.toggle('active');this.nextElementSibling.classList.toggle('active')">

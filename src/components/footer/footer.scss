@@ -82,7 +82,7 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.205);
 
     &-short {
-      padding: 0px 23%;
+      padding: 0 23%;
       border-bottom: none;
       margin: 0;
       line-height: 24px;
@@ -129,10 +129,10 @@
 
     &__footer {
       width: 10px;
+    }
 
-      &_contacts__lang {
-        display: none;
-      }
+    &__lang {
+      display: none;
     }
 
     .social-footer {
@@ -262,6 +262,14 @@
 
       &__mail {
         color: #FFF774;
+      }
+
+      &__data {
+        flex-basis: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
       }
 
       &__lang {
