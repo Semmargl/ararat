@@ -1,60 +1,60 @@
 export const TopSlides = [
   {
-    image: './src/images/games/game_1.png',
+    image: './src/svg/games/game_1.svg',
     demoTitle: 'Демо',
     name: 'Reel Haist',
     rating: '4.5'
   },
   {
-    image: './src/images/games/game_2.png',
+    image: './src/svg/games/game_2.svg',
     demoTitle: 'Демо',
     name: 'Reel Haist',
     rating: '4.5'
   },
   {
-    image: './src/images/games/game_3.png',
+    image: './src/svg/games/game_3.svg',
     demoTitle: 'Демо',
     name: 'Reel Haist',
     rating: '4.5'
   },
   {
-    image: './src/images/games/game_4.png',
+    image: './src/svg/games/game_4.svg',
     demoTitle: 'Демо',
     name: 'Reel Haist',
     rating: '4.5'
   },
   {
-    image: './src/images/games/game_5.png',
+    image: './src/svg/games/game_5.svg',
     demoTitle: 'Демо',
     name: 'Reel Haist',
     rating: '4.5'
   },
   {
-    image: './src/images/games/game_1.png',
+    image: './src/svg/games/game_1.svg',
     demoTitle: 'Демо',
     name: 'Reel Haist',
     rating: '4.5'
   },
   {
-    image: './src/images/games/game_2.png',
+    image: './src/svg/games/game_2.svg',
     demoTitle: 'Демо',
     name: 'Reel Haist',
     rating: '4.5'
   },
   {
-    image: './src/images/games/game_3.png',
+    image: './src/svg/games/game_3.svg',
     demoTitle: 'Демо',
     name: 'Reel Haist',
     rating: '4.5'
   },
   {
-    image: './src/images/games/game_4.png',
+    image: './src/svg/games/game_4.svg',
     demoTitle: 'Демо',
     name: 'Reel Haist',
     rating: '4.5'
   },
   {
-    image: './src/images/games/game_5.png',
+    image: './src/svg/games/game_5.svg',
     demoTitle: 'Демо',
     name: 'Reel Haist',
     rating: '4.5'

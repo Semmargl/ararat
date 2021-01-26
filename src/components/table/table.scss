@@ -23,6 +23,9 @@
       color: #FFFFFF;
       text-align: left;
     }
+    .content-centered {
+      text-align: center;
+    }
   }
   tbody {
     td {
@@ -32,6 +35,9 @@
       &:nth-child(2) {
         width: 30%;
       }
+    }
+    .content-centered {
+      text-align: center;
     }
     .color-blue {
       color: #4DFFF4;

@@ -5,7 +5,7 @@ const GameList = () => {
 <section class="section-gameList">
     <div class="title-category">
         <div class="title-category_name">
-            <img src="./src/svg/Popular.svg" alt="">
+            <img src="./src/svg/games.svg" alt="">
             <span>Игры</span>
         </div>
 
@@ -15,7 +15,7 @@ const GameList = () => {
     <div class="section-gameList_wrap">
         <virtual-scroller #scroll [items]="items">
             <div class="section-gameList_wrap__card"> 
-                <img src="./src/images/GamePrevMiddle.png" alt=""> 
+                <img src="./src/svg/GamePrevMiddle.svg" alt=""> 
                 <div class="section-gameList_wrap__card-bg"></div>
                 <div class="section-gameList_wrap__card_info">
                     <button class="section-gameList_wrap__card_info_play reset-btn">Играть</button>
@@ -28,7 +28,7 @@ const GameList = () => {
                 <div class="section-gameList_wrap__card_rating">4.5</div>
             </div>
             <div class="section-gameList_wrap__card"> 
-                <img src="./src/images/GamePrevMiddle.png" alt=""> 
+                <img src="./src/svg/GamePrevMiddle.svg" alt=""> 
                 <div class="section-gameList_wrap__card-bg"></div>
                 <div class="section-gameList_wrap__card_info">
                     <button class="section-gameList_wrap__card_info_play reset-btn">Играть</button>
@@ -41,7 +41,7 @@ const GameList = () => {
                 <div class="section-gameList_wrap__card_rating">4.5</div>
             </div>
             <div class="section-gameList_wrap__card"> 
-                <img src="./src/images/GamePrevMiddle.png" alt=""> 
+                <img src="./src/svg/GamePrevMiddle.svg" alt=""> 
                 <div class="section-gameList_wrap__card-bg"></div>
                 <div class="section-gameList_wrap__card_info">
                     <button class="section-gameList_wrap__card_info_play reset-btn">Играть</button>
@@ -54,7 +54,7 @@ const GameList = () => {
                 <div class="section-gameList_wrap__card_rating">4.5</div>
             </div>
             <div class="section-gameList_wrap__card"> 
-                <img src="./src/images/GamePrevMiddle.png" alt=""> 
+                <img src="./src/svg/GamePrevMiddle.svg" alt=""> 
                 <div class="section-gameList_wrap__card-bg"></div>
                 <div class="section-gameList_wrap__card_info">
                     <button class="section-gameList_wrap__card_info_play reset-btn">Играть</button>
@@ -67,7 +67,7 @@ const GameList = () => {
                 <div class="section-gameList_wrap__card_rating">4.5</div>
             </div>
             <div class="section-gameList_wrap__card"> 
-                <img src="./src/images/GamePrevMiddle.png" alt=""> 
+                <img src="./src/svg/GamePrevMiddle.svg" alt=""> 
                 <div class="section-gameList_wrap__card-bg"></div>
                 <div class="section-gameList_wrap__card_info">
                     <button class="section-gameList_wrap__card_info_play reset-btn">Играть</button>
@@ -80,7 +80,7 @@ const GameList = () => {
                 <div class="section-gameList_wrap__card_rating">4.5</div>
             </div>
             <div class="section-gameList_wrap__card"> 
-                <img src="./src/images/GamePrevMiddle.png" alt=""> 
+                <img src="./src/svg/GamePrevMiddle.svg" alt=""> 
                 <div class="section-gameList_wrap__card-bg"></div>
                 <div class="section-gameList_wrap__card_info">
                     <button class="section-gameList_wrap__card_info_play reset-btn">Играть</button>
@@ -93,7 +93,7 @@ const GameList = () => {
                 <div class="section-gameList_wrap__card_rating">4.5</div>
             </div>
             <div class="section-gameList_wrap__card"> 
-                <img src="./src/images/GamePrevMiddle.png" alt=""> 
+                <img src="./src/svg/GamePrevMiddle.svg" alt=""> 
                 <div class="section-gameList_wrap__card-bg"></div>
                 <div class="section-gameList_wrap__card_info">
                     <button class="section-gameList_wrap__card_info_play reset-btn">Играть</button>
@@ -106,7 +106,7 @@ const GameList = () => {
                 <div class="section-gameList_wrap__card_rating">4.5</div>
             </div>
             <div class="section-gameList_wrap__card"> 
-                <img src="./src/images/GamePrevMiddle.png" alt=""> 
+                <img src="./src/svg/GamePrevMiddle.svg" alt=""> 
                 <div class="section-gameList_wrap__card-bg"></div>
                 <div class="section-gameList_wrap__card_info">
                     <button class="section-gameList_wrap__card_info_play reset-btn">Играть</button>
@@ -119,7 +119,7 @@ const GameList = () => {
                 <div class="section-gameList_wrap__card_rating">4.5</div>
             </div>
             <div class="section-gameList_wrap__card"> 
-                <img src="./src/images/GamePrevMiddle.png" alt=""> 
+                <img src="./src/svg/GamePrevMiddle.svg" alt=""> 
                 <div class="section-gameList_wrap__card-bg"></div>
                 <div class="section-gameList_wrap__card_info">
                     <button class="section-gameList_wrap__card_info_play reset-btn">Играть</button>
@@ -132,7 +132,7 @@ const GameList = () => {
                 <div class="section-gameList_wrap__card_rating">4.5</div>
             </div>
             <div class="section-gameList_wrap__card"> 
-                <img src="./src/images/GamePrevMiddle.png" alt=""> 
+                <img src="./src/svg/GamePrevMiddle.svg" alt=""> 
                 <div class="section-gameList_wrap__card-bg"></div>
                 <div class="section-gameList_wrap__card_info">
                     <button class="section-gameList_wrap__card_info_play reset-btn">Играть</button>
@@ -145,7 +145,7 @@ const GameList = () => {
                 <div class="section-gameList_wrap__card_rating">4.5</div>
             </div>
             <div class="section-gameList_wrap__card"> 
-                <img src="./src/images/GamePrevMiddle.png" alt=""> 
+                <img src="./src/svg/GamePrevMiddle.svg" alt=""> 
                 <div class="section-gameList_wrap__card-bg"></div>
                 <div class="section-gameList_wrap__card_info">
                     <button class="section-gameList_wrap__card_info_play reset-btn">Играть</button>
@@ -158,7 +158,7 @@ const GameList = () => {
                 <div class="section-gameList_wrap__card_rating">4.5</div>
             </div>
             <div class="section-gameList_wrap__card"> 
-                <img src="./src/images/GamePrevMiddle.png" alt=""> 
+                <img src="./src/svg/GamePrevMiddle.svg" alt=""> 
                 <div class="section-gameList_wrap__card-bg"></div>
                 <div class="section-gameList_wrap__card_info">
                     <button class="section-gameList_wrap__card_info_play reset-btn">Играть</button>

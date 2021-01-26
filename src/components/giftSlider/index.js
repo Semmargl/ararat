@@ -47,9 +47,9 @@ export const GiftSlider = () => {
                         </div>
                     </div>
                 </div>
-
-                <button class="section-giftSlider_slider__item_card__activation reset-btn">активировать бонус</button>
-                 
+                <div class="section-giftSlider_slider__item_card__mask">
+                  <button class="section-giftSlider_slider__item_card__activation reset-btn">активировать бонус</button>
+                </div>
             </div>
         </div>
         <div class="section-giftSlider_slider__item">
@@ -88,9 +88,9 @@ export const GiftSlider = () => {
                         </div>
                     </div>
                 </div>
-
-                <button class="section-giftSlider_slider__item_card__activation reset-btn">активировать бонус</button>
-                 
+                <div class="section-giftSlider_slider__item_card__mask">
+                  <button class="section-giftSlider_slider__item_card__activation reset-btn">активировать бонус</button>
+                </div> 
             </div>
         </div>
         <div class="section-giftSlider_slider__item">
@@ -129,9 +129,9 @@ export const GiftSlider = () => {
                         </div>
                     </div>
                 </div>
-
-                <button class="section-giftSlider_slider__item_card__activation reset-btn">активировать бонус</button>
-                 
+                <div class="section-giftSlider_slider__item_card__mask">
+                  <button class="section-giftSlider_slider__item_card__activation reset-btn">активировать бонус</button>
+                </div> 
             </div>
         </div>
         <div class="section-giftSlider_slider__item">
@@ -170,9 +170,9 @@ export const GiftSlider = () => {
                         </div>
                     </div>
                 </div>
-
-                <button class="section-giftSlider_slider__item_card__activation reset-btn">активировать бонус</button>
-                 
+                <div class="section-giftSlider_slider__item_card__mask">
+                  <button class="section-giftSlider_slider__item_card__activation reset-btn">активировать бонус</button>
+                </div> 
             </div>
         </div>
         <div class="section-giftSlider_slider__item">
@@ -211,9 +211,9 @@ export const GiftSlider = () => {
                         </div>
                     </div>
                 </div>
-
-                <button class="section-giftSlider_slider__item_card__activation reset-btn">активировать бонус</button>
-                 
+                <div class="section-giftSlider_slider__item_card__mask">
+                  <button class="section-giftSlider_slider__item_card__activation reset-btn">активировать бонус</button>
+                </div> 
             </div>
         </div>
         
@@ -253,9 +253,9 @@ export const GiftSlider = () => {
                         </div>
                     </div>
                 </div>
-
-                <button class="section-giftSlider_slider__item_card__activation reset-btn">активировать бонус</button>
-                 
+                <div class="section-giftSlider_slider__item_card__mask">
+                  <button class="section-giftSlider_slider__item_card__activation reset-btn">активировать бонус</button>
+                </div>  
             </div>
         </div>
     </div>

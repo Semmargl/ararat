@@ -6,23 +6,28 @@ const Jackpot = () => {
         <div class="section-jackpot__count-left">
           <header>
             <span>Ежедневный</span>
-            <img src="./src/images/jackpot.png"/>
           </header>
           <div class="section-jackpot__count-left-main">
-            <div class="jackpot-countdown" data-time_offset="5"></div>  
-            <div class="jackpot-amount">5 425,04 ₽</div>
-            <div class="jackpot-more">Подробнее</div>
+            <img class="jackpot-bg" src="./src/svg/jackpot_left_bg.svg"/>
+            <div class="jackpot-content">
+              <div class="jackpot-countdown" data-time_offset="5"></div>  
+              <div class="jackpot-amount">5 425,04 ₽</div>
+              <div class="jackpot-more">Подробнее</div>
+            </div>
           </div>
         </div>
         <div class="section-jackpot__count-right">
           <header>
             <span>Ежемесячный</span>
-            <img src="./src/images/jackpot.png"/>
           </header>
           <div class="section-jackpot__count-right-main">
-            <div class="jackpot-countdown" data-time_offset="125"></div>  
-            <div class="jackpot-amount">334 425,39 ₽</div>
-            <div class="jackpot-more">Подробнее</div>
+            <img class="jackpot-bg" src="./src/svg/jackpot_right_bg.svg"/>
+            <img class="jackpot-bg-mobile" src="./src/svg/jackpot_right_bg_m.svg"/>
+            <div class="jackpot-content">
+              <div class="jackpot-countdown" data-time_offset="125"></div>  
+              <div class="jackpot-amount">334 425,39 ₽</div>
+              <div class="jackpot-more">Подробнее</div>
+            </div>
           </div>
         </div>
       </div>
@@ -31,7 +36,7 @@ const Jackpot = () => {
         <div class="section-jackpot__winning-games">
           <div class="section-jackpot__winning-games-item">
             <div class="section-jackpot__winning-games-item__img">
-              <img src="./src/images/winning1.png"/>
+              <img src="./src/svg/winning1.svg"/>
             </div>
             <div class="section-jackpot__winning-games-item__text">
               <header>Nikela***</header>
@@ -41,7 +46,7 @@ const Jackpot = () => {
           </div>
           <div class="section-jackpot__winning-games-item">
             <div class="section-jackpot__winning-games-item__img">
-              <img src="./src/images/winning2.png"/>
+              <img src="./src/svg/winning2.svg"/>
             </div>
             <div class="section-jackpot__winning-games-item__text">
               <header>NewPlaye***</header>
@@ -51,7 +56,7 @@ const Jackpot = () => {
           </div>
           <div class="section-jackpot__winning-games-item">
             <div class="section-jackpot__winning-games-item__img">
-              <img src="./src/images/winning3.png"/>
+              <img src="./src/svg/winning3.svg"/>
             </div>
             <div class="section-jackpot__winning-games-item__text">
               <header>jonnyMars***</header>
@@ -61,7 +66,7 @@ const Jackpot = () => {
           </div>
           <div class="section-jackpot__winning-games-item">
             <div class="section-jackpot__winning-games-item__img">
-              <img src="./src/images/winning2.png"/>
+              <img src="./src/svg/winning2.svg"/>
             </div>
             <div class="section-jackpot__winning-games-item__text">
               <header>NewPlaye***</header>

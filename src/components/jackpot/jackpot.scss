@@ -2,161 +2,275 @@
   &__count {
     display: flex;
     align-items: center;
-    padding-top: 108px;
+    justify-content: center;
+    padding-top: 20px;
     &-left {
       position: relative;
-      width: 55%;
-      z-index: 2;
       header {
-        position: absolute;
-        top: -72px;
-        left: 17%;
-        width: 300px;
-        background: url(../svg/jack1.svg) 0 0 no-repeat;
-        padding: 29px 50px;
-        background-size: 100% 100%;
-        text-align: center;
-        font-weight: 900;
-        font-size: 18.8556px;
-        line-height: 18px;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        color: #271C3F;
-        span, img {
-          position: relative;
-          z-index: 2;
-        }
-        img {
+        position: relative;
+        height: 4vw;
+        z-index: 3;
+        &:after {
+          content: '';
+          position: absolute;
+          bottom: -70%;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          width: 12vw;
           display: block;
-          margin: 10px auto 0;
+          height: 10px;
+          box-shadow: 0 3.1016px 13.9572px 6.20321px rgba(39, 28, 63, 0.75);
+        }
+        span {
+          display: block;
+          position: absolute;
+          width: 52%;
+          height: 200%;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          padding-top: 2.5%;
+          box-sizing: border-box;
+          background: url(../svg/jack1.svg) 0 0 no-repeat;
+          background-size: 100% 100%;
+          text-align: center;
+          font-weight: 900;
+          font-size: 90%;
+          line-height: 18px;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+          color: #271C3F;
+          z-index: 3;
         }
       }
       &-main {
-        padding-top: 40px;
         display: flex;
         flex-flow: column;
         justify-content: center;
         align-items: center;
-        height: 300px;
-        box-shadow: inset 0px 0px 4px 4px rgba(0, 255, 240, 1), inset 0px 2px 4px 1px rgba(255, 255, 255, 0.75);
+        max-height: 300px;
+        width: 100%;
         box-sizing: border-box;
         border-radius: 5px;
-        background: url(../images/jackpot_left_bg.png) 0 0 no-repeat;
-        background-size: 100% 100%;
         overflow: hidden;
-        .jackpot-countdown {
-          font-family: "Digital Numbers";
-          font-style: normal;
-          font-weight: normal;
-          font-size: 42px;
-          line-height: 54px;
-          letter-spacing: -0.1em;
-          text-transform: uppercase;
-          color: #14FFE3;
-          text-shadow: 2px 2px 4px rgba(51, 255, 243, 0.5);
+        position: relative;
+        z-index: 2;
+        .jackpot-bg {
+          width: 100%;
         }
-        .jackpot-amount {
-          font-family: "Press Start 2P";
-          font-style: normal;
-          font-weight: normal;
-          font-size: 42px;
-          line-height: 70px;
+        .jackpot-content {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
           text-align: center;
-          letter-spacing: 0.05em;
-          color: #FFFFFF;
-          text-shadow: 4px 8px 0 #000000;
+          padding: 11% 0 15px;
+          display: flex;
+          flex-flow: column;
+          justify-content: center;
+          align-items: center;
+          .jackpot-countdown {
+            position: relative;
+            font-family: "Digital Numbers", sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 31px;
+            letter-spacing: -0.1em;
+            text-transform: uppercase;
+            color: #14FFE3;
+            text-shadow: 2px 2px 4px rgba(51, 255, 243, 0.5);
+          }
+          .jackpot-amount {
+            position: relative;
+            font-family: "Press Start 2P", sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 60px;
+            text-align: center;
+            letter-spacing: 0.05em;
+            color: #FFFFFF;
+            text-shadow:
+              -0   -2px 0   #000000,
+              0   -2px 0   #000000,
+              -0    2px 0   #000000,
+              0    2px 0   #000000,
+              -2px -0   0   #000000,
+              2px -0   0   #000000,
+              -2px  0   0   #000000,
+              2px  0   0   #000000,
+              -1px -2px 0   #000000,
+              1px -2px 0   #000000,
+              -1px  2px 0   #000000,
+              1px  2px 0   #000000,
+              -2px -1px 0   #000000,
+              2px -1px 0   #000000,
+              -2px  1px 0   #000000,
+              2px  1px 0   #000000,
+              -2px -2px 0   #000000,
+              2px -2px 0   #000000,
+              -2px  2px 0   #000000,
+              2px  2px 0   #000000,
+              -2px -2px 0   #000000,
+              2px -2px 0   #000000,
+              -2px  2px 0   #000000,
+              1px  2px 0   #000000,
+              1px 2px 0 #000000,
+              2px 3px 0 #000000,
+              3px 4px 0 #000000,
+              4px 5px 0 #000000;
+          }
+          .jackpot-more {
+            position: relative;
+            background: #FF0636;
+            border: 4px solid #28164E;
+            box-shadow: 2px 6px 0 #28164E;
+            border-radius: 5px;
+            font-weight: 900;
+            font-size: 14px;
+            line-height: 16px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            padding: 11px 40px;
+          }
         }
-        .jackpot-more {
-          margin-top: 12px;
-          background: #FF0636;
-          border: 4px solid #28164E;
-          box-shadow: 2px 6px 0 #28164E;
-          border-radius: 5px;
-          width: 220px;
-          font-weight: 900;
-          font-size: 19.8724px;
-          line-height: 23px;
-          text-align: center;
-          text-transform: uppercase;
-          color: #FFFFFF;
-          padding: 11px 20px;
+        .jackpot-bg-mobile {
+          display: none;
         }
       }
     }
     &-right {
       position: relative;
-      width: 46%;
       margin-left: -1%;
       header {
-        position: absolute;
-        top: -76px;
-        width: 200px;
-        left: 20%;
-        background: url(../svg/jack2.svg) 0 0 no-repeat;
-        background-size: 100% 100%;
-        text-align: center;
-        font-weight: 900;
-        font-size: 14px;
-        line-height: 18px;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        padding: 14px 36px;
-        color: #FFFFFF;
-        img {
+        position: relative;
+        height: 3vw;
+        z-index: 2;
+        &:after {
+          content: '';
+          position: absolute;
+          bottom: -86%;
+          left: 40%;
+          width: 20%;
           display: block;
-          margin: 10px auto 0;
-          transform: scale(0.7, 0.7) translateX(-10%);
+          height: 10px;
+          box-shadow: 0 3.1016px 13.9572px 6.20321px rgba(39, 28, 63, 0.75);
         }
+
         span {
           display: block;
-          margin-top: 20px;
+          position: absolute;
+          width: 50%;
+          padding-top: 3%;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          height: 200%;
+          box-sizing: border-box;
+          background: url(../svg/jack2.svg) 0 0 no-repeat;
+          background-size: 100% 100%;
+          text-align: center;
+          font-weight: 900;
+          font-size: 85%;
+          line-height: 18px;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+          color: #FFFFFF;
+          z-index: 2;
         }
       }
       &-main {
-        padding-top: 10px;
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-        align-items: center;
-        height: 260px;
-        background: url(../images/jackpot_right_bg.png) 0 0 no-repeat;
-        background-size: 100% 100%;
-        .jackpot-countdown {
-          font-family: "Digital Numbers";
-          font-style: normal;
-          font-weight: normal;
-          font-size: 24px;
-          line-height: 31px;
-          letter-spacing: -0.1em;
-          text-transform: uppercase;
-          color: #14FFE3;
-          text-shadow: 2px 2px 4px rgba(51, 255, 243, 0.5);
+        max-height: 260px;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        .jackpot-bg {
+          width: 100%;
         }
-        .jackpot-amount {
-          font-family: "Press Start 2P";
-          font-style: normal;
-          font-weight: normal;
-          font-size: 30px;
-          line-height: 50px;
+        .jackpot-content {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          padding: 13% 0 15px;
           text-align: center;
-          letter-spacing: 0.05em;
-          color: #FFFFFF;
-          text-shadow: 4px 8px 0 #000000;
+          display: flex;
+          flex-flow: column;
+          justify-content: center;
+          align-items: center;
+          .jackpot-countdown {
+            position: relative;
+            font-family: "Digital Numbers", sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 18px;
+            letter-spacing: -0.1em;
+            text-transform: uppercase;
+            color: #14FFE3;
+            text-shadow: 2px 2px 4px rgba(51, 255, 243, 0.5);
+          }
+          .jackpot-amount {
+            position: relative;
+            font-family: "Press Start 2P", sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 50px;
+            text-align: center;
+            letter-spacing: 0.05em;
+            color: #FFFFFF;
+            text-shadow:
+                -0   -2px 0   #000000,
+                0   -2px 0   #000000,
+                -0    2px 0   #000000,
+                0    2px 0   #000000,
+                -2px -0   0   #000000,
+                2px -0   0   #000000,
+                -2px  0   0   #000000,
+                2px  0   0   #000000,
+                -1px -2px 0   #000000,
+                1px -2px 0   #000000,
+                -1px  2px 0   #000000,
+                1px  2px 0   #000000,
+                -2px -1px 0   #000000,
+                2px -1px 0   #000000,
+                -2px  1px 0   #000000,
+                2px  1px 0   #000000,
+                -2px -2px 0   #000000,
+                2px -2px 0   #000000,
+                -2px  2px 0   #000000,
+                2px  2px 0   #000000,
+                -2px -2px 0   #000000,
+                2px -2px 0   #000000,
+                -2px  2px 0   #000000,
+                1px  2px 0   #000000,
+                1px 2px 0 #000000,
+                2px 3px 0 #000000,
+                3px 4px 0 #000000,
+                4px 5px 0 #000000;
+          }
+          .jackpot-more {
+            position: relative;
+            margin-top: 5px;
+            background: #913CFF;
+            border: 4px solid #28164E;
+            box-shadow: 2px 6px 0 #28164E;
+            padding: 11px 40px;
+            border-radius: 5px;
+            font-weight: 900;
+            font-size: 14px;
+            line-height: 16px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+          }
         }
-        .jackpot-more {
-          margin-top: 12px;
-          background: #913CFF;
-          border: 4px solid #28164E;
-          box-shadow: 2px 6px 0 #28164E;
-          padding: 11px 20px;
-          border-radius: 5px;
-          width: 220px;
-          font-weight: 900;
-          font-size: 19.8724px;
-          line-height: 23px;
-          text-align: center;
-          text-transform: uppercase;
-          color: #FFFFFF;
+        .jackpot-bg-mobile {
+          display: none;
         }
       }
     }
@@ -171,8 +285,8 @@
     &-title {
       width: 18%;
       font-weight: bold;
-      font-size: 24px;
-      line-height: 30px;
+      font-size: 18px;
+      line-height: 24px;
       text-transform: uppercase;
       color: #FFF774;
       mix-blend-mode: normal;
@@ -186,7 +300,7 @@
       background: #4D398F;
       border: 6px solid #674BC2;
       box-sizing: border-box;
-      box-shadow: inset 0 4px 10px 4px rgba(0, 0, 0, 0.5);
+      box-shadow: inset 0 3px 5px -1px rgba(0, 0, 0, 0.5);
       white-space: nowrap;
       overflow: hidden;
       &-item {
@@ -198,13 +312,16 @@
         align-items: center;
         &__img {
           margin-right: 20px;
+
+          img {
+            width: 58px;
+          }
         }
         &__text {
           height: 100%;
           display: flex;
           flex-flow: column;
           justify-content: space-between;
-          padding-top: 10px;
           header {
             font-size: 12px;
             line-height: 18px;
@@ -229,69 +346,91 @@
   .section-jackpot {
     &__count {
       flex-flow: column;
+      padding-top: 35px;
+      margin: 0 auto;
+
       &-left, &-right {
         width: 100%;
         max-width: 500px;
-        matgin: 0 auto;
+        margin: 0 auto;
       }
       &-left {
+        max-width: 300px;
         header {
-          left: 0;
-          right: 0;
-          max-width: 60vw;
-          margin: 0 auto;
-          padding: 29px 10px;
-          text-align: center;
-          display: flex;
-          align-items: center;
-          flex-flow: column;
-          img {
-            transform: scale(0.5,0.5);
+          height: 32px;
+          &:after {
+            width: 32%;
+            bottom: -60%;
           }
+
           span {
+            height: 56px;
             font-size: 9px;
-            top: 10px;
           }
         }
         &-main {
-          .jackpot-countdown {
-            font-size: 26px;
-            line-height: 50px;
-          }
-          .jackpot-amount {
-            font-size: 16px;
-            line-height: 30px;
+          .jackpot-content {
+            .jackpot-countdown {
+              font-size: 16px;
+              line-height: 21px;
+            }
+            .jackpot-amount {
+              font-size: 16px;
+              line-height: 30px;
+            }
+            .jackpot-more {
+              font-size: 9px;
+              line-height: 11px;
+              padding: 3px 20px;
+              border: 2px solid #28164E;
+              box-shadow: 2px 4px 0 #28164e;
+            }
           }
         }
       }
       &-right {
-        margin: 90px 0 0 0;
+        max-width: 300px;
+        margin: 20px 0 0 0;
+
         header {
-          left: 0;
-          right: 0;
-          margin: 0 auto;
-          max-width: 40vw;
-          text-align: center;
-          display: flex;
-          align-items: center;
-          flex-flow: column;
-          img {
-            transform: scale(0.4,0.4);
-            margin: -10px 0;
+          height: 27px;
+          &:after {
+            bottom: -40%;
           }
+
           span {
-            font-size: 9px;
-            margin-top: 30px;
+            font-size: 6px;
+            height: 41px;
+            width: 36%;
+            padding-top: 5px;
           }
         }
         &-main {
-          .jackpot-countdown {
-            font-size: 26px;
-            line-height: 50px;
+          .jackpot-bg {
+            display: none;
           }
-          .jackpot-amount {
-            font-size: 16px;
-            line-height: 30px;
+          .jackpot-bg-mobile {
+            display: block;
+            width: 100%;
+          }
+          .jackpot-content {
+            padding-top: 9%;
+
+            .jackpot-countdown {
+              font-size: 16px;
+              line-height: 21px;
+            }
+            .jackpot-amount {
+              font-size: 14px;
+              line-height: 30px;
+            }
+            .jackpot-more {
+              font-size: 9px;
+              line-height: 11px;
+              padding: 3px 20px;
+              border: 2px solid #28164E;
+              box-shadow: 2px 4px 0 #28164e;
+            }
           }
         }
       }
@@ -299,18 +438,27 @@
     &__winning {
       max-width: 500px;
       margin: 20px auto 0;
+      border-radius: 2px;
+
       &-title {
-        padding: 10px 10px 0;
+        padding: 0 12px 0;
         font-size: 9px;
         line-height: 12px;
+        width: 23%;
       }
       &-games {
+        width: 77%;
+        max-width: 77%;
+        border-left: 0;
+        box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+
         &-item {
           padding: 2px 8px;
           width: 50%;
           &__img{
             margin-right: 8px;
             img {
+              width: 23px;
               height: 33px;
             }
           }
@@ -322,6 +470,7 @@
             article {
               font-size: 9px;
               line-height: 12px;
+              margin: 0;
             }
             footer {
               font-size: 9px;
@@ -333,3 +482,4 @@
     }
   }
 }
+

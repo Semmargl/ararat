@@ -22,6 +22,7 @@
     .dropdown {
       background: #0B0A0D;
       border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
       &-toggle {
         font-size: 14px;
         line-height: 16px;
@@ -32,6 +33,7 @@
         display: flex;
         align-items: center;
         align-content: center;
+
         &:after {
           content: '';
           width: 0;
@@ -48,6 +50,7 @@
           transform: rotate(180deg);
         }
       }
+
       &-item {
         display: block;
         height: 0;
@@ -142,7 +145,7 @@
           display: inline-block;
           width: 100%;
           height: 100%;
-          background-image: url(/src/images/sandw.png);
+          background-image: url(/src/svg/sandw.svg);
           background-position: 50% 50%;
           background-repeat: no-repeat;
           transition: transform .5s;
@@ -151,7 +154,7 @@
           display: inline-block;
           width: 100%;
           height: 100%;
-          background-image: url(/src/images/close.png);
+          background-image: url(/src/svg/close.svg);
           background-position: 50% 50%;
           background-repeat: no-repeat;
           transition: transform .5s;

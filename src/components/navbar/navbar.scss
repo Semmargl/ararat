@@ -228,11 +228,12 @@
           }
         }
         &_wrap {
-          padding-left: 10px;
+          padding-left: 0;
           margin-left: 9px;
           background: #44365e;
           border-radius: 3px;
           height: 100%;
+          width: 48px;
         }
         &_area {
           width: 0;
@@ -258,6 +259,18 @@
     }
     &_bot {
       display: none;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .section-navbar {
+    &_top {
+      &_menu {
+        &__link {
+          padding: 3px;
+        }
+      }
     }
   }
 }

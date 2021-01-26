@@ -11,7 +11,7 @@ export const GameNonAuth = () => {
         </div>
       </div>
       <div class="side__modal__inner-row">
-        <img src="./src/images/side_banner.png" alt=""/>
+        <img src="./src/svg/side_banner.svg" alt=""/>
       </div>
       <div class="side__modal__inner-row">
         <div class="side__modal__inner-row_rbutton">

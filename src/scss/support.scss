@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding: 20px 0 0;
   &_name {
     display: flex;
     justify-content: flex-start;
@@ -34,6 +34,7 @@
     background-color: rgba(196, 196, 196, 0);
   }
 }
+
 .title-search {
   &_name {
     width: 100%;
@@ -52,4 +53,25 @@
   height: 1px;
   background: #4B2D70;
   margin: 40px 0 10px;
+}
+
+@media (max-width: 767px) {
+  .title-category {
+    &_name {
+      img {
+        width: 28px;
+      }
+      span {
+        font-size: 14px;
+        line-height: 12px;
+      }
+    }
+
+    &_more {
+      font-size: 9px;
+      line-height: 15px;
+      height: 27px;
+      width: 112px;
+    }
+  }
 }

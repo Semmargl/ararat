@@ -35,7 +35,7 @@ const Main = () => {
             
             <div class="container">
                 <div class="bonus-heading-img">
-                    <img src="./src/images/bonus.png"/>
+                    <img src="./src/svg/bonus_bg.svg"/>
                 </div>
                 
                 <div class="bonus-heading-text">

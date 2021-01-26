@@ -4,7 +4,7 @@ export default () => {
         <div id="signInModal">
             <div class="modal__banner">
                 <div class="modal__banner__title">Получи подарок</div>
-                <div class="modal__banner__image"><img src="./src/images/loginBanner.png" alt=""></div>
+                <div class="modal__banner__image"><img src="./src/svg/side_banner.svg" alt=""></div>
             </div>  
             
             <form class="modal__form">
@@ -54,7 +54,7 @@ export default () => {
                 </div>
                 <button class="modal__form__submit" onclick="signIn(event,this)">
                     Забрать подарок
-                    <img src="./src/images/gift.png" />
+                    <img src="./src/svg/gift.svg" />
                 </button>
                 <div class="modal__form__switch_form">
                     <div class="modal__form__switch_form__text">Уже имеете акаунт?</div>

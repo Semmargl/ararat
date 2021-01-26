@@ -8,7 +8,8 @@ const Table = () => {
         
             <thead>
                 <tr>
-                    <td colspan="2">Метод оплаты</td>
+                    <td class="content-centered">Метод оплаты</td>
+                    <td></td>
                     <td>Бесплатно</td>
                     <td>Время обработки</td>
                     <td>Лимит транзакции</td>
@@ -17,7 +18,7 @@ const Table = () => {
             
             <tbody>
                 <tr>
-                    <td><img src="./src/images/visa.png"/></td>
+                    <td class="content-centered"><img src="./src/svg/Visa.svg"/></td>
                     <td><div class="content-table__mobile_heading">Метод оплаты</div>Visa</td>
                     <td class="content__table__mobile_column color-grey">
                         <div class="content-table__mobile_heading">Тип</div>
@@ -29,7 +30,7 @@ const Table = () => {
                 </tr>
                 
                 <tr>
-                    <td><img src="./src/images/mastercard.png"/></td>
+                    <td class="content-centered"><img src="./src/svg/Mastercard.svg"/></td>
                     <td><div class="content-table__mobile_heading">Метод оплаты</div>MasterCard</td>
                     <td class="content__table__mobile_column color-grey">
                         <div class="content-table__mobile_heading">Тип</div>
@@ -41,7 +42,7 @@ const Table = () => {
                 </tr>
                 
                 <tr>
-                    <td><img src="./src/images/qiwi.png"/></td>
+                    <td class="content-centered"><img src="./src/svg/Qiwi.svg"/></td>
                     <td><div class="content-table__mobile_heading">Метод оплаты</div>Qiwi</td>
                     <td class="content__table__mobile_column color-grey">
                         <div class="content-table__mobile_heading">Тип</div>
@@ -53,7 +54,7 @@ const Table = () => {
                 </tr>
                 
                 <tr>
-                    <td><img src="./src/images/yandex_money.png"/></td>
+                    <td class="content-centered"><img src="./src/svg/YAndex_money.svg"/></td>
                     <td><div class="content-table__mobile_heading">Метод оплаты</div>Yandex money</td>
                     <td class="content__table__mobile_column color-grey">
                         <div class="content-table__mobile_heading">Тип</div>
@@ -65,7 +66,7 @@ const Table = () => {
                 </tr>
                 
                 <tr>
-                    <td><img src="./src/images/alfa_bank.png"/></td>
+                    <td class="content-centered"><img src="./src/svg/Alfa_bank.svg"/></td>
                     <td><div class="content-table__mobile_heading">Метод оплаты</div>Alfa bank</td>
                     <td class="content__table__mobile_column color-grey">
                         <div class="content-table__mobile_heading">Тип</div>
@@ -77,7 +78,7 @@ const Table = () => {
                 </tr>
                 
                 <tr>
-                    <td><img src="./src/images/beeline.png"/></td>
+                    <td class="content-centered"><img src="./src/svg/Beeline.svg"/></td>
                     <td><div class="content-table__mobile_heading">Метод оплаты</div>Beeline</td>
                     <td class="content__table__mobile_column color-grey">
                         <div class="content-table__mobile_heading">Тип</div>
@@ -89,7 +90,7 @@ const Table = () => {
                 </tr>
                 
                 <tr>
-                    <td><img src="./src/images/mts.png"/></td>
+                    <td class="content-centered"><img src="./src/svg/MTS.svg"/></td>
                     <td><div class="content-table__mobile_heading">Метод оплаты</div>MTS</td>
                     <td class="content__table__mobile_column color-grey">
                         <div class="content-table__mobile_heading">Тип</div>
@@ -101,7 +102,7 @@ const Table = () => {
                 </tr>
                 
                 <tr>
-                    <td><img src="./src/images/megaphone.png"/></td>
+                    <td class="content-centered"><img src="./src/svg/Megafon.svg"/></td>
                     <td><div class="content-table__mobile_heading">Метод оплаты</div>Megaphone</td>
                     <td class="content__table__mobile_column color-grey">
                         <div class="content-table__mobile_heading">Тип</div>
@@ -113,7 +114,7 @@ const Table = () => {
                 </tr>
                 
                 <tr>
-                    <td><img src="./src/images/tele2.png"/></td>
+                    <td class="content-centered"><img src="./src/svg/tele2.svg"/></td>
                     <td><div class="content-table__mobile_heading">Метод оплаты</div>Tele2</td>
                     <td class="content__table__mobile_column color-grey">
                         <div class="content-table__mobile_heading">Тип</div>

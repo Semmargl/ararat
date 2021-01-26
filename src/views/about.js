@@ -44,7 +44,7 @@ const Main = () => {
             
             <div class="container">
                 <div class="about-heading-img">
-                    <img src="./src/images/about.png"/>
+                    <img src="./src/svg/about.svg"/>
                 </div>
                 
                 <div class="about-heading-text">

@@ -50,11 +50,12 @@ const Footer = () => {
         </nav>
 
         <div class="section-footer_payment">
+            <img src="./src/svg/Lic.svg" alt="" class="section-footer_payment__logo section-footer_payment__logo-mobile">
             <img src="./src/svg/Visa.svg" alt="" class="section-footer_payment__logo">
             <img src="./src/svg/Mastercard.svg" alt="" class="section-footer_payment__logo">
             <img src="./src/svg/Qiwi.svg" alt="" class="section-footer_payment__logo">
             <img src="./src/svg/YAndex_money.svg" alt="" class="section-footer_payment__logo">
-            <img src="./src/svg/Lic.svg" alt="" class="section-footer_payment__logo">
+            <img src="./src/svg/Lic.svg" alt="" class="section-footer_payment__logo section-footer_payment__logo-desktop">
             <img src="./src/svg/bitcoin.svg" alt="" class="section-footer_payment__logo">
             <img src="./src/svg/Alfa_bank.svg" alt="" class="section-footer_payment__logo">
             <img src="./src/svg/Beeline.svg" alt="" class="section-footer_payment__logo">
@@ -72,6 +73,18 @@ Ararat Gold is a legal website in conformity with the regulations concerning Bel
         <div class="section-footer_contacts">
             <a class="section-footer_contacts__number" href="tel:+78122009512">+7 812 200 95 12</a>
             <a class="section-footer_contacts__mail" href="mailto:support@ararat.gold">support@ararat.gold</a>
+            <div class="dropdown section-footer_contacts__lang">
+              <div class="dropdown">
+                <div class="dropdown-toggle" type="button" onclick="this.classList.toggle('active');this.nextElementSibling.classList.toggle('active')">
+                  <img src="./src/svg/ru.svg"/>&nbsp;&nbsp;Ру
+                </div>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Pol</a>
+                  <a class="dropdown-item" href="#">Eng</a>
+                  <a class="dropdown-item" href="#">Ру</a>
+                </div>
+              </div>
+            </div>
             <div class="section-footer_contacts__footer social-footer">
                 <button class="social-footer__google social-footer-icon"></button>
                 <button class="social-footer__vk social-footer-icon"></button>
