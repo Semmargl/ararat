@@ -8,19 +8,19 @@
       position: relative;
       header {
         position: relative;
-        height: 4vw;
+        height: 62px;
         z-index: 3;
         &:after {
           content: '';
           position: absolute;
-          bottom: -70%;
+          bottom: -66%;
           left: 0;
           right: 0;
           margin: 0 auto;
-          width: 12vw;
+          width: 30%;
           display: block;
           height: 10px;
-          box-shadow: 0 3.1016px 13.9572px 6.20321px rgba(39, 28, 63, 0.75);
+          box-shadow: 0 10px 22px 4px rgba(39, 28, 63, 0.9);
         }
         span {
           display: block;
@@ -30,7 +30,7 @@
           left: 0;
           right: 0;
           margin: 0 auto;
-          padding-top: 2.5%;
+          padding-top: 4.5%;
           box-sizing: border-box;
           background: url(../svg/jack1.svg) 0 0 no-repeat;
           background-size: 100% 100%;
@@ -135,6 +135,7 @@
             text-transform: uppercase;
             color: #FFFFFF;
             padding: 11px 40px;
+            text-decoration: none;
           }
         }
         .jackpot-bg-mobile {
@@ -147,24 +148,24 @@
       margin-left: -1%;
       header {
         position: relative;
-        height: 3vw;
+        height: 46px;
         z-index: 2;
         &:after {
           content: '';
           position: absolute;
           bottom: -86%;
-          left: 40%;
-          width: 20%;
+          left: 36%;
+          width: 28%;
           display: block;
           height: 10px;
-          box-shadow: 0 3.1016px 13.9572px 6.20321px rgba(39, 28, 63, 0.75);
+          box-shadow: 0 3px 14px 2px rgba(39, 28, 63, 0.65);
         }
 
         span {
           display: block;
           position: absolute;
           width: 50%;
-          padding-top: 3%;
+          padding-top: 6%;
           left: 0;
           right: 0;
           margin: 0 auto;
@@ -174,7 +175,7 @@
           background-size: 100% 100%;
           text-align: center;
           font-weight: 900;
-          font-size: 85%;
+          font-size: 13px;
           line-height: 18px;
           letter-spacing: 0.1em;
           text-transform: uppercase;
@@ -267,6 +268,7 @@
             text-align: center;
             text-transform: uppercase;
             color: #FFFFFF;
+            text-decoration: none;
           }
         }
         .jackpot-bg-mobile {
@@ -344,44 +346,6 @@
   }
 }
 
-@media (min-width: 1300px) {
-  .section-jackpot {
-    &__count-left {
-      header {
-        span {
-          padding-top: 3.5%;
-        }
-      }
-    }
-    &__count-right {
-      header {
-        span {
-          padding-top: 5%;
-        }
-      }
-    }
-  }
-}
-
-@media (min-width: 1440px) {
-  .section-jackpot {
-    &__count-left {
-      header {
-        span {
-          padding-top: 4%;
-        }
-      }
-    }
-    &__count-right {
-      header {
-        span {
-          padding-top: 5.5%;
-        }
-      }
-    }
-  }
-}
-
 @media (max-width: 1024px) {
   .section-jackpot {
     &__count {
@@ -406,6 +370,7 @@
           span {
             height: 56px;
             font-size: 9px;
+            padding-top: 1.5%;
           }
         }
         &-main {
@@ -464,6 +429,8 @@
           height: 27px;
           &:after {
             bottom: -40%;
+            left: 40%;
+            width: 20%;
           }
 
           span {

@@ -5,6 +5,7 @@
   .slick-list {
     width: 100%;
     position: relative;
+    overflow: hidden;
     &:after {
       content: '';
       display: block;
@@ -181,11 +182,9 @@
   }
 }
 
-@media (min-width: 1040px) {
+@media (max-width: 747px) {
   .section-giftSlider {
-    .slick-list {
-      overflow: hidden;
-    }
+    margin-right: -10px
   }
 }
 

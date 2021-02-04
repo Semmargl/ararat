@@ -12,7 +12,7 @@ const Jackpot = () => {
             <div class="jackpot-content">
               <div class="jackpot-countdown" data-time_offset="5"></div>  
               <div class="jackpot-amount">5 425,04 ₽</div>
-              <div class="jackpot-more">Подробнее</div>
+              <a href="#" class="jackpot-more">Подробнее</a>
             </div>
           </div>
         </div>
@@ -26,7 +26,7 @@ const Jackpot = () => {
             <div class="jackpot-content">
               <div class="jackpot-countdown" data-time_offset="125"></div>  
               <div class="jackpot-amount">334 425,39 ₽</div>
-              <div class="jackpot-more">Подробнее</div>
+              <a href="#" class="jackpot-more">Подробнее</a>
             </div>
           </div>
         </div>
