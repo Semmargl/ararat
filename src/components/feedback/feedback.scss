@@ -1,0 +1,183 @@
+@import "../../scss/constants";
+
+.section-feedback {
+  &__form {
+    background: #372C57;
+    border-radius: 6px;
+    padding: 21px 56px 21px 56px;
+    width: 400px;
+    margin: 0 auto 92px;
+    max-width: 100%;
+    box-sizing: border-box;
+
+    &__field {
+      margin-top: 10px;
+      &__label {
+        display: block;
+        font-size: 12px;
+        line-height: 14px;
+        color: #FFF774;
+        margin: 0 0 8px;
+      }
+      &__wrap {
+        position: relative;
+        &__input {
+          display: block;
+          width: 100%;
+          background: #44365D;
+          border-radius: 5px;
+          padding: 12px 10px;
+          border: 1px solid #716589;
+          color: #fff;
+          box-sizing: border-box;
+          &::placeholder {
+            font-size: 14px;
+            line-height: 16px;
+            color: #9F98AD;
+          }
+
+          &_textarea {
+            resize: none;
+            height: 100px;
+
+            &:focus {
+              outline: none;
+              border: 1px solid #716589;
+            }
+          }
+        }
+        &__tooltips {
+          position: absolute;
+          top: 100%;
+          left: -1%;
+          z-index: 3;
+          max-width: 100%;
+          &__item-error {
+            display: none;
+            font-size: 12px;
+            line-height: 14px;
+            background: #44365D;
+            color: #9F98AD;
+            padding: 6px 11px;
+            border-radius: 4px;
+            border: 1px solid #FF0636;
+            margin-top: 6px;
+            &:before {
+              content: '';
+              position: absolute;
+              top: 1px;
+              width: 0;
+              left: 10px;
+              height: 0;
+              border-style: solid;
+              border-width: 0 5px 5px 5px;
+              border-color: transparent transparent #FF0636 transparent;
+            }
+          }
+          &__item-notice {
+            display: none;
+            font-size: 12px;
+            line-height: 14px;
+            background: #44365D;
+            color: #9F98AD;
+            padding: 6px 11px;
+            border-radius: 4px;
+            border: 1px solid #FFF774;
+            margin-top: 6px;
+            &:before {
+              content: '';
+              position: absolute;
+              top: 1px;
+              width: 0;
+              left: 10px;
+              height: 0;
+              border-style: solid;
+              border-width: 0 5px 5px 5px;
+              border-color: transparent transparent #FFF774 transparent;
+            }
+          }
+        }
+        &__input:focus:not(.error) ~ &__tooltips &__tooltips__item-notice {
+          display: block
+        }
+        &__input.error ~ &__tooltips &__tooltips__item-error,
+        &__checkbox.error ~ &__tooltips &__tooltips__item-error {
+          display: block
+        }
+      }
+    }
+    &__button {
+      width: 200px;
+      padding: 11px 0;
+      text-align: center;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 0.02em;
+      color: #FFFFFF;
+      background: #FF0636;
+      border-radius: 2px;
+      margin: 27px auto 0;
+      display: block;
+    }
+
+    &__file {
+      border: 1px dashed #FFF774;
+      background: #483C6C;
+      box-sizing: border-box;
+      border-radius: 5px;
+      padding: 18px 16px 15px 16px;
+      margin: 18px 0 0 0 ;
+      position: relative;
+      cursor: pointer;
+
+      &__input {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        cursor: pointer;
+      }
+
+      &__title {
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: 0.02em;
+        text-decoration-line: underline;
+        color: #FFF774;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0 13px 0;
+
+        &:before {
+          content: '';
+          background: url(../svg/file.svg);
+          width: 29px;
+          height: 29px;
+          margin: 0 10px 0 0;
+        }
+      }
+
+      &__requirements {
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        color: #A4A4A4;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .section-feedback {
+    &__form {
+      background: none;
+      padding: 6px;
+      margin-bottom: 34px;
+    }
+  }
+}

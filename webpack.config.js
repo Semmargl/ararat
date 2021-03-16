@@ -4,6 +4,8 @@ const miniCss = require('mini-css-extract-plugin');
 module.exports = {
     entry: {
       main: '/src/app.js',
+        faq: '/src/pages/entry_faq.js',
+        feedback: '/src/pages/entry_feedback.js',
       search: '/src/pages/entry_search.js',
       payments: '/src/pages/entry_payments.js',
       about: '/src/pages/entry_about.js',
